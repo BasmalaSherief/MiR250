@@ -48,3 +48,7 @@ cd /home/mir250_ws/MIR_250
 colcon build
 source install/setup.bash
 ```
+
+# how to run
+1) Open Isaac Sim
+2) File -> Open -> usd -> robots -> mir_250_cabinet2.0.usd
