@@ -74,8 +74,8 @@ export ROS_DISTRO=humble
 export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 
 # 3. Launch the controller with Low-VRAM optimizations
-taskset -c 0,1 /home/basmala/isaac-sim/python.sh \
-"/home/basmala/Windows-Educational/Robotics Master/2nd semester/Cognitive Architecture for robotics/MIR250 Project/MIR_250/mir_manual_navigation/mir_manual_navigation/isaac_diff_controller.py" \
+taskset -c 0,1 <path-to-isaac-sim>/python.sh \
+"<path-to-mir250-workspace>/MIR_250/mir_manual_navigation/mir_manual_navigation/isaac_diff_controller.py" \
 --/rtx/ecoMode/enabled=True \
 --/rtx/sceneDb/enabled=False \
 --/renderer/resolution/width=1280 \
