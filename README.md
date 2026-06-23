@@ -49,6 +49,35 @@ colcon build
 source install/setup.bash
 ```
 
-# how to run
+## How to Run
 1) Open Isaac Sim
 2) File -> Open -> usd -> robots -> mir_250_cabinet2.0.usd
+
+## Kinematic Wheels Calibration (Sim2Real)
+
+To ensure the digital twin's odometry matches the physics engine without drifting, the `WHEEL_RADIUS` and `WHEEL_BASE` must be calibrated. 
+
+**⚠️ CRITICAL:** Ensure the main Isaac Sim GUI is completely closed before starting. The controller script will launch its own dedicated, optimized rendering instance.
+
+### Step 1: Launch the Controller (Host Machine)
+Open a terminal on the host machine. Set the middleware to match the Docker container, and run the Python controller using Isaac Sim's bundled Python. 
+
+*Note: The `taskset` command and the appended flags are required to prevent the 4GB VRAM GPU from crashing during material compilation.*
+
+```bash
+# 1. Hide host ROS 2 installations (if applicable)
+unset PYTHONPATH
+unset AMENT_PREFIX_PATH
+
+# 2. Set networking to FastDDS
+export ROS_DISTRO=humble
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+
+# 3. Launch the controller with Low-VRAM optimizations
+taskset -c 0,1 /home/basmala/isaac-sim/python.sh \
+"/home/basmala/Windows-Educational/Robotics Master/2nd semester/Cognitive Architecture for robotics/MIR250 Project/MIR_250/mir_manual_navigation/mir_manual_navigation/isaac_diff_controller.py" \
+--/rtx/ecoMode/enabled=True \
+--/rtx/sceneDb/enabled=False \
+--/renderer/resolution/width=1280 \
+--/renderer/resolution/height=720
+```
