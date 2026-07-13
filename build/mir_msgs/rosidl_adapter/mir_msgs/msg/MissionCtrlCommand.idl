@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mir_msgs/msg/MissionCtrlCommand.msg
+// generated code does not contain a copyright notice
+
+
+module mir_msgs {
+  module msg {
+    module MissionCtrlCommand_Constants {
+      const uint8 CMD_GET_STATUS = 0;
+      const uint8 CMD_WAIT_POS_LOCK = 1;
+      const uint8 CMD_WAIT_AREA_LOCK = 2;
+      const uint8 CMD_CONTINUE = 3;
+      const uint8 CMD_LOAD_MISSION = 4;
+    };
+    struct MissionCtrlCommand {
+      string description;
+
+      int32 cmd;
+
+      int32 mission_id;
+    };
+  };
+};

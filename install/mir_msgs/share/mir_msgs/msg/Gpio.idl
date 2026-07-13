@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mir_msgs/msg/Gpio.msg
+// generated code does not contain a copyright notice
+
+
+module mir_msgs {
+  module msg {
+    module Gpio_Constants {
+      const uint8 POWERBOARD_GPIO = 0;
+      const uint8 POWERBOARD_RESET_SWITCH_LED = 1;
+      const uint8 PENDANT_INPUT = 5;
+      const uint8 AUTO_MODE_SWITCH = 10;
+      const uint8 MANUAL_MODE_SWITCH = 11;
+    };
+    struct Gpio {
+      uint8 ioport;
+
+      uint8 dat;
+    };
+  };
+};

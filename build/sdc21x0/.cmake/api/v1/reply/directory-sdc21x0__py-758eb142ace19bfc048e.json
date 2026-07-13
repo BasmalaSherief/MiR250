@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "sdc21x0__py",
+		"source" : "/home/basmala/mir250_ws/build/sdc21x0/sdc21x0__py"
+	}
+}

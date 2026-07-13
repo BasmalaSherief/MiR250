@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "mir_actions__py",
+		"source" : "/home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_actions/mir_actions__py"
+	}
+}

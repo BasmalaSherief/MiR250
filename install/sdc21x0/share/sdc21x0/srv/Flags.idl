@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from sdc21x0/srv/Flags.srv
+// generated code does not contain a copyright notice
+
+
+module sdc21x0 {
+  module srv {
+    struct Flags_Request {
+      int32 digital_port;
+    };
+    struct Flags_Response {
+      boolean response;
+    };
+  };
+};

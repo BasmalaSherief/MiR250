@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mir_msgs/msg/PalletLifterStatus.msg
+// generated code does not contain a copyright notice
+
+
+module mir_msgs {
+  module msg {
+    module PalletLifterStatus_Constants {
+      const uint8 PALLET_LIFT_STATE_DISABLED = 0;
+      const uint8 PALLET_LIFT_STATE_MOVING = 1;
+      const uint8 PALLET_LIFT_STATE_DOWN = 2;
+      const uint8 PALLET_LIFT_STATE_UP = 3;
+    };
+    struct PalletLifterStatus {
+      boolean is_enabled;
+
+      uint8 state;
+    };
+  };
+};

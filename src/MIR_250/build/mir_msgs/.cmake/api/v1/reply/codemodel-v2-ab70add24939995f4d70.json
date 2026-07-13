@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4786734ff9618bd93c53.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "mir_msgs__py",
+					"jsonFile" : "directory-mir_msgs__py-eaa066206a0c762c2195.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_msgs/mir_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "mir_msgs__rs",
+					"jsonFile" : "directory-mir_msgs__rs-77e9beebc9a2d8669e9b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_msgs/mir_msgs__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "mir_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_mir_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_mir_msgs_egg-68957fb5d12f749643c9.json",
+					"name" : "ament_cmake_python_build_mir_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_mir_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_mir_msgs-bc9a83db174a38941043.json",
+					"name" : "ament_cmake_python_copy_mir_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mir_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mir_msgs-185d44f609eb2d658278.json",
+					"name" : "mir_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mir_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mir_msgs__cpp-1fc51845a442ad0a9e19.json",
+					"name" : "mir_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "mir_msgs__py::@5fd1cefdebab06ca3a94",
+					"jsonFile" : "target-mir_msgs__py-dcf018b4eacb9477bf54.json",
+					"name" : "mir_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mir_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mir_msgs__rosidl_generator_c-8bc67a974b67f945bcc0.json",
+					"name" : "mir_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mir_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mir_msgs__rosidl_generator_py-fd6e8150b4af637f549a.json",
+					"name" : "mir_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mir_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mir_msgs__rosidl_typesupport_c-a8aedbbf419c59a2e531.json",
+					"name" : "mir_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mir_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mir_msgs__rosidl_typesupport_c__pyext-b90a15d6a76f6fb1ca11.json",
+					"name" : "mir_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mir_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mir_msgs__rosidl_typesupport_cpp-38c2f8a93242aae6b694.json",
+					"name" : "mir_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mir_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mir_msgs__rosidl_typesupport_fastrtps_c-cbf29542b0312cac0c6a.json",
+					"name" : "mir_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mir_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mir_msgs__rosidl_typesupport_fastrtps_c__pyext-ef4bcbd56c98e689b793.json",
+					"name" : "mir_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mir_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mir_msgs__rosidl_typesupport_fastrtps_cpp-d6756ca17d02f0d4298b.json",
+					"name" : "mir_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mir_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mir_msgs__rosidl_typesupport_introspection_c-7fa41af7e6d997e41db0.json",
+					"name" : "mir_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mir_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mir_msgs__rosidl_typesupport_introspection_c__pyext-35f75c01bc8c413cf1f7.json",
+					"name" : "mir_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mir_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mir_msgs__rosidl_typesupport_introspection_cpp-212a47f6baedde183961.json",
+					"name" : "mir_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "mir_msgs__rs::@9127627777ec8cf45cbf",
+					"jsonFile" : "target-mir_msgs__rs-5a8dd7d4787d0859fa29.json",
+					"name" : "mir_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mir_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mir_msgs_uninstall-84ddc8772af38fbddead.json",
+					"name" : "mir_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-8c8b68aaa21390ba8dd9.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_msgs",
+		"source" : "/home/basmala/mir250_ws/src/MiR250/MIR_250/mir_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

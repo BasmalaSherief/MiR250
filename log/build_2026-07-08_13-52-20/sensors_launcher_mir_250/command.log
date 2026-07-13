@@ -1,0 +1,6 @@
+Invoking command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/sensors_launcher_mir_250 -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/sensors_launcher_mir_250
+Invoked command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/sensors_launcher_mir_250 -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/sensors_launcher_mir_250
+Invoking command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/build/sensors_launcher_mir_250 -- -j20 -l20
+Invoked command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/build/sensors_launcher_mir_250 -- -j20 -l20
+Invoking command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/build/sensors_launcher_mir_250
+Invoked command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/build/sensors_launcher_mir_250

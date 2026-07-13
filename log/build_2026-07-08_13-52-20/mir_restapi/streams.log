@@ -1,0 +1,50 @@
+[1.306s] Invoking command in '/home/basmala/mir250_ws/src/MIR_250/mir_restapi': PYTHONPATH=/home/basmala/mir250_ws/build/mir_restapi/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/mir_restapi build --build-base /home/basmala/mir250_ws/build/mir_restapi/build install --record /home/basmala/mir250_ws/build/mir_restapi/install.log --install-scripts $base/lib/mir_restapi --single-version-externally-managed install_data
+[1.662s] running egg_info
+[1.663s] creating ../../../build/mir_restapi/mir_restapi.egg-info
+[1.663s] writing ../../../build/mir_restapi/mir_restapi.egg-info/PKG-INFO
+[1.664s] writing dependency_links to ../../../build/mir_restapi/mir_restapi.egg-info/dependency_links.txt
+[1.664s] writing entry points to ../../../build/mir_restapi/mir_restapi.egg-info/entry_points.txt
+[1.664s] writing requirements to ../../../build/mir_restapi/mir_restapi.egg-info/requires.txt
+[1.664s] writing top-level names to ../../../build/mir_restapi/mir_restapi.egg-info/top_level.txt
+[1.664s] writing manifest file '../../../build/mir_restapi/mir_restapi.egg-info/SOURCES.txt'
+[1.667s] reading manifest file '../../../build/mir_restapi/mir_restapi.egg-info/SOURCES.txt'
+[1.667s] adding license file 'LICENSE'
+[1.669s] writing manifest file '../../../build/mir_restapi/mir_restapi.egg-info/SOURCES.txt'
+[1.669s] running build
+[1.669s] running build_py
+[1.669s] creating /home/basmala/mir250_ws/build/mir_restapi/build
+[1.669s] creating /home/basmala/mir250_ws/build/mir_restapi/build/lib
+[1.670s] creating /home/basmala/mir250_ws/build/mir_restapi/build/lib/mir_restapi
+[1.670s] copying mir_restapi/mir_restapi_server.py -> /home/basmala/mir250_ws/build/mir_restapi/build/lib/mir_restapi
+[1.670s] copying mir_restapi/__init__.py -> /home/basmala/mir250_ws/build/mir_restapi/build/lib/mir_restapi
+[1.670s] copying mir_restapi/mir_restapi_lib.py -> /home/basmala/mir250_ws/build/mir_restapi/build/lib/mir_restapi
+[1.670s] copying mir_restapi/mir_restapi_sync_time.py -> /home/basmala/mir250_ws/build/mir_restapi/build/lib/mir_restapi
+[1.671s] copying mir_restapi/mir_controller_restapi.py -> /home/basmala/mir250_ws/build/mir_restapi/build/lib/mir_restapi
+[1.671s] running install
+[1.672s] running install_lib
+[1.673s] creating /home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages/mir_restapi
+[1.673s] copying /home/basmala/mir250_ws/build/mir_restapi/build/lib/mir_restapi/mir_restapi_server.py -> /home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages/mir_restapi
+[1.674s] copying /home/basmala/mir250_ws/build/mir_restapi/build/lib/mir_restapi/__init__.py -> /home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages/mir_restapi
+[1.674s] copying /home/basmala/mir250_ws/build/mir_restapi/build/lib/mir_restapi/mir_restapi_lib.py -> /home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages/mir_restapi
+[1.674s] copying /home/basmala/mir250_ws/build/mir_restapi/build/lib/mir_restapi/mir_restapi_sync_time.py -> /home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages/mir_restapi
+[1.674s] copying /home/basmala/mir250_ws/build/mir_restapi/build/lib/mir_restapi/mir_controller_restapi.py -> /home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages/mir_restapi
+[1.675s] byte-compiling /home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages/mir_restapi/mir_restapi_server.py to mir_restapi_server.cpython-310.pyc
+[1.678s] byte-compiling /home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages/mir_restapi/__init__.py to __init__.cpython-310.pyc
+[1.678s] byte-compiling /home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages/mir_restapi/mir_restapi_lib.py to mir_restapi_lib.cpython-310.pyc
+[1.681s] byte-compiling /home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages/mir_restapi/mir_restapi_sync_time.py to mir_restapi_sync_time.cpython-310.pyc
+[1.681s] byte-compiling /home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages/mir_restapi/mir_controller_restapi.py to mir_controller_restapi.cpython-310.pyc
+[1.684s] running install_data
+[1.684s] creating /home/basmala/mir250_ws/install/mir_restapi/share/ament_index
+[1.684s] creating /home/basmala/mir250_ws/install/mir_restapi/share/ament_index/resource_index
+[1.684s] creating /home/basmala/mir250_ws/install/mir_restapi/share/ament_index/resource_index/packages
+[1.684s] copying resource/mir_restapi -> /home/basmala/mir250_ws/install/mir_restapi/share/ament_index/resource_index/packages
+[1.685s] copying package.xml -> /home/basmala/mir250_ws/install/mir_restapi/share/mir_restapi
+[1.685s] creating /home/basmala/mir250_ws/install/mir_restapi/share/mir_restapi/launch
+[1.685s] running install_egg_info
+[1.688s] Copying ../../../build/mir_restapi/mir_restapi.egg-info to /home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages/mir_restapi-0.0.0-py3.10.egg-info
+[1.690s] running install_scripts
+[1.722s] Installing mir_control_node script to /home/basmala/mir250_ws/install/mir_restapi/lib/mir_restapi
+[1.723s] Installing mir_restapi_server script to /home/basmala/mir250_ws/install/mir_restapi/lib/mir_restapi
+[1.723s] Installing mir_restapi_sync_time script to /home/basmala/mir250_ws/install/mir_restapi/lib/mir_restapi
+[1.723s] writing list of installed files to '/home/basmala/mir250_ws/build/mir_restapi/install.log'
+[1.752s] Invoked command in '/home/basmala/mir250_ws/src/MIR_250/mir_restapi' returned '0': PYTHONPATH=/home/basmala/mir250_ws/build/mir_restapi/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/mir_restapi build --build-base /home/basmala/mir250_ws/build/mir_restapi/build install --record /home/basmala/mir250_ws/build/mir_restapi/install.log --install-scripts $base/lib/mir_restapi --single-version-externally-managed install_data

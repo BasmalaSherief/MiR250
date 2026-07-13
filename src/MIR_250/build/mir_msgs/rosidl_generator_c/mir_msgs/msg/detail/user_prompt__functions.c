@@ -1,0 +1,340 @@
+// generated from rosidl_generator_c/resource/idl__functions.c.em
+// with input from mir_msgs:msg/UserPrompt.idl
+// generated code does not contain a copyright notice
+#include "mir_msgs/msg/detail/user_prompt__functions.h"
+
+#include <assert.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "rcutils/allocator.h"
+
+
+// Include directives for member types
+// Member `guid`
+// Member `user_group`
+// Member `question`
+// Member `options`
+#include "rosidl_runtime_c/string_functions.h"
+// Member `timeout`
+#include "builtin_interfaces/msg/detail/duration__functions.h"
+
+bool
+mir_msgs__msg__UserPrompt__init(mir_msgs__msg__UserPrompt * msg)
+{
+  if (!msg) {
+    return false;
+  }
+  // has_request
+  // guid
+  if (!rosidl_runtime_c__String__init(&msg->guid)) {
+    mir_msgs__msg__UserPrompt__fini(msg);
+    return false;
+  }
+  // user_group
+  if (!rosidl_runtime_c__String__init(&msg->user_group)) {
+    mir_msgs__msg__UserPrompt__fini(msg);
+    return false;
+  }
+  // question
+  if (!rosidl_runtime_c__String__init(&msg->question)) {
+    mir_msgs__msg__UserPrompt__fini(msg);
+    return false;
+  }
+  // options
+  if (!rosidl_runtime_c__String__Sequence__init(&msg->options, 0)) {
+    mir_msgs__msg__UserPrompt__fini(msg);
+    return false;
+  }
+  // timeout
+  if (!builtin_interfaces__msg__Duration__init(&msg->timeout)) {
+    mir_msgs__msg__UserPrompt__fini(msg);
+    return false;
+  }
+  return true;
+}
+
+void
+mir_msgs__msg__UserPrompt__fini(mir_msgs__msg__UserPrompt * msg)
+{
+  if (!msg) {
+    return;
+  }
+  // has_request
+  // guid
+  rosidl_runtime_c__String__fini(&msg->guid);
+  // user_group
+  rosidl_runtime_c__String__fini(&msg->user_group);
+  // question
+  rosidl_runtime_c__String__fini(&msg->question);
+  // options
+  rosidl_runtime_c__String__Sequence__fini(&msg->options);
+  // timeout
+  builtin_interfaces__msg__Duration__fini(&msg->timeout);
+}
+
+bool
+mir_msgs__msg__UserPrompt__are_equal(const mir_msgs__msg__UserPrompt * lhs, const mir_msgs__msg__UserPrompt * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // has_request
+  if (lhs->has_request != rhs->has_request) {
+    return false;
+  }
+  // guid
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->guid), &(rhs->guid)))
+  {
+    return false;
+  }
+  // user_group
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->user_group), &(rhs->user_group)))
+  {
+    return false;
+  }
+  // question
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->question), &(rhs->question)))
+  {
+    return false;
+  }
+  // options
+  if (!rosidl_runtime_c__String__Sequence__are_equal(
+      &(lhs->options), &(rhs->options)))
+  {
+    return false;
+  }
+  // timeout
+  if (!builtin_interfaces__msg__Duration__are_equal(
+      &(lhs->timeout), &(rhs->timeout)))
+  {
+    return false;
+  }
+  return true;
+}
+
+bool
+mir_msgs__msg__UserPrompt__copy(
+  const mir_msgs__msg__UserPrompt * input,
+  mir_msgs__msg__UserPrompt * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // has_request
+  output->has_request = input->has_request;
+  // guid
+  if (!rosidl_runtime_c__String__copy(
+      &(input->guid), &(output->guid)))
+  {
+    return false;
+  }
+  // user_group
+  if (!rosidl_runtime_c__String__copy(
+      &(input->user_group), &(output->user_group)))
+  {
+    return false;
+  }
+  // question
+  if (!rosidl_runtime_c__String__copy(
+      &(input->question), &(output->question)))
+  {
+    return false;
+  }
+  // options
+  if (!rosidl_runtime_c__String__Sequence__copy(
+      &(input->options), &(output->options)))
+  {
+    return false;
+  }
+  // timeout
+  if (!builtin_interfaces__msg__Duration__copy(
+      &(input->timeout), &(output->timeout)))
+  {
+    return false;
+  }
+  return true;
+}
+
+mir_msgs__msg__UserPrompt *
+mir_msgs__msg__UserPrompt__create()
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  mir_msgs__msg__UserPrompt * msg = (mir_msgs__msg__UserPrompt *)allocator.allocate(sizeof(mir_msgs__msg__UserPrompt), allocator.state);
+  if (!msg) {
+    return NULL;
+  }
+  memset(msg, 0, sizeof(mir_msgs__msg__UserPrompt));
+  bool success = mir_msgs__msg__UserPrompt__init(msg);
+  if (!success) {
+    allocator.deallocate(msg, allocator.state);
+    return NULL;
+  }
+  return msg;
+}
+
+void
+mir_msgs__msg__UserPrompt__destroy(mir_msgs__msg__UserPrompt * msg)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  if (msg) {
+    mir_msgs__msg__UserPrompt__fini(msg);
+  }
+  allocator.deallocate(msg, allocator.state);
+}
+
+
+bool
+mir_msgs__msg__UserPrompt__Sequence__init(mir_msgs__msg__UserPrompt__Sequence * array, size_t size)
+{
+  if (!array) {
+    return false;
+  }
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  mir_msgs__msg__UserPrompt * data = NULL;
+
+  if (size) {
+    data = (mir_msgs__msg__UserPrompt *)allocator.zero_allocate(size, sizeof(mir_msgs__msg__UserPrompt), allocator.state);
+    if (!data) {
+      return false;
+    }
+    // initialize all array elements
+    size_t i;
+    for (i = 0; i < size; ++i) {
+      bool success = mir_msgs__msg__UserPrompt__init(&data[i]);
+      if (!success) {
+        break;
+      }
+    }
+    if (i < size) {
+      // if initialization failed finalize the already initialized array elements
+      for (; i > 0; --i) {
+        mir_msgs__msg__UserPrompt__fini(&data[i - 1]);
+      }
+      allocator.deallocate(data, allocator.state);
+      return false;
+    }
+  }
+  array->data = data;
+  array->size = size;
+  array->capacity = size;
+  return true;
+}
+
+void
+mir_msgs__msg__UserPrompt__Sequence__fini(mir_msgs__msg__UserPrompt__Sequence * array)
+{
+  if (!array) {
+    return;
+  }
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+
+  if (array->data) {
+    // ensure that data and capacity values are consistent
+    assert(array->capacity > 0);
+    // finalize all array elements
+    for (size_t i = 0; i < array->capacity; ++i) {
+      mir_msgs__msg__UserPrompt__fini(&array->data[i]);
+    }
+    allocator.deallocate(array->data, allocator.state);
+    array->data = NULL;
+    array->size = 0;
+    array->capacity = 0;
+  } else {
+    // ensure that data, size, and capacity values are consistent
+    assert(0 == array->size);
+    assert(0 == array->capacity);
+  }
+}
+
+mir_msgs__msg__UserPrompt__Sequence *
+mir_msgs__msg__UserPrompt__Sequence__create(size_t size)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  mir_msgs__msg__UserPrompt__Sequence * array = (mir_msgs__msg__UserPrompt__Sequence *)allocator.allocate(sizeof(mir_msgs__msg__UserPrompt__Sequence), allocator.state);
+  if (!array) {
+    return NULL;
+  }
+  bool success = mir_msgs__msg__UserPrompt__Sequence__init(array, size);
+  if (!success) {
+    allocator.deallocate(array, allocator.state);
+    return NULL;
+  }
+  return array;
+}
+
+void
+mir_msgs__msg__UserPrompt__Sequence__destroy(mir_msgs__msg__UserPrompt__Sequence * array)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  if (array) {
+    mir_msgs__msg__UserPrompt__Sequence__fini(array);
+  }
+  allocator.deallocate(array, allocator.state);
+}
+
+bool
+mir_msgs__msg__UserPrompt__Sequence__are_equal(const mir_msgs__msg__UserPrompt__Sequence * lhs, const mir_msgs__msg__UserPrompt__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!mir_msgs__msg__UserPrompt__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+mir_msgs__msg__UserPrompt__Sequence__copy(
+  const mir_msgs__msg__UserPrompt__Sequence * input,
+  mir_msgs__msg__UserPrompt__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(mir_msgs__msg__UserPrompt);
+    rcutils_allocator_t allocator = rcutils_get_default_allocator();
+    mir_msgs__msg__UserPrompt * data =
+      (mir_msgs__msg__UserPrompt *)allocator.reallocate(
+      output->data, allocation_size, allocator.state);
+    if (!data) {
+      return false;
+    }
+    // If reallocation succeeded, memory may or may not have been moved
+    // to fulfill the allocation request, invalidating output->data.
+    output->data = data;
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!mir_msgs__msg__UserPrompt__init(&output->data[i])) {
+        // If initialization of any new item fails, roll back
+        // all previously initialized items. Existing items
+        // in output are to be left unmodified.
+        for (; i-- > output->capacity; ) {
+          mir_msgs__msg__UserPrompt__fini(&output->data[i]);
+        }
+        return false;
+      }
+    }
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!mir_msgs__msg__UserPrompt__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
+}

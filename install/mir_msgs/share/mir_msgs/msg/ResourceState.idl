@@ -1,0 +1,49 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mir_msgs/msg/ResourceState.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+
+module mir_msgs {
+  module msg {
+    module ResourceState_Constants {
+      const uint32 ROBOT_POSITION = 0;
+      const uint32 STAGING_POSITION = 1;
+      const uint32 CHARGING_STATION = 2;
+      const uint32 AREA = 3;
+    };
+    struct ResourceState {
+      @verbatim (language="comment", text=
+        "A token that is true whenever the resource is busy.")
+      sequence<string> assigned;
+
+      @verbatim (language="comment", text=
+        "The resource type")
+      uint32 type;
+
+      @verbatim (language="comment", text=
+        "The index from the global path in which the robot gets into the position")
+      uint32 path_idx;
+
+      @verbatim (language="comment", text=
+        "The distance from the robot to the resource")
+      float distance;
+
+      @verbatim (language="comment", text=
+        "The collision point with the resource")
+      geometry_msgs::msg::Point collision_point;
+
+      @verbatim (language="comment", text=
+        "The queue for a resource. It's a list of robots ips.")
+      sequence<string> queue;
+
+      @verbatim (language="comment", text=
+        "The name of the resource")
+      string name;
+
+      @verbatim (language="comment", text=
+        "The guid of the resource")
+      string guid;
+    };
+  };
+};

@@ -1,0 +1,9 @@
+/home/basmala/mir250_ws/build/mir_navigation/CMakeFiles/uninstall.dir
+/home/basmala/mir250_ws/build/mir_navigation/CMakeFiles/mir_navigation_uninstall.dir
+/home/basmala/mir250_ws/build/mir_navigation/CMakeFiles/test.dir
+/home/basmala/mir250_ws/build/mir_navigation/CMakeFiles/edit_cache.dir
+/home/basmala/mir250_ws/build/mir_navigation/CMakeFiles/rebuild_cache.dir
+/home/basmala/mir250_ws/build/mir_navigation/CMakeFiles/list_install_components.dir
+/home/basmala/mir250_ws/build/mir_navigation/CMakeFiles/install.dir
+/home/basmala/mir250_ws/build/mir_navigation/CMakeFiles/install/local.dir
+/home/basmala/mir250_ws/build/mir_navigation/CMakeFiles/install/strip.dir

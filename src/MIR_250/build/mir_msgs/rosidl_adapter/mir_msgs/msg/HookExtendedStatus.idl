@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mir_msgs/msg/HookExtendedStatus.msg
+// generated code does not contain a copyright notice
+
+#include "mir_msgs/msg/BrakeState.idl"
+#include "mir_msgs/msg/GripperState.idl"
+#include "mir_msgs/msg/HeightState.idl"
+
+module mir_msgs {
+  module msg {
+    struct HookExtendedStatus {
+      boolean available;
+
+      mir_msgs::msg::BrakeState brake;
+
+      mir_msgs::msg::GripperState gripper;
+
+      mir_msgs::msg::HeightState height;
+
+      float angle;
+
+      string qr_marker_name;
+    };
+  };
+};

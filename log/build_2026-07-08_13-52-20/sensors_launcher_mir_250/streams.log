@@ -1,0 +1,147 @@
+[0.434s] Invoking command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/sensors_launcher_mir_250 -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/sensors_launcher_mir_250
+[0.530s] -- The C compiler identification is GNU 11.4.0
+[0.640s] -- The CXX compiler identification is GNU 11.4.0
+[0.656s] -- Detecting C compiler ABI info
+[0.790s] -- Detecting C compiler ABI info - done
+[0.805s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.805s] -- Detecting C compile features
+[0.806s] -- Detecting C compile features - done
+[0.812s] -- Detecting CXX compiler ABI info
+[0.978s] -- Detecting CXX compiler ABI info - done
+[0.992s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.992s] -- Detecting CXX compile features
+[0.994s] -- Detecting CXX compile features - done
+[0.998s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.317s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.478s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.640s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.647s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.660s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.678s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.702s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.758s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.761s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.894s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.930s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.000s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.016s] -- Looking for pthread.h
+[2.129s] -- Looking for pthread.h - found
+[2.129s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.239s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.240s] -- Found Threads: TRUE  
+[2.539s] -- Checking for module 'eigen3'
+[2.562s] --   Found eigen3, version 3.4.0
+[2.624s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.624s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.697s] -- Checking for module 'flann'
+[2.722s] --   Found flann, version 1.9.1
+[2.796s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[2.796s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[4.678s] -- Checking for module 'libusb-1.0'
+[4.706s] --   Found libusb-1.0, version 1.0.25
+[4.797s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[4.800s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.906s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[5.313s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[5.329s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.341s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[5.834s] -- Found Qhull version 8.0.2
+[6.351s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.713s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[6.715s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[6.717s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[6.719s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[6.724s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[6.724s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[6.725s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[6.725s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[6.727s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[6.729s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[6.731s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[6.732s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[6.734s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[6.736s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[6.737s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[6.739s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[6.741s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[6.742s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[6.744s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[6.746s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[6.748s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[6.748s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[6.749s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[6.751s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[6.752s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[6.940s] -- Found PCL: /usr/include/pcl-1.12
+[7.037s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.177s] -- Added test 'copyright' to check source files copyright and LICENSE
+[7.180s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.181s] -- Configured cppcheck include dirs: /home/basmala/mir250_ws/src/MIR_250/sensors_launcher_mir_250/include;$<BUILD_INTERFACE:/home/basmala/mir250_ws/src/MIR_250/sensors_launcher_mir_250/include>
+[7.181s] -- Configured cppcheck exclude dirs and/or files: 
+[7.183s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[7.184s] -- Configured cpplint exclude dirs and/or files: 
+[7.184s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.186s] -- Added test 'lint_cmake' to check CMake code style
+[7.187s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.189s] -- Added test 'uncrustify' to check C / C++ code style
+[7.189s] -- Configured uncrustify additional arguments: 
+[7.190s] -- Added test 'xmllint' to check XML markup files
+[7.194s] -- Configuring done
+[7.347s] -- Generating done
+[7.373s] -- Build files have been written to: /home/basmala/mir250_ws/build/sensors_launcher_mir_250
+[7.398s] Invoked command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/sensors_launcher_mir_250 -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/sensors_launcher_mir_250
+[7.402s] Invoking command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/build/sensors_launcher_mir_250 -- -j20 -l20
+[7.500s] [ 12%] [32mBuilding CXX object CMakeFiles/dual_laser_merger_node.dir/rclcpp_components/node_main_dual_laser_merger_node.cpp.o[0m
+[7.507s] [ 25%] [32mBuilding CXX object CMakeFiles/camera_left_changer_node.dir/src/camera_left_changer.cpp.o[0m
+[7.507s] [ 37%] [32mBuilding CXX object CMakeFiles/camera_right_changer_node.dir/src/camera_right_changer.cpp.o[0m
+[7.510s] [ 50%] [32mBuilding CXX object CMakeFiles/sensors_launcher_mir_250.dir/src/dual_laser_merger.cpp.o[0m
+[13.608s] [ 62%] [32m[1mLinking CXX executable dual_laser_merger_node[0m
+[13.887s] [ 62%] Built target dual_laser_merger_node
+[32.429s] [ 75%] [32m[1mLinking CXX executable camera_right_changer_node[0m
+[33.083s] [ 87%] [32m[1mLinking CXX executable camera_left_changer_node[0m
+[33.101s] [ 87%] Built target camera_right_changer_node
+[33.708s] [ 87%] Built target camera_left_changer_node
+[41.637s] [100%] [32m[1mLinking CXX shared library libsensors_launcher_mir_250.so[0m
+[43.526s] [100%] Built target sensors_launcher_mir_250
+[43.545s] Invoked command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/build/sensors_launcher_mir_250 -- -j20 -l20
+[43.549s] Invoking command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/build/sensors_launcher_mir_250
+[43.561s] -- Install configuration: ""
+[43.561s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/sensors_launcher_mir_250/dual_laser_merger_node
+[43.562s] -- Set runtime path of "/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/sensors_launcher_mir_250/dual_laser_merger_node" to ""
+[43.562s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/libsensors_launcher_mir_250.so
+[43.577s] -- Set runtime path of "/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/libsensors_launcher_mir_250.so" to ""
+[43.578s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/sensors_launcher_mir_250/camera_left_changer_node
+[43.581s] -- Set runtime path of "/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/sensors_launcher_mir_250/camera_left_changer_node" to ""
+[43.581s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/sensors_launcher_mir_250/camera_right_changer_node
+[43.586s] -- Set runtime path of "/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/sensors_launcher_mir_250/camera_right_changer_node" to ""
+[43.586s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/include/sensors_launcher_mir_250
+[43.586s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/include/sensors_launcher_mir_250/sensors_launcher_mir_250
+[43.586s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/include/sensors_launcher_mir_250/sensors_launcher_mir_250/dual_laser_merger.hpp
+[43.586s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250//launch
+[43.587s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250//launch/sensors_launcher.launch.py
+[43.587s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/environment/library_path.sh
+[43.587s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/environment/library_path.dsv
+[43.587s] -- Up-to-date: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/include/sensors_launcher_mir_250
+[43.587s] -- Up-to-date: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/include/sensors_launcher_mir_250/sensors_launcher_mir_250
+[43.587s] -- Up-to-date: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/include/sensors_launcher_mir_250/sensors_launcher_mir_250/dual_laser_merger.hpp
+[43.587s] -- Up-to-date: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/libsensors_launcher_mir_250.so
+[43.587s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/ament_index/resource_index/package_run_dependencies/sensors_launcher_mir_250
+[43.588s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/ament_index/resource_index/parent_prefix_path/sensors_launcher_mir_250
+[43.588s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/environment/ament_prefix_path.sh
+[43.588s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/environment/ament_prefix_path.dsv
+[43.589s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/environment/path.sh
+[43.589s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/environment/path.dsv
+[43.589s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/local_setup.bash
+[43.589s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/local_setup.sh
+[43.590s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/local_setup.zsh
+[43.590s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/local_setup.dsv
+[43.590s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/package.dsv
+[43.590s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/ament_index/resource_index/packages/sensors_launcher_mir_250
+[43.591s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/ament_index/resource_index/rclcpp_components/sensors_launcher_mir_250
+[43.591s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/cmake/ament_cmake_export_dependencies-extras.cmake
+[43.591s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/cmake/ament_cmake_export_include_directories-extras.cmake
+[43.591s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/cmake/ament_cmake_export_libraries-extras.cmake
+[43.591s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/cmake/sensors_launcher_mir_250Config.cmake
+[43.592s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/cmake/sensors_launcher_mir_250Config-version.cmake
+[43.592s] -- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/package.xml
+[43.595s] Invoked command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/build/sensors_launcher_mir_250

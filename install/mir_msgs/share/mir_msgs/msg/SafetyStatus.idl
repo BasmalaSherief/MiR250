@@ -1,0 +1,62 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mir_msgs/msg/SafetyStatus.msg
+// generated code does not contain a copyright notice
+
+
+module mir_msgs {
+  module msg {
+    module SafetyStatus_Constants {
+      @verbatim (language="comment", text=
+        "Defines for filling out the mute_mask")
+      const uint8 MUTE_FRONT_RIGHT = 1;
+      const uint8 MUTE_FRONT_CENTER = 2;
+      const uint8 MUTE_FRONT_LEFT = 4;
+      const uint8 MUTE_LEFT_CENTER = 8;
+      const uint8 MUTE_REAR_LEFT = 16;
+      const uint8 MUTE_REAR_CENTER = 32;
+      const uint8 MUTE_REAR_RIGHT = 64;
+      const uint8 MUTE_RIGHT_CENTER = 128;
+      const uint8 MUTE_FRONT = 7;
+      const uint8 MUTE_LEFT = 28;
+      const uint8 MUTE_REAR = 112;
+      const uint8 MUTE_RIGHT = 193;
+      const uint8 MUTE_SIDES = 221;
+      const uint8 MUTE_ALL = 255;
+    };
+    struct SafetyStatus {
+      boolean is_connected;
+
+      boolean is_firmware_ok;
+
+      int32 firmware_version;
+
+      boolean in_protective_stop;
+
+      boolean in_emergency_stop;
+
+      boolean sto_feedback;
+
+      boolean is_restart_required;
+
+      boolean is_safety_muted;
+
+      double max_lin_speed;
+
+      double max_rot_speed;
+
+      uint8 mute_mask;
+
+      uint8 partial_mute_mask;
+
+      boolean is_limited_speed_active;
+
+      boolean is_lifter_down;
+
+      boolean in_sleep_mode;
+
+      boolean in_manual_mode;
+
+      boolean is_manual_mode_restart_required;
+    };
+  };
+};

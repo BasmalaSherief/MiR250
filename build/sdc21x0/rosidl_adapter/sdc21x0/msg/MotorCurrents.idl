@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from sdc21x0/msg/MotorCurrents.msg
+// generated code does not contain a copyright notice
+
+
+module sdc21x0 {
+  module msg {
+    struct MotorCurrents {
+      float left_motor;
+
+      float right_motor;
+    };
+  };
+};

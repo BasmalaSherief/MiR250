@@ -1,0 +1,66 @@
+running egg_info
+creating ../../../build/graph_based_navigation_system/graph_based_navigation_system.egg-info
+writing ../../../build/graph_based_navigation_system/graph_based_navigation_system.egg-info/PKG-INFO
+writing dependency_links to ../../../build/graph_based_navigation_system/graph_based_navigation_system.egg-info/dependency_links.txt
+writing entry points to ../../../build/graph_based_navigation_system/graph_based_navigation_system.egg-info/entry_points.txt
+writing requirements to ../../../build/graph_based_navigation_system/graph_based_navigation_system.egg-info/requires.txt
+writing top-level names to ../../../build/graph_based_navigation_system/graph_based_navigation_system.egg-info/top_level.txt
+writing manifest file '../../../build/graph_based_navigation_system/graph_based_navigation_system.egg-info/SOURCES.txt'
+reading manifest file '../../../build/graph_based_navigation_system/graph_based_navigation_system.egg-info/SOURCES.txt'
+writing manifest file '../../../build/graph_based_navigation_system/graph_based_navigation_system.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/basmala/mir250_ws/build/graph_based_navigation_system/build
+creating /home/basmala/mir250_ws/build/graph_based_navigation_system/build/lib
+creating /home/basmala/mir250_ws/build/graph_based_navigation_system/build/lib/graph_based_navigation_system
+copying graph_based_navigation_system/nav2_dynamic_reconfig.py -> /home/basmala/mir250_ws/build/graph_based_navigation_system/build/lib/graph_based_navigation_system
+copying graph_based_navigation_system/graph_editor.py -> /home/basmala/mir250_ws/build/graph_based_navigation_system/build/lib/graph_based_navigation_system
+copying graph_based_navigation_system/__init__.py -> /home/basmala/mir250_ws/build/graph_based_navigation_system/build/lib/graph_based_navigation_system
+copying graph_based_navigation_system/render_graph_on_map.py -> /home/basmala/mir250_ws/build/graph_based_navigation_system/build/lib/graph_based_navigation_system
+copying graph_based_navigation_system/navigation_helper.py -> /home/basmala/mir250_ws/build/graph_based_navigation_system/build/lib/graph_based_navigation_system
+copying graph_based_navigation_system/graph_nav_controller.py -> /home/basmala/mir250_ws/build/graph_based_navigation_system/build/lib/graph_based_navigation_system
+copying graph_based_navigation_system/navigation_defaults.py -> /home/basmala/mir250_ws/build/graph_based_navigation_system/build/lib/graph_based_navigation_system
+running install
+running install_lib
+creating /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages/graph_based_navigation_system
+copying /home/basmala/mir250_ws/build/graph_based_navigation_system/build/lib/graph_based_navigation_system/nav2_dynamic_reconfig.py -> /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages/graph_based_navigation_system
+copying /home/basmala/mir250_ws/build/graph_based_navigation_system/build/lib/graph_based_navigation_system/graph_editor.py -> /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages/graph_based_navigation_system
+copying /home/basmala/mir250_ws/build/graph_based_navigation_system/build/lib/graph_based_navigation_system/__init__.py -> /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages/graph_based_navigation_system
+copying /home/basmala/mir250_ws/build/graph_based_navigation_system/build/lib/graph_based_navigation_system/render_graph_on_map.py -> /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages/graph_based_navigation_system
+copying /home/basmala/mir250_ws/build/graph_based_navigation_system/build/lib/graph_based_navigation_system/navigation_helper.py -> /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages/graph_based_navigation_system
+copying /home/basmala/mir250_ws/build/graph_based_navigation_system/build/lib/graph_based_navigation_system/graph_nav_controller.py -> /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages/graph_based_navigation_system
+copying /home/basmala/mir250_ws/build/graph_based_navigation_system/build/lib/graph_based_navigation_system/navigation_defaults.py -> /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages/graph_based_navigation_system
+byte-compiling /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages/graph_based_navigation_system/nav2_dynamic_reconfig.py to nav2_dynamic_reconfig.cpython-310.pyc
+byte-compiling /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages/graph_based_navigation_system/graph_editor.py to graph_editor.cpython-310.pyc
+byte-compiling /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages/graph_based_navigation_system/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages/graph_based_navigation_system/render_graph_on_map.py to render_graph_on_map.cpython-310.pyc
+byte-compiling /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages/graph_based_navigation_system/navigation_helper.py to navigation_helper.cpython-310.pyc
+byte-compiling /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages/graph_based_navigation_system/graph_nav_controller.py to graph_nav_controller.cpython-310.pyc
+byte-compiling /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages/graph_based_navigation_system/navigation_defaults.py to navigation_defaults.cpython-310.pyc
+running install_data
+creating /home/basmala/mir250_ws/install/graph_based_navigation_system/share/ament_index
+creating /home/basmala/mir250_ws/install/graph_based_navigation_system/share/ament_index/resource_index
+creating /home/basmala/mir250_ws/install/graph_based_navigation_system/share/ament_index/resource_index/packages
+copying resource/graph_based_navigation_system -> /home/basmala/mir250_ws/install/graph_based_navigation_system/share/ament_index/resource_index/packages
+copying package.xml -> /home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system
+creating /home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/config
+copying config/mir_nav_params.yaml -> /home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/config
+copying config/graph_based_nav.rviz -> /home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/config
+copying config/set_up_graph.yaml -> /home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/config
+copying config/test_TER_1_graph.yaml -> /home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/config
+creating /home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/maps
+copying maps/test_TER_1_with_nodes_edges.yaml -> /home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/maps
+copying maps/test_TER_1_with_nodes_edges.png -> /home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/maps
+creating /home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/launch
+copying launch/graph_nav_controller_launch.py -> /home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/launch
+copying launch/graph_navigation_launch.py -> /home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/launch
+running install_egg_info
+Copying ../../../build/graph_based_navigation_system/graph_based_navigation_system.egg-info to /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages/graph_based_navigation_system-0.0.0-py3.10.egg-info
+running install_scripts
+Installing graph_editor script to /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/graph_based_navigation_system
+Installing graph_nav_controller script to /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/graph_based_navigation_system
+Installing nav2_dynamic_reconfig script to /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/graph_based_navigation_system
+Installing navigation_defaults script to /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/graph_based_navigation_system
+Installing navigation_helper script to /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/graph_based_navigation_system
+Installing render_graph_on_map script to /home/basmala/mir250_ws/install/graph_based_navigation_system/lib/graph_based_navigation_system
+writing list of installed files to '/home/basmala/mir250_ws/build/graph_based_navigation_system/install.log'

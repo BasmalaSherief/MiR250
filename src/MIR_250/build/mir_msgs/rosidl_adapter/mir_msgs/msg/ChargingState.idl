@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mir_msgs/msg/ChargingState.msg
+// generated code does not contain a copyright notice
+
+
+module mir_msgs {
+  module msg {
+    struct ChargingState {
+      boolean charging_relay;
+
+      double charging_current;
+
+      uint32 charging_current_raw;
+
+      double last_time_current;
+
+      double charging_voltage;
+
+      uint32 charging_voltage_raw;
+
+      boolean is_voltage_low;
+
+      double last_time_voltage;
+    };
+  };
+};

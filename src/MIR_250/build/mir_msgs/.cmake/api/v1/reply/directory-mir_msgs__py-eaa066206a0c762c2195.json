@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "mir_msgs__py",
+		"source" : "/home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_msgs/mir_msgs__py"
+	}
+}

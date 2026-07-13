@@ -1,0 +1,881 @@
+[0.275s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.275s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x787c09911fc0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x787c09a8f580>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x787c09a8f580>>, mixin_verb=('build',))
+[0.585s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.586s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/basmala/mir250_ws'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR250 Specifications) by extensions ['ignore', 'ignore_ament_install']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR250 Specifications) by extension 'ignore'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR250 Specifications) by extension 'ignore_ament_install'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR250 Specifications) by extensions ['colcon_pkg']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR250 Specifications) by extension 'colcon_pkg'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR250 Specifications) by extensions ['colcon_meta']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR250 Specifications) by extension 'colcon_meta'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR250 Specifications) by extensions ['ros']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR250 Specifications) by extension 'ros'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR250 Specifications) by extensions ['cmake', 'python']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR250 Specifications) by extension 'cmake'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR250 Specifications) by extension 'python'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR250 Specifications) by extensions ['python_setup_py']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR250 Specifications) by extension 'python_setup_py'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250) by extensions ['ignore', 'ignore_ament_install']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250) by extension 'ignore'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250) by extension 'ignore_ament_install'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250) by extensions ['colcon_pkg']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250) by extension 'colcon_pkg'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250) by extensions ['colcon_meta']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250) by extension 'colcon_meta'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250) by extensions ['ros']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250) by extension 'ros'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250) by extensions ['cmake', 'python']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250) by extension 'cmake'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250) by extension 'python'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250) by extensions ['python_setup_py']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250) by extension 'python_setup_py'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/build) by extensions ['ignore', 'ignore_ament_install']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/build) by extension 'ignore'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/build) ignored
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/graph_based_navigation_system) by extensions ['ignore', 'ignore_ament_install']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/graph_based_navigation_system) by extension 'ignore'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/graph_based_navigation_system) by extension 'ignore_ament_install'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/graph_based_navigation_system) by extensions ['colcon_pkg']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/graph_based_navigation_system) by extension 'colcon_pkg'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/graph_based_navigation_system) by extensions ['colcon_meta']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/graph_based_navigation_system) by extension 'colcon_meta'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/graph_based_navigation_system) by extensions ['ros']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/graph_based_navigation_system) by extension 'ros'
+[0.618s] DEBUG:colcon.colcon_core.package_identification:Package 'src/MIR_250/graph_based_navigation_system' with type 'ros.ament_python' and name 'graph_based_navigation_system'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/install) by extensions ['ignore', 'ignore_ament_install']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/install) by extension 'ignore'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/install) ignored
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/log) by extensions ['ignore', 'ignore_ament_install']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/log) by extension 'ignore'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/log) ignored
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_actions) by extensions ['ignore', 'ignore_ament_install']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_actions) by extension 'ignore'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_actions) by extension 'ignore_ament_install'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_actions) by extensions ['colcon_pkg']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_actions) by extension 'colcon_pkg'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_actions) by extensions ['colcon_meta']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_actions) by extension 'colcon_meta'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_actions) by extensions ['ros']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_actions) by extension 'ros'
+[0.622s] DEBUG:colcon.colcon_core.package_identification:Package 'src/MIR_250/mir_actions' with type 'ros.ament_cmake' and name 'mir_actions'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_description) by extensions ['ignore', 'ignore_ament_install']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_description) by extension 'ignore'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_description) by extension 'ignore_ament_install'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_description) by extensions ['colcon_pkg']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_description) by extension 'colcon_pkg'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_description) by extensions ['colcon_meta']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_description) by extension 'colcon_meta'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_description) by extensions ['ros']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_description) by extension 'ros'
+[0.624s] DEBUG:colcon.colcon_core.package_identification:Package 'src/MIR_250/mir_description' with type 'ros.ament_cmake' and name 'mir_description'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_driver) by extension 'ignore'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_driver) by extension 'ignore_ament_install'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_driver) by extensions ['colcon_pkg']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_driver) by extension 'colcon_pkg'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_driver) by extensions ['colcon_meta']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_driver) by extension 'colcon_meta'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_driver) by extensions ['ros']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_driver) by extension 'ros'
+[0.627s] DEBUG:colcon.colcon_core.package_identification:Package 'src/MIR_250/mir_driver' with type 'ros.ament_python' and name 'mir_driver'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_manual_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_manual_navigation) by extension 'ignore'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_manual_navigation) by extension 'ignore_ament_install'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_manual_navigation) by extensions ['colcon_pkg']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_manual_navigation) by extension 'colcon_pkg'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_manual_navigation) by extensions ['colcon_meta']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_manual_navigation) by extension 'colcon_meta'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_manual_navigation) by extensions ['ros']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_manual_navigation) by extension 'ros'
+[0.630s] DEBUG:colcon.colcon_core.package_identification:Package 'src/MIR_250/mir_manual_navigation' with type 'ros.ament_python' and name 'mir_manual_navigation'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_msgs) by extension 'ignore'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_msgs) by extension 'ignore_ament_install'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_msgs) by extensions ['colcon_pkg']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_msgs) by extension 'colcon_pkg'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_msgs) by extensions ['colcon_meta']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_msgs) by extension 'colcon_meta'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_msgs) by extensions ['ros']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_msgs) by extension 'ros'
+[0.632s] DEBUG:colcon.colcon_core.package_identification:Package 'src/MIR_250/mir_msgs' with type 'ros.ament_cmake' and name 'mir_msgs'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_navigation) by extension 'ignore'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_navigation) by extension 'ignore_ament_install'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_navigation) by extensions ['colcon_pkg']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_navigation) by extension 'colcon_pkg'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_navigation) by extensions ['colcon_meta']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_navigation) by extension 'colcon_meta'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_navigation) by extensions ['ros']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_navigation) by extension 'ros'
+[0.634s] DEBUG:colcon.colcon_core.package_identification:Package 'src/MIR_250/mir_navigation' with type 'ros.ament_cmake' and name 'mir_navigation'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_restapi) by extensions ['ignore', 'ignore_ament_install']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_restapi) by extension 'ignore'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_restapi) by extension 'ignore_ament_install'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_restapi) by extensions ['colcon_pkg']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_restapi) by extension 'colcon_pkg'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_restapi) by extensions ['colcon_meta']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_restapi) by extension 'colcon_meta'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_restapi) by extensions ['ros']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/mir_restapi) by extension 'ros'
+[0.637s] DEBUG:colcon.colcon_core.package_identification:Package 'src/MIR_250/mir_restapi' with type 'ros.ament_python' and name 'mir_restapi'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sdc21x0) by extensions ['ignore', 'ignore_ament_install']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sdc21x0) by extension 'ignore'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sdc21x0) by extension 'ignore_ament_install'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sdc21x0) by extensions ['colcon_pkg']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sdc21x0) by extension 'colcon_pkg'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sdc21x0) by extensions ['colcon_meta']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sdc21x0) by extension 'colcon_meta'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sdc21x0) by extensions ['ros']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sdc21x0) by extension 'ros'
+[0.639s] DEBUG:colcon.colcon_core.package_identification:Package 'src/MIR_250/sdc21x0' with type 'ros.ament_cmake' and name 'sdc21x0'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sensors_launcher_mir_250) by extensions ['ignore', 'ignore_ament_install']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sensors_launcher_mir_250) by extension 'ignore'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sensors_launcher_mir_250) by extension 'ignore_ament_install'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sensors_launcher_mir_250) by extensions ['colcon_pkg']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sensors_launcher_mir_250) by extension 'colcon_pkg'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sensors_launcher_mir_250) by extensions ['colcon_meta']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sensors_launcher_mir_250) by extension 'colcon_meta'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sensors_launcher_mir_250) by extensions ['ros']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/MIR_250/sensors_launcher_mir_250) by extension 'ros'
+[0.643s] DEBUG:colcon.colcon_core.package_identification:Package 'src/MIR_250/sensors_launcher_mir_250' with type 'ros.ament_cmake' and name 'sensors_launcher_mir_250'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests) by extensions ['ignore', 'ignore_ament_install']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests) by extension 'ignore'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests) by extension 'ignore_ament_install'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests) by extensions ['colcon_pkg']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests) by extension 'colcon_pkg'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests) by extensions ['colcon_meta']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests) by extension 'colcon_meta'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests) by extensions ['ros']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests) by extension 'ros'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests) by extensions ['cmake', 'python']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests) by extension 'cmake'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests) by extension 'python'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests) by extensions ['python_setup_py']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests) by extension 'python_setup_py'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests/media) by extensions ['ignore', 'ignore_ament_install']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests/media) by extension 'ignore'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests/media) by extension 'ignore_ament_install'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests/media) by extensions ['colcon_pkg']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests/media) by extension 'colcon_pkg'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests/media) by extensions ['colcon_meta']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests/media) by extension 'colcon_meta'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests/media) by extensions ['ros']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests/media) by extension 'ros'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests/media) by extensions ['cmake', 'python']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests/media) by extension 'cmake'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests/media) by extension 'python'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests/media) by extensions ['python_setup_py']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/assests/media) by extension 'python_setup_py'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/references) by extensions ['ignore', 'ignore_ament_install']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/references) by extension 'ignore'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/references) by extension 'ignore_ament_install'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/references) by extensions ['colcon_pkg']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/references) by extension 'colcon_pkg'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/references) by extensions ['colcon_meta']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/references) by extension 'colcon_meta'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/references) by extensions ['ros']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/references) by extension 'ros'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/references) by extensions ['cmake', 'python']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/references) by extension 'cmake'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/references) by extension 'python'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/references) by extensions ['python_setup_py']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/references) by extension 'python_setup_py'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd) by extensions ['ignore', 'ignore_ament_install']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd) by extension 'ignore'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd) by extension 'ignore_ament_install'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd) by extensions ['colcon_pkg']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd) by extension 'colcon_pkg'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd) by extensions ['colcon_meta']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd) by extension 'colcon_meta'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd) by extensions ['ros']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd) by extension 'ros'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd) by extensions ['cmake', 'python']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd) by extension 'cmake'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd) by extension 'python'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd) by extensions ['python_setup_py']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd) by extension 'python_setup_py'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/objects) by extensions ['ignore', 'ignore_ament_install']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/objects) by extension 'ignore'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/objects) by extension 'ignore_ament_install'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/objects) by extensions ['colcon_pkg']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/objects) by extension 'colcon_pkg'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/objects) by extensions ['colcon_meta']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/objects) by extension 'colcon_meta'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/objects) by extensions ['ros']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/objects) by extension 'ros'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/objects) by extensions ['cmake', 'python']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/objects) by extension 'cmake'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/objects) by extension 'python'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/objects) by extensions ['python_setup_py']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/objects) by extension 'python_setup_py'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots) by extensions ['ignore', 'ignore_ament_install']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots) by extension 'ignore'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots) by extension 'ignore_ament_install'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots) by extensions ['colcon_pkg']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots) by extension 'colcon_pkg'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots) by extensions ['colcon_meta']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots) by extension 'colcon_meta'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots) by extensions ['ros']
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots) by extension 'ros'
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots) by extensions ['cmake', 'python']
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots) by extension 'cmake'
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots) by extension 'python'
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots) by extensions ['python_setup_py']
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots) by extension 'python_setup_py'
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes) by extensions ['ignore', 'ignore_ament_install']
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes) by extension 'ignore'
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes) by extension 'ignore_ament_install'
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes) by extensions ['colcon_pkg']
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes) by extension 'colcon_pkg'
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes) by extensions ['colcon_meta']
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes) by extension 'colcon_meta'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes) by extensions ['ros']
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes) by extension 'ros'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes) by extensions ['cmake', 'python']
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes) by extension 'cmake'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes) by extension 'python'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes) by extensions ['python_setup_py']
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes) by extension 'python_setup_py'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250) by extensions ['ignore', 'ignore_ament_install']
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250) by extension 'ignore'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250) by extension 'ignore_ament_install'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250) by extensions ['colcon_pkg']
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250) by extension 'colcon_pkg'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250) by extensions ['colcon_meta']
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250) by extension 'colcon_meta'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250) by extensions ['ros']
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250) by extension 'ros'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250) by extensions ['cmake', 'python']
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250) by extension 'cmake'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250) by extension 'python'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250) by extensions ['python_setup_py']
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250) by extension 'python_setup_py'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/collision) by extensions ['ignore', 'ignore_ament_install']
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/collision) by extension 'ignore'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/collision) by extension 'ignore_ament_install'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/collision) by extensions ['colcon_pkg']
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/collision) by extension 'colcon_pkg'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/collision) by extensions ['colcon_meta']
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/collision) by extension 'colcon_meta'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/collision) by extensions ['ros']
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/collision) by extension 'ros'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/collision) by extensions ['cmake', 'python']
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/collision) by extension 'cmake'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/collision) by extension 'python'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/collision) by extensions ['python_setup_py']
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/collision) by extension 'python_setup_py'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/visual) by extensions ['ignore', 'ignore_ament_install']
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/visual) by extension 'ignore'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/visual) by extension 'ignore_ament_install'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/visual) by extensions ['colcon_pkg']
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/visual) by extension 'colcon_pkg'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/visual) by extensions ['colcon_meta']
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/visual) by extension 'colcon_meta'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/visual) by extensions ['ros']
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/visual) by extension 'ros'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/visual) by extensions ['cmake', 'python']
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/visual) by extension 'cmake'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/visual) by extension 'python'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/visual) by extensions ['python_setup_py']
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/usd/robots/meshes/mir250/visual) by extension 'python_setup_py'
+[0.654s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.654s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.654s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.654s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.654s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.711s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.711s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.716s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 320 installed packages in /opt/ros/humble
+[0.718s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'mir_actions' build argument 'cmake_args' from command line to 'None'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'mir_actions' build argument 'cmake_target' from command line to 'None'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'mir_actions' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'mir_actions' build argument 'cmake_clean_cache' from command line to 'False'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'mir_actions' build argument 'cmake_clean_first' from command line to 'False'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'mir_actions' build argument 'cmake_force_configure' from command line to 'False'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'mir_actions' build argument 'ament_cmake_args' from command line to 'None'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'mir_actions' build argument 'catkin_cmake_args' from command line to 'None'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'mir_actions' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.801s] DEBUG:colcon.colcon_core.verb:Building package 'mir_actions' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/basmala/mir250_ws/build/mir_actions', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/basmala/mir250_ws/install/mir_actions', 'merge_install': False, 'path': '/home/basmala/mir250_ws/src/MIR_250/mir_actions', 'symlink_install': False, 'test_result_base': None}
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'mir_description' build argument 'cmake_args' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'mir_description' build argument 'cmake_target' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'mir_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'mir_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'mir_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'mir_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'mir_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'mir_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'mir_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.802s] DEBUG:colcon.colcon_core.verb:Building package 'mir_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/basmala/mir250_ws/build/mir_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/basmala/mir250_ws/install/mir_description', 'merge_install': False, 'path': '/home/basmala/mir250_ws/src/MIR_250/mir_description', 'symlink_install': False, 'test_result_base': None}
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'mir_msgs' build argument 'cmake_args' from command line to 'None'
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'mir_msgs' build argument 'cmake_target' from command line to 'None'
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'mir_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'mir_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'mir_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'mir_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'mir_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'mir_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'mir_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.803s] DEBUG:colcon.colcon_core.verb:Building package 'mir_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/basmala/mir250_ws/build/mir_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/basmala/mir250_ws/install/mir_msgs', 'merge_install': False, 'path': '/home/basmala/mir250_ws/src/MIR_250/mir_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'mir_restapi' build argument 'cmake_args' from command line to 'None'
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'mir_restapi' build argument 'cmake_target' from command line to 'None'
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'mir_restapi' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'mir_restapi' build argument 'cmake_clean_cache' from command line to 'False'
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'mir_restapi' build argument 'cmake_clean_first' from command line to 'False'
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'mir_restapi' build argument 'cmake_force_configure' from command line to 'False'
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'mir_restapi' build argument 'ament_cmake_args' from command line to 'None'
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'mir_restapi' build argument 'catkin_cmake_args' from command line to 'None'
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'mir_restapi' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.804s] DEBUG:colcon.colcon_core.verb:Building package 'mir_restapi' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/basmala/mir250_ws/build/mir_restapi', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/basmala/mir250_ws/install/mir_restapi', 'merge_install': False, 'path': '/home/basmala/mir250_ws/src/MIR_250/mir_restapi', 'symlink_install': False, 'test_result_base': None}
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'sdc21x0' build argument 'cmake_args' from command line to 'None'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'sdc21x0' build argument 'cmake_target' from command line to 'None'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'sdc21x0' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'sdc21x0' build argument 'cmake_clean_cache' from command line to 'False'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'sdc21x0' build argument 'cmake_clean_first' from command line to 'False'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'sdc21x0' build argument 'cmake_force_configure' from command line to 'False'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'sdc21x0' build argument 'ament_cmake_args' from command line to 'None'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'sdc21x0' build argument 'catkin_cmake_args' from command line to 'None'
+[0.805s] Level 5:colcon.colcon_core.verb:set package 'sdc21x0' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.805s] DEBUG:colcon.colcon_core.verb:Building package 'sdc21x0' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/basmala/mir250_ws/build/sdc21x0', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/basmala/mir250_ws/install/sdc21x0', 'merge_install': False, 'path': '/home/basmala/mir250_ws/src/MIR_250/sdc21x0', 'symlink_install': False, 'test_result_base': None}
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'sensors_launcher_mir_250' build argument 'cmake_args' from command line to 'None'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'sensors_launcher_mir_250' build argument 'cmake_target' from command line to 'None'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'sensors_launcher_mir_250' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'sensors_launcher_mir_250' build argument 'cmake_clean_cache' from command line to 'False'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'sensors_launcher_mir_250' build argument 'cmake_clean_first' from command line to 'False'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'sensors_launcher_mir_250' build argument 'cmake_force_configure' from command line to 'False'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'sensors_launcher_mir_250' build argument 'ament_cmake_args' from command line to 'None'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'sensors_launcher_mir_250' build argument 'catkin_cmake_args' from command line to 'None'
+[0.806s] Level 5:colcon.colcon_core.verb:set package 'sensors_launcher_mir_250' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.806s] DEBUG:colcon.colcon_core.verb:Building package 'sensors_launcher_mir_250' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/basmala/mir250_ws/build/sensors_launcher_mir_250', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/basmala/mir250_ws/install/sensors_launcher_mir_250', 'merge_install': False, 'path': '/home/basmala/mir250_ws/src/MIR_250/sensors_launcher_mir_250', 'symlink_install': False, 'test_result_base': None}
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mir_driver' build argument 'cmake_args' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mir_driver' build argument 'cmake_target' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mir_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mir_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mir_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mir_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mir_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mir_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'mir_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.807s] DEBUG:colcon.colcon_core.verb:Building package 'mir_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/basmala/mir250_ws/build/mir_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/basmala/mir250_ws/install/mir_driver', 'merge_install': False, 'path': '/home/basmala/mir250_ws/src/MIR_250/mir_driver', 'symlink_install': False, 'test_result_base': None}
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'graph_based_navigation_system' build argument 'cmake_args' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'graph_based_navigation_system' build argument 'cmake_target' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'graph_based_navigation_system' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'graph_based_navigation_system' build argument 'cmake_clean_cache' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'graph_based_navigation_system' build argument 'cmake_clean_first' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'graph_based_navigation_system' build argument 'cmake_force_configure' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'graph_based_navigation_system' build argument 'ament_cmake_args' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'graph_based_navigation_system' build argument 'catkin_cmake_args' from command line to 'None'
+[0.808s] Level 5:colcon.colcon_core.verb:set package 'graph_based_navigation_system' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.808s] DEBUG:colcon.colcon_core.verb:Building package 'graph_based_navigation_system' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/basmala/mir250_ws/build/graph_based_navigation_system', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/basmala/mir250_ws/install/graph_based_navigation_system', 'merge_install': False, 'path': '/home/basmala/mir250_ws/src/MIR_250/graph_based_navigation_system', 'symlink_install': False, 'test_result_base': None}
+[0.808s] Level 5:colcon.colcon_core.verb:set package 'mir_manual_navigation' build argument 'cmake_args' from command line to 'None'
+[0.808s] Level 5:colcon.colcon_core.verb:set package 'mir_manual_navigation' build argument 'cmake_target' from command line to 'None'
+[0.808s] Level 5:colcon.colcon_core.verb:set package 'mir_manual_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.808s] Level 5:colcon.colcon_core.verb:set package 'mir_manual_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.808s] Level 5:colcon.colcon_core.verb:set package 'mir_manual_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.808s] Level 5:colcon.colcon_core.verb:set package 'mir_manual_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.808s] Level 5:colcon.colcon_core.verb:set package 'mir_manual_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.808s] Level 5:colcon.colcon_core.verb:set package 'mir_manual_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.808s] Level 5:colcon.colcon_core.verb:set package 'mir_manual_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.809s] DEBUG:colcon.colcon_core.verb:Building package 'mir_manual_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/basmala/mir250_ws/build/mir_manual_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/basmala/mir250_ws/install/mir_manual_navigation', 'merge_install': False, 'path': '/home/basmala/mir250_ws/src/MIR_250/mir_manual_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.810s] Level 5:colcon.colcon_core.verb:set package 'mir_navigation' build argument 'cmake_args' from command line to 'None'
+[0.810s] Level 5:colcon.colcon_core.verb:set package 'mir_navigation' build argument 'cmake_target' from command line to 'None'
+[0.810s] Level 5:colcon.colcon_core.verb:set package 'mir_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.810s] Level 5:colcon.colcon_core.verb:set package 'mir_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.810s] Level 5:colcon.colcon_core.verb:set package 'mir_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.810s] Level 5:colcon.colcon_core.verb:set package 'mir_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.810s] Level 5:colcon.colcon_core.verb:set package 'mir_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.810s] Level 5:colcon.colcon_core.verb:set package 'mir_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.810s] Level 5:colcon.colcon_core.verb:set package 'mir_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.810s] DEBUG:colcon.colcon_core.verb:Building package 'mir_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/basmala/mir250_ws/build/mir_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/basmala/mir250_ws/install/mir_navigation', 'merge_install': False, 'path': '/home/basmala/mir250_ws/src/MIR_250/mir_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.811s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.812s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.813s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/basmala/mir250_ws/src/MIR_250/mir_description' with build type 'ament_cmake'
+[0.813s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/basmala/mir250_ws/src/MIR_250/mir_description'
+[0.819s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.819s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.819s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.825s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/basmala/mir250_ws/src/MIR_250/mir_msgs' with build type 'ament_cmake'
+[0.825s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/basmala/mir250_ws/src/MIR_250/mir_msgs'
+[0.825s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.825s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.830s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/basmala/mir250_ws/src/MIR_250/mir_actions' with build type 'ament_cmake'
+[0.831s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/basmala/mir250_ws/src/MIR_250/mir_actions'
+[0.831s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.831s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.836s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/basmala/mir250_ws/src/MIR_250/mir_restapi' with build type 'ament_python'
+[0.836s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_restapi', 'ament_prefix_path')
+[0.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_restapi/share/mir_restapi/hook/ament_prefix_path.ps1'
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_restapi/share/mir_restapi/hook/ament_prefix_path.dsv'
+[0.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_restapi/share/mir_restapi/hook/ament_prefix_path.sh'
+[0.842s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.842s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.848s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/basmala/mir250_ws/src/MIR_250/sdc21x0' with build type 'ament_cmake'
+[0.849s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/basmala/mir250_ws/src/MIR_250/sdc21x0'
+[0.849s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.849s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.856s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/basmala/mir250_ws/src/MIR_250/sensors_launcher_mir_250' with build type 'ament_cmake'
+[0.856s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/basmala/mir250_ws/src/MIR_250/sensors_launcher_mir_250'
+[0.857s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.858s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.870s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/mir_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/mir_description -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/mir_description
+[0.878s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/mir_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/mir_msgs -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/mir_msgs
+[0.884s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/mir_actions': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/mir_actions -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/mir_actions
+[1.271s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/basmala/mir250_ws/src/MIR_250/mir_restapi'
+[1.271s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.271s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.282s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/sdc21x0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/sdc21x0 -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/sdc21x0
+[1.291s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/sensors_launcher_mir_250 -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/sensors_launcher_mir_250
+[2.138s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: rotate, build_scripts, install_egg_info, upload_docs, build_py, register, saveopts, bdist_dumb, install_lib, bdist_rpm, bdist_egg, install_data, build, build_ext, sdist, check, egg_info, install_scripts, dist_info, develop, clean, build_clib, setopt, install, bdist_wheel, bdist, test, symlink_data, install_headers, alias, upload, easy_install
+[2.143s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/src/MIR_250/mir_restapi': PYTHONPATH=/home/basmala/mir250_ws/build/mir_restapi/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/mir_restapi build --build-base /home/basmala/mir250_ws/build/mir_restapi/build install --record /home/basmala/mir250_ws/build/mir_restapi/install.log --install-scripts $base/lib/mir_restapi --single-version-externally-managed install_data
+[2.589s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/src/MIR_250/mir_restapi' returned '0': PYTHONPATH=/home/basmala/mir250_ws/build/mir_restapi/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/mir_restapi build --build-base /home/basmala/mir250_ws/build/mir_restapi/build install --record /home/basmala/mir250_ws/build/mir_restapi/install.log --install-scripts $base/lib/mir_restapi --single-version-externally-managed install_data
+[2.597s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_restapi' for CMake module files
+[2.598s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_restapi' for CMake config files
+[2.599s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_restapi/lib'
+[2.599s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_restapi/bin'
+[2.599s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_restapi/lib/pkgconfig/mir_restapi.pc'
+[2.600s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages'
+[2.600s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_restapi', 'pythonpath')
+[2.600s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_restapi/share/mir_restapi/hook/pythonpath.ps1'
+[2.601s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_restapi/share/mir_restapi/hook/pythonpath.dsv'
+[2.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_restapi/share/mir_restapi/hook/pythonpath.sh'
+[2.602s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_restapi/bin'
+[2.602s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mir_restapi)
+[2.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_restapi/share/mir_restapi/package.ps1'
+[2.604s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basmala/mir250_ws/install/mir_restapi/share/mir_restapi/package.dsv'
+[2.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_restapi/share/mir_restapi/package.sh'
+[2.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_restapi/share/mir_restapi/package.bash'
+[2.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_restapi/share/mir_restapi/package.zsh'
+[2.608s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basmala/mir250_ws/install/mir_restapi/share/colcon-core/packages/mir_restapi)
+[3.514s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/mir_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/mir_description -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/mir_description
+[3.519s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/mir_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/build/mir_description -- -j20 -l20
+[3.592s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/mir_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/build/mir_description -- -j20 -l20
+[3.611s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/mir_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/build/mir_description
+[3.665s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mir_description)
+[3.665s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_description' for CMake module files
+[3.667s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/mir_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/build/mir_description
+[3.667s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_description' for CMake config files
+[3.668s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_description', 'cmake_prefix_path')
+[3.668s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_description/share/mir_description/hook/cmake_prefix_path.ps1'
+[3.669s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_description/share/mir_description/hook/cmake_prefix_path.dsv'
+[3.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_description/share/mir_description/hook/cmake_prefix_path.sh'
+[3.671s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_description/bin'
+[3.671s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_description/lib/pkgconfig/mir_description.pc'
+[3.671s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_description/lib/python3.10/site-packages'
+[3.672s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_description/bin'
+[3.672s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_description/share/mir_description/package.ps1'
+[3.673s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basmala/mir250_ws/install/mir_description/share/mir_description/package.dsv'
+[3.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_description/share/mir_description/package.sh'
+[3.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_description/share/mir_description/package.bash'
+[3.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_description/share/mir_description/package.zsh'
+[3.675s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basmala/mir250_ws/install/mir_description/share/colcon-core/packages/mir_description)
+[3.676s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mir_description)
+[3.676s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_description' for CMake module files
+[3.677s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_description' for CMake config files
+[3.678s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_description', 'cmake_prefix_path')
+[3.678s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_description/share/mir_description/hook/cmake_prefix_path.ps1'
+[3.679s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_description/share/mir_description/hook/cmake_prefix_path.dsv'
+[3.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_description/share/mir_description/hook/cmake_prefix_path.sh'
+[3.680s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_description/bin'
+[3.680s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_description/lib/pkgconfig/mir_description.pc'
+[3.681s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_description/lib/python3.10/site-packages'
+[3.681s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_description/bin'
+[3.681s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_description/share/mir_description/package.ps1'
+[3.682s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basmala/mir250_ws/install/mir_description/share/mir_description/package.dsv'
+[3.683s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_description/share/mir_description/package.sh'
+[3.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_description/share/mir_description/package.bash'
+[3.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_description/share/mir_description/package.zsh'
+[3.686s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basmala/mir250_ws/install/mir_description/share/colcon-core/packages/mir_description)
+[4.219s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/sdc21x0' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/sdc21x0 -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/sdc21x0
+[4.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/sdc21x0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/build/sdc21x0 -- -j20 -l20
+[4.583s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/mir_actions' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/mir_actions -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/mir_actions
+[4.587s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/mir_actions': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/build/mir_actions -- -j20 -l20
+[4.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/mir_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/mir_msgs -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/mir_msgs
+[4.988s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/mir_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/build/mir_msgs -- -j20 -l20
+[8.254s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/sensors_launcher_mir_250 -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/sensors_launcher_mir_250
+[8.259s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/build/sensors_launcher_mir_250 -- -j20 -l20
+[9.736s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/sdc21x0' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/build/sdc21x0 -- -j20 -l20
+[9.741s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/sdc21x0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/build/sdc21x0
+[9.868s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sdc21x0)
+[9.868s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sdc21x0' for CMake module files
+[9.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/sdc21x0' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/build/sdc21x0
+[9.870s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sdc21x0' for CMake config files
+[9.872s] Level 1:colcon.colcon_core.shell:create_environment_hook('sdc21x0', 'cmake_prefix_path')
+[9.872s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/hook/cmake_prefix_path.ps1'
+[9.873s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/hook/cmake_prefix_path.dsv'
+[9.874s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/hook/cmake_prefix_path.sh'
+[9.875s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sdc21x0/lib'
+[9.875s] Level 1:colcon.colcon_core.shell:create_environment_hook('sdc21x0', 'ld_library_path_lib')
+[9.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/hook/ld_library_path_lib.ps1'
+[9.876s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/hook/ld_library_path_lib.dsv'
+[9.876s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/hook/ld_library_path_lib.sh'
+[9.877s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sdc21x0/bin'
+[9.877s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sdc21x0/lib/pkgconfig/sdc21x0.pc'
+[9.877s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sdc21x0/lib/python3.10/site-packages'
+[9.878s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sdc21x0/bin'
+[9.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/package.ps1'
+[9.880s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/package.dsv'
+[9.881s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/package.sh'
+[9.882s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/package.bash'
+[9.882s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/package.zsh'
+[9.883s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basmala/mir250_ws/install/sdc21x0/share/colcon-core/packages/sdc21x0)
+[9.884s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sdc21x0)
+[9.885s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sdc21x0' for CMake module files
+[9.886s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sdc21x0' for CMake config files
+[9.887s] Level 1:colcon.colcon_core.shell:create_environment_hook('sdc21x0', 'cmake_prefix_path')
+[9.888s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/hook/cmake_prefix_path.ps1'
+[9.889s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/hook/cmake_prefix_path.dsv'
+[9.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/hook/cmake_prefix_path.sh'
+[9.890s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sdc21x0/lib'
+[9.890s] Level 1:colcon.colcon_core.shell:create_environment_hook('sdc21x0', 'ld_library_path_lib')
+[9.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/hook/ld_library_path_lib.ps1'
+[9.892s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/hook/ld_library_path_lib.dsv'
+[9.892s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/hook/ld_library_path_lib.sh'
+[9.893s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sdc21x0/bin'
+[9.893s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sdc21x0/lib/pkgconfig/sdc21x0.pc'
+[9.893s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sdc21x0/lib/python3.10/site-packages'
+[9.894s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sdc21x0/bin'
+[9.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/package.ps1'
+[9.896s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/package.dsv'
+[9.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/package.sh'
+[9.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/package.bash'
+[9.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/sdc21x0/share/sdc21x0/package.zsh'
+[9.898s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basmala/mir250_ws/install/sdc21x0/share/colcon-core/packages/sdc21x0)
+[14.027s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/mir_actions' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/build/mir_actions -- -j20 -l20
+[14.032s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/mir_actions': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/build/mir_actions
+[14.164s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mir_actions)
+[14.164s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_actions' for CMake module files
+[14.165s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/mir_actions' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/build/mir_actions
+[14.166s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_actions' for CMake config files
+[14.167s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_actions', 'cmake_prefix_path')
+[14.167s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/hook/cmake_prefix_path.ps1'
+[14.168s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/hook/cmake_prefix_path.dsv'
+[14.169s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/hook/cmake_prefix_path.sh'
+[14.170s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_actions/lib'
+[14.170s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_actions', 'ld_library_path_lib')
+[14.170s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/hook/ld_library_path_lib.ps1'
+[14.171s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/hook/ld_library_path_lib.dsv'
+[14.171s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/hook/ld_library_path_lib.sh'
+[14.172s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_actions/bin'
+[14.172s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_actions/lib/pkgconfig/mir_actions.pc'
+[14.172s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_actions/lib/python3.10/site-packages'
+[14.172s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_actions/bin'
+[14.173s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/package.ps1'
+[14.174s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/package.dsv'
+[14.174s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/package.sh'
+[14.175s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/package.bash'
+[14.175s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/package.zsh'
+[14.176s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basmala/mir250_ws/install/mir_actions/share/colcon-core/packages/mir_actions)
+[14.177s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mir_actions)
+[14.177s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_actions' for CMake module files
+[14.178s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_actions' for CMake config files
+[14.179s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_actions', 'cmake_prefix_path')
+[14.179s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/hook/cmake_prefix_path.ps1'
+[14.180s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/hook/cmake_prefix_path.dsv'
+[14.180s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/hook/cmake_prefix_path.sh'
+[14.181s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_actions/lib'
+[14.181s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_actions', 'ld_library_path_lib')
+[14.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/hook/ld_library_path_lib.ps1'
+[14.182s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/hook/ld_library_path_lib.dsv'
+[14.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/hook/ld_library_path_lib.sh'
+[14.183s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_actions/bin'
+[14.183s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_actions/lib/pkgconfig/mir_actions.pc'
+[14.183s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_actions/lib/python3.10/site-packages'
+[14.184s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_actions/bin'
+[14.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/package.ps1'
+[14.185s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/package.dsv'
+[14.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/package.sh'
+[14.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/package.bash'
+[14.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_actions/share/mir_actions/package.zsh'
+[14.188s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basmala/mir250_ws/install/mir_actions/share/colcon-core/packages/mir_actions)
+[41.188s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/mir_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/build/mir_msgs -- -j20 -l20
+[41.190s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/mir_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/build/mir_msgs
+[41.496s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mir_msgs)
+[41.497s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_msgs' for CMake module files
+[41.497s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/mir_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/build/mir_msgs
+[41.498s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_msgs' for CMake config files
+[41.500s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_msgs', 'cmake_prefix_path')
+[41.500s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/hook/cmake_prefix_path.ps1'
+[41.501s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/hook/cmake_prefix_path.dsv'
+[41.501s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/hook/cmake_prefix_path.sh'
+[41.502s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_msgs/lib'
+[41.502s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_msgs', 'ld_library_path_lib')
+[41.502s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/hook/ld_library_path_lib.ps1'
+[41.502s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/hook/ld_library_path_lib.dsv'
+[41.503s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/hook/ld_library_path_lib.sh'
+[41.503s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_msgs/bin'
+[41.503s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_msgs/lib/pkgconfig/mir_msgs.pc'
+[41.503s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_msgs/lib/python3.10/site-packages'
+[41.504s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_msgs/bin'
+[41.504s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/package.ps1'
+[41.505s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/package.dsv'
+[41.506s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/package.sh'
+[41.506s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/package.bash'
+[41.507s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/package.zsh'
+[41.507s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basmala/mir250_ws/install/mir_msgs/share/colcon-core/packages/mir_msgs)
+[41.508s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mir_msgs)
+[41.508s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_msgs' for CMake module files
+[41.509s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_msgs' for CMake config files
+[41.510s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_msgs', 'cmake_prefix_path')
+[41.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/hook/cmake_prefix_path.ps1'
+[41.511s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/hook/cmake_prefix_path.dsv'
+[41.511s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/hook/cmake_prefix_path.sh'
+[41.512s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_msgs/lib'
+[41.512s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_msgs', 'ld_library_path_lib')
+[41.512s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/hook/ld_library_path_lib.ps1'
+[41.513s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/hook/ld_library_path_lib.dsv'
+[41.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/hook/ld_library_path_lib.sh'
+[41.513s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_msgs/bin'
+[41.513s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_msgs/lib/pkgconfig/mir_msgs.pc'
+[41.514s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_msgs/lib/python3.10/site-packages'
+[41.514s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_msgs/bin'
+[41.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/package.ps1'
+[41.515s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/package.dsv'
+[41.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/package.sh'
+[41.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/package.bash'
+[41.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_msgs/share/mir_msgs/package.zsh'
+[41.517s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basmala/mir250_ws/install/mir_msgs/share/colcon-core/packages/mir_msgs)
+[41.517s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/basmala/mir250_ws/src/MIR_250/mir_driver' with build type 'ament_python'
+[41.518s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_driver', 'ament_prefix_path')
+[41.518s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_driver/share/mir_driver/hook/ament_prefix_path.ps1'
+[41.519s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_driver/share/mir_driver/hook/ament_prefix_path.dsv'
+[41.520s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_driver/share/mir_driver/hook/ament_prefix_path.sh'
+[41.520s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[41.520s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[41.928s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/basmala/mir250_ws/src/MIR_250/mir_driver'
+[41.929s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[41.929s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[42.317s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: rotate, build_scripts, install_egg_info, upload_docs, build_py, register, saveopts, bdist_dumb, install_lib, bdist_rpm, bdist_egg, install_data, build, build_ext, sdist, check, egg_info, install_scripts, dist_info, develop, clean, build_clib, setopt, install, bdist_wheel, bdist, test, symlink_data, install_headers, alias, upload, easy_install
+[42.321s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/src/MIR_250/mir_driver': AMENT_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description LD_LIBRARY_PATH=/home/basmala/mir250_ws/install/mir_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/basmala/mir250_ws/build/mir_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/basmala/mir250_ws/install/mir_driver/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/mir_driver build --build-base /home/basmala/mir250_ws/build/mir_driver/build install --record /home/basmala/mir250_ws/build/mir_driver/install.log --install-scripts $base/lib/mir_driver --single-version-externally-managed install_data
+[42.661s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_driver' for CMake module files
+[42.662s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/src/MIR_250/mir_driver' returned '0': AMENT_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description LD_LIBRARY_PATH=/home/basmala/mir250_ws/install/mir_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/basmala/mir250_ws/build/mir_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/basmala/mir250_ws/install/mir_driver/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/mir_driver build --build-base /home/basmala/mir250_ws/build/mir_driver/build install --record /home/basmala/mir250_ws/build/mir_driver/install.log --install-scripts $base/lib/mir_driver --single-version-externally-managed install_data
+[42.662s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_driver' for CMake config files
+[42.663s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_driver/lib'
+[42.663s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_driver/bin'
+[42.663s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_driver/lib/pkgconfig/mir_driver.pc'
+[42.663s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_driver/lib/python3.10/site-packages'
+[42.663s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_driver', 'pythonpath')
+[42.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_driver/share/mir_driver/hook/pythonpath.ps1'
+[42.664s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_driver/share/mir_driver/hook/pythonpath.dsv'
+[42.664s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_driver/share/mir_driver/hook/pythonpath.sh'
+[42.665s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_driver/bin'
+[42.665s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mir_driver)
+[42.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_driver/share/mir_driver/package.ps1'
+[42.666s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basmala/mir250_ws/install/mir_driver/share/mir_driver/package.dsv'
+[42.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_driver/share/mir_driver/package.sh'
+[42.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_driver/share/mir_driver/package.bash'
+[42.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_driver/share/mir_driver/package.zsh'
+[42.668s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basmala/mir250_ws/install/mir_driver/share/colcon-core/packages/mir_driver)
+[42.669s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/basmala/mir250_ws/src/MIR_250/graph_based_navigation_system' with build type 'ament_python'
+[42.669s] Level 1:colcon.colcon_core.shell:create_environment_hook('graph_based_navigation_system', 'ament_prefix_path')
+[42.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/hook/ament_prefix_path.ps1'
+[42.670s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/hook/ament_prefix_path.dsv'
+[42.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/hook/ament_prefix_path.sh'
+[42.671s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[42.671s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[42.675s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/basmala/mir250_ws/src/MIR_250/mir_manual_navigation' with build type 'ament_python'
+[42.676s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_manual_navigation', 'ament_prefix_path')
+[42.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation/hook/ament_prefix_path.ps1'
+[42.677s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation/hook/ament_prefix_path.dsv'
+[42.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation/hook/ament_prefix_path.sh'
+[42.678s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[42.678s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[42.682s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/basmala/mir250_ws/src/MIR_250/mir_navigation' with build type 'ament_cmake'
+[42.682s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/basmala/mir250_ws/src/MIR_250/mir_navigation'
+[42.683s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[42.683s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[42.975s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/basmala/mir250_ws/src/MIR_250/graph_based_navigation_system'
+[42.975s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[42.975s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[43.265s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/basmala/mir250_ws/src/MIR_250/mir_manual_navigation'
+[43.265s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[43.265s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[43.274s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/mir_navigation': AMENT_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_driver:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:/opt/ros/humble LD_LIBRARY_PATH=/home/basmala/mir250_ws/install/mir_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/basmala/mir250_ws/install/mir_driver/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/mir_navigation -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/mir_navigation
+[43.707s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: rotate, build_scripts, install_egg_info, upload_docs, build_py, register, saveopts, bdist_dumb, install_lib, bdist_rpm, bdist_egg, install_data, build, build_ext, sdist, check, egg_info, install_scripts, dist_info, develop, clean, build_clib, setopt, install, bdist_wheel, bdist, test, symlink_data, install_headers, alias, upload, easy_install
+[43.709s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: rotate, build_scripts, install_egg_info, upload_docs, build_py, register, saveopts, bdist_dumb, install_lib, bdist_rpm, bdist_egg, install_data, build, build_ext, sdist, check, egg_info, install_scripts, dist_info, develop, clean, build_clib, setopt, install, bdist_wheel, bdist, test, symlink_data, install_headers, alias, upload, easy_install
+[43.713s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/src/MIR_250/mir_manual_navigation': AMENT_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_driver:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description LD_LIBRARY_PATH=/home/basmala/mir250_ws/install/mir_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/basmala/mir250_ws/build/mir_manual_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_driver/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/mir_manual_navigation build --build-base /home/basmala/mir250_ws/build/mir_manual_navigation/build install --record /home/basmala/mir250_ws/build/mir_manual_navigation/install.log --install-scripts $base/lib/mir_manual_navigation --single-version-externally-managed install_data
+[43.714s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/src/MIR_250/graph_based_navigation_system': AMENT_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_driver:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description LD_LIBRARY_PATH=/home/basmala/mir250_ws/install/mir_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/basmala/mir250_ws/build/graph_based_navigation_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_driver/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/graph_based_navigation_system build --build-base /home/basmala/mir250_ws/build/graph_based_navigation_system/build install --record /home/basmala/mir250_ws/build/graph_based_navigation_system/install.log --install-scripts $base/lib/graph_based_navigation_system --single-version-externally-managed install_data
+[44.099s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/graph_based_navigation_system' for CMake module files
+[44.100s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/src/MIR_250/graph_based_navigation_system' returned '0': AMENT_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_driver:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description LD_LIBRARY_PATH=/home/basmala/mir250_ws/install/mir_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/basmala/mir250_ws/build/graph_based_navigation_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_driver/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/graph_based_navigation_system build --build-base /home/basmala/mir250_ws/build/graph_based_navigation_system/build install --record /home/basmala/mir250_ws/build/graph_based_navigation_system/install.log --install-scripts $base/lib/graph_based_navigation_system --single-version-externally-managed install_data
+[44.100s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/graph_based_navigation_system' for CMake config files
+[44.101s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/graph_based_navigation_system/lib'
+[44.101s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/graph_based_navigation_system/bin'
+[44.102s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/graph_based_navigation_system/lib/pkgconfig/graph_based_navigation_system.pc'
+[44.102s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages'
+[44.102s] Level 1:colcon.colcon_core.shell:create_environment_hook('graph_based_navigation_system', 'pythonpath')
+[44.102s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/hook/pythonpath.ps1'
+[44.103s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/hook/pythonpath.dsv'
+[44.103s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/hook/pythonpath.sh'
+[44.104s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/graph_based_navigation_system/bin'
+[44.104s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(graph_based_navigation_system)
+[44.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/package.ps1'
+[44.105s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/package.dsv'
+[44.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/package.sh'
+[44.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/package.bash'
+[44.107s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/graph_based_navigation_system/share/graph_based_navigation_system/package.zsh'
+[44.107s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basmala/mir250_ws/install/graph_based_navigation_system/share/colcon-core/packages/graph_based_navigation_system)
+[44.110s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_manual_navigation' for CMake module files
+[44.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/src/MIR_250/mir_manual_navigation' returned '0': AMENT_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_driver:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description LD_LIBRARY_PATH=/home/basmala/mir250_ws/install/mir_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/basmala/mir250_ws/build/mir_manual_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_driver/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/mir_manual_navigation build --build-base /home/basmala/mir250_ws/build/mir_manual_navigation/build install --record /home/basmala/mir250_ws/build/mir_manual_navigation/install.log --install-scripts $base/lib/mir_manual_navigation --single-version-externally-managed install_data
+[44.111s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_manual_navigation' for CMake config files
+[44.113s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_manual_navigation/lib'
+[44.113s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_manual_navigation/bin'
+[44.113s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_manual_navigation/lib/pkgconfig/mir_manual_navigation.pc'
+[44.113s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages'
+[44.113s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_manual_navigation', 'pythonpath')
+[44.113s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation/hook/pythonpath.ps1'
+[44.114s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation/hook/pythonpath.dsv'
+[44.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation/hook/pythonpath.sh'
+[44.115s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_manual_navigation/bin'
+[44.115s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mir_manual_navigation)
+[44.116s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation/package.ps1'
+[44.117s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation/package.dsv'
+[44.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation/package.sh'
+[44.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation/package.bash'
+[44.118s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation/package.zsh'
+[44.118s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basmala/mir250_ws/install/mir_manual_navigation/share/colcon-core/packages/mir_manual_navigation)
+[44.402s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/build/sensors_launcher_mir_250 -- -j20 -l20
+[44.405s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/build/sensors_launcher_mir_250
+[44.450s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensors_launcher_mir_250)
+[44.450s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sensors_launcher_mir_250' for CMake module files
+[44.451s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/sensors_launcher_mir_250' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/build/sensors_launcher_mir_250
+[44.452s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sensors_launcher_mir_250' for CMake config files
+[44.452s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_launcher_mir_250', 'cmake_prefix_path')
+[44.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/hook/cmake_prefix_path.ps1'
+[44.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/hook/cmake_prefix_path.dsv'
+[44.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/hook/cmake_prefix_path.sh'
+[44.455s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib'
+[44.455s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_launcher_mir_250', 'ld_library_path_lib')
+[44.456s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/hook/ld_library_path_lib.ps1'
+[44.456s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/hook/ld_library_path_lib.dsv'
+[44.456s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/hook/ld_library_path_lib.sh'
+[44.457s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/bin'
+[44.457s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/pkgconfig/sensors_launcher_mir_250.pc'
+[44.457s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/python3.10/site-packages'
+[44.458s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/bin'
+[44.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/package.ps1'
+[44.459s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/package.dsv'
+[44.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/package.sh'
+[44.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/package.bash'
+[44.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/package.zsh'
+[44.461s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/colcon-core/packages/sensors_launcher_mir_250)
+[44.462s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensors_launcher_mir_250)
+[44.462s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sensors_launcher_mir_250' for CMake module files
+[44.462s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sensors_launcher_mir_250' for CMake config files
+[44.463s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_launcher_mir_250', 'cmake_prefix_path')
+[44.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/hook/cmake_prefix_path.ps1'
+[44.463s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/hook/cmake_prefix_path.dsv'
+[44.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/hook/cmake_prefix_path.sh'
+[44.464s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib'
+[44.464s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_launcher_mir_250', 'ld_library_path_lib')
+[44.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/hook/ld_library_path_lib.ps1'
+[44.465s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/hook/ld_library_path_lib.dsv'
+[44.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/hook/ld_library_path_lib.sh'
+[44.466s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/bin'
+[44.467s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/pkgconfig/sensors_launcher_mir_250.pc'
+[44.467s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/python3.10/site-packages'
+[44.468s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/bin'
+[44.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/package.ps1'
+[44.469s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/package.dsv'
+[44.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/package.sh'
+[44.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/package.bash'
+[44.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/package.zsh'
+[44.471s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/colcon-core/packages/sensors_launcher_mir_250)
+[46.293s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/mir_navigation' returned '0': AMENT_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_driver:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:/opt/ros/humble LD_LIBRARY_PATH=/home/basmala/mir250_ws/install/mir_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/basmala/mir250_ws/install/mir_driver/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/mir_navigation -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/mir_navigation
+[46.295s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/mir_navigation': AMENT_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_driver:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:/opt/ros/humble LD_LIBRARY_PATH=/home/basmala/mir250_ws/install/mir_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/basmala/mir250_ws/install/mir_driver/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/basmala/mir250_ws/build/mir_navigation -- -j20 -l20
+[46.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/mir_navigation' returned '0': AMENT_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_driver:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:/opt/ros/humble LD_LIBRARY_PATH=/home/basmala/mir250_ws/install/mir_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/basmala/mir250_ws/install/mir_driver/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/basmala/mir250_ws/build/mir_navigation -- -j20 -l20
+[46.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basmala/mir250_ws/build/mir_navigation': AMENT_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_driver:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:/opt/ros/humble LD_LIBRARY_PATH=/home/basmala/mir250_ws/install/mir_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/basmala/mir250_ws/install/mir_driver/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/basmala/mir250_ws/build/mir_navigation
+[46.426s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mir_navigation)
+[46.427s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basmala/mir250_ws/build/mir_navigation' returned '0': AMENT_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_driver:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:/opt/ros/humble LD_LIBRARY_PATH=/home/basmala/mir250_ws/install/mir_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/basmala/mir250_ws/install/mir_driver/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/basmala/mir250_ws/build/mir_navigation
+[46.428s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_navigation' for CMake module files
+[46.429s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_navigation' for CMake config files
+[46.429s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_navigation', 'cmake_prefix_path')
+[46.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_navigation/share/mir_navigation/hook/cmake_prefix_path.ps1'
+[46.431s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_navigation/share/mir_navigation/hook/cmake_prefix_path.dsv'
+[46.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_navigation/share/mir_navigation/hook/cmake_prefix_path.sh'
+[46.433s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_navigation/bin'
+[46.433s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_navigation/lib/pkgconfig/mir_navigation.pc'
+[46.434s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_navigation/lib/python3.10/site-packages'
+[46.434s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_navigation/bin'
+[46.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_navigation/share/mir_navigation/package.ps1'
+[46.435s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basmala/mir250_ws/install/mir_navigation/share/mir_navigation/package.dsv'
+[46.436s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_navigation/share/mir_navigation/package.sh'
+[46.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_navigation/share/mir_navigation/package.bash'
+[46.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_navigation/share/mir_navigation/package.zsh'
+[46.437s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basmala/mir250_ws/install/mir_navigation/share/colcon-core/packages/mir_navigation)
+[46.439s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mir_navigation)
+[46.439s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_navigation' for CMake module files
+[46.440s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_navigation' for CMake config files
+[46.440s] Level 1:colcon.colcon_core.shell:create_environment_hook('mir_navigation', 'cmake_prefix_path')
+[46.440s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_navigation/share/mir_navigation/hook/cmake_prefix_path.ps1'
+[46.441s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basmala/mir250_ws/install/mir_navigation/share/mir_navigation/hook/cmake_prefix_path.dsv'
+[46.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basmala/mir250_ws/install/mir_navigation/share/mir_navigation/hook/cmake_prefix_path.sh'
+[46.443s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_navigation/bin'
+[46.443s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_navigation/lib/pkgconfig/mir_navigation.pc'
+[46.443s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_navigation/lib/python3.10/site-packages'
+[46.443s] Level 1:colcon.colcon_core.environment:checking '/home/basmala/mir250_ws/install/mir_navigation/bin'
+[46.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_navigation/share/mir_navigation/package.ps1'
+[46.444s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basmala/mir250_ws/install/mir_navigation/share/mir_navigation/package.dsv'
+[46.445s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_navigation/share/mir_navigation/package.sh'
+[46.446s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_navigation/share/mir_navigation/package.bash'
+[46.446s] INFO:colcon.colcon_core.shell:Creating package script '/home/basmala/mir250_ws/install/mir_navigation/share/mir_navigation/package.zsh'
+[46.447s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basmala/mir250_ws/install/mir_navigation/share/colcon-core/packages/mir_navigation)
+[46.447s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[46.448s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[46.448s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[46.448s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[46.465s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[46.465s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[46.465s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[46.556s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[46.557s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/basmala/mir250_ws/install/local_setup.ps1'
+[46.559s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/basmala/mir250_ws/install/_local_setup_util_ps1.py'
+[46.561s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/basmala/mir250_ws/install/setup.ps1'
+[46.562s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/basmala/mir250_ws/install/local_setup.sh'
+[46.563s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/basmala/mir250_ws/install/_local_setup_util_sh.py'
+[46.564s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/basmala/mir250_ws/install/setup.sh'
+[46.566s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/basmala/mir250_ws/install/local_setup.bash'
+[46.566s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/basmala/mir250_ws/install/setup.bash'
+[46.568s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/basmala/mir250_ws/install/local_setup.zsh'
+[46.570s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/basmala/mir250_ws/install/setup.zsh'

@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mir_msgs/msg/Devices.msg
+// generated code does not contain a copyright notice
+
+#include "mir_msgs/msg/Device.idl"
+
+module mir_msgs {
+  module msg {
+    struct Devices {
+      sequence<mir_msgs::msg::Device> devices;
+    };
+  };
+};

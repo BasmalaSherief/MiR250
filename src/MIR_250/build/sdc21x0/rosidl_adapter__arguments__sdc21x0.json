@@ -1,0 +1,9 @@
+{
+  "package_name": "sdc21x0",
+  "non_idl_tuples": [
+    "/home/basmala/mir250_ws/src/MiR250/MIR_250/sdc21x0:msg/Encoders.msg",
+    "/home/basmala/mir250_ws/src/MiR250/MIR_250/sdc21x0:msg/MotorCurrents.msg",
+    "/home/basmala/mir250_ws/src/MiR250/MIR_250/sdc21x0:msg/StampedEncoders.msg",
+    "/home/basmala/mir250_ws/src/MiR250/MIR_250/sdc21x0:srv/Flags.srv"
+  ]
+}

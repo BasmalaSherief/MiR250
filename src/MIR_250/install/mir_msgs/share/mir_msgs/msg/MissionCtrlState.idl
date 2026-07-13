@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mir_msgs/msg/MissionCtrlState.msg
+// generated code does not contain a copyright notice
+
+
+module mir_msgs {
+  module msg {
+    module MissionCtrlState_Constants {
+      const uint8 STATE_IDLE = 0;
+      const uint8 STATE_WAIT_POS_LOCK = 1;
+      const uint8 STATE_WAIT_AREA_LOCK = 2;
+      const uint8 STATE_WAIT_MAP_TRANSITION = 10;
+      const uint8 STATE_WAIT_LIFT_START_FLOOR = 11;
+      const uint8 STATE_WAIT_LIFT_END_FLOOR = 12;
+    };
+    struct MissionCtrlState {
+      int32 state;
+
+      int32 pos_id;
+    };
+  };
+};

@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-fe13cfba5b5c5f44a6f0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "sdc21x0__py",
+					"jsonFile" : "directory-sdc21x0__py-07ed61959cdd5b34c98d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/basmala/mir250_ws/src/MiR250/MIR_250/build/sdc21x0/sdc21x0__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "sdc21x0__rs",
+					"jsonFile" : "directory-sdc21x0__rs-4156b5b407fc51b0b4fb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/basmala/mir250_ws/src/MiR250/MIR_250/build/sdc21x0/sdc21x0__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "sdc21x0",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_sdc21x0_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_sdc21x0_egg-7aa891f946986d23ea11.json",
+					"name" : "ament_cmake_python_build_sdc21x0_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_sdc21x0::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_sdc21x0-f2bdc160fc8535c8c76d.json",
+					"name" : "ament_cmake_python_copy_sdc21x0",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sdc21x0::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdc21x0-86219f2e894572359ef0.json",
+					"name" : "sdc21x0",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sdc21x0__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdc21x0__cpp-9298bd5c17cb54580280.json",
+					"name" : "sdc21x0__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sdc21x0__py::@e864daca6c5c8732c198",
+					"jsonFile" : "target-sdc21x0__py-4cd58057d681dbdb384f.json",
+					"name" : "sdc21x0__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sdc21x0__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdc21x0__rosidl_generator_c-922fc594069ffb11bbe8.json",
+					"name" : "sdc21x0__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sdc21x0__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdc21x0__rosidl_generator_py-abc72291aa7ab8fe081b.json",
+					"name" : "sdc21x0__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sdc21x0__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdc21x0__rosidl_typesupport_c-fea80c90d393a71e541f.json",
+					"name" : "sdc21x0__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sdc21x0__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdc21x0__rosidl_typesupport_c__pyext-80a2855cf490f0442b45.json",
+					"name" : "sdc21x0__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sdc21x0__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdc21x0__rosidl_typesupport_cpp-831b1a9ce02604b4c8ed.json",
+					"name" : "sdc21x0__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sdc21x0__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdc21x0__rosidl_typesupport_fastrtps_c-00cd5863cbf61eab5a00.json",
+					"name" : "sdc21x0__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sdc21x0__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdc21x0__rosidl_typesupport_fastrtps_c__pyext-ee776748c24912555aad.json",
+					"name" : "sdc21x0__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sdc21x0__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdc21x0__rosidl_typesupport_fastrtps_cpp-6a587b48f19d8478ec92.json",
+					"name" : "sdc21x0__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sdc21x0__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdc21x0__rosidl_typesupport_introspection_c-a8a8fe94e0e5bf12176a.json",
+					"name" : "sdc21x0__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sdc21x0__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdc21x0__rosidl_typesupport_introspection_c__pyext-47a67dd2bc8411fc72c9.json",
+					"name" : "sdc21x0__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sdc21x0__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdc21x0__rosidl_typesupport_introspection_cpp-d31217f0369aa6edba71.json",
+					"name" : "sdc21x0__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "sdc21x0__rs::@be6985c1993ad43159cd",
+					"jsonFile" : "target-sdc21x0__rs-c31ee65e37f27099b43d.json",
+					"name" : "sdc21x0__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sdc21x0_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdc21x0_uninstall-f3f88dd2b3b96c995206.json",
+					"name" : "sdc21x0_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-bed64ec093131f363957.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/basmala/mir250_ws/src/MiR250/MIR_250/build/sdc21x0",
+		"source" : "/home/basmala/mir250_ws/src/MiR250/MIR_250/sdc21x0"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

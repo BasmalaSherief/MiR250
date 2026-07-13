@@ -1,0 +1,178 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from mir_actions/action/MirMoveBase.action
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose2D.idl"
+#include "geometry_msgs/msg/PoseStamped.idl"
+#include "nav_msgs/msg/Path.idl"
+
+module mir_actions {
+  module action {
+    module MirMoveBase_Goal_Constants {
+      const int16 BASE_MOVE = 0;
+      const int16 GLOBAL_MOVE = 1;
+      const int16 RELATIVE_MOVE = 2;
+      const int16 RELATIVE_MARKER_MOVE = 3;
+      const int16 DOCKING_MOVE = 4;
+      const int16 DOCKING_GLOBAL_MOVE = 5;
+    };
+    @verbatim (language="comment", text=
+      "goal definition" "\n"
+      "move type")
+    struct MirMoveBase_Goal {
+      int16 move_task;
+
+      @verbatim (language="comment", text=
+        "shared parameters")
+      geometry_msgs::msg::PoseStamped target_pose;
+
+      @verbatim (language="comment", text=
+        "global move parameters")
+      double goal_dist_threshold;
+
+      double goal_orientation_threshold;
+
+      nav_msgs::msg::Path path;
+
+      float max_plan_time;
+
+      boolean clear_costmaps;
+
+      boolean pause_command;
+
+      boolean continue_command;
+
+      @verbatim (language="comment", text=
+        "relative move parameters")
+      double yaw;
+
+      boolean collision_detection;
+
+      boolean collision_avoidance;
+
+      double disable_collision_check_dist;
+
+      double max_linear_speed;
+
+      double max_rotational_speed;
+
+      double pid_dist_offset;
+
+      double target_offset;
+
+      boolean only_collision_detection;
+
+      double timeout;
+
+      @verbatim (language="comment", text=
+        "docking move parameters")
+      int32 pattern_type;
+
+      int32 pattern_value;
+
+      boolean only_track;
+
+      boolean same_goal;
+
+      string pose_frame;
+
+      geometry_msgs::msg::Pose2D pose;
+
+      geometry_msgs::msg::Pose2D offset;
+
+      double bar_length;
+
+      double bar_distance;
+
+      double shelf_leg_asymmetry_x;
+
+      double tolerance;
+    };
+    module MirMoveBase_Result_Constants {
+      @verbatim (language="comment", text=
+        "shared states")
+      const int16 UNDEFINED = 0;
+      const int16 GOAL_REACHED = 1;
+      const int16 FAILED = -1;
+      @verbatim (language="comment", text=
+        "global move states")
+      const int16 MARKER_VISIBLE = 2;
+      const int16 FAILED_NO_PATH = -2;
+      const int16 FAILED_GOAL_IN_STATIC_OBSTACLE = -3;
+      const int16 FAILED_GOAL_IN_FORBIDDEN_AREA = -4;
+      const int16 FAILED_GOAL_IN_DYNAMIC_OBSTACLE = -5;
+      const int16 FAILED_ROBOT_IN_COLLISION = -6;
+      const int16 FAILED_ROBOT_IN_FORBIDDEN_AREA = -7;
+      const int16 FAILED_UNKNOWN_TRAILER = -8;
+      const int16 FAILED_TO_PASS_GLOBAL_PLAN = -9;
+      const int16 FAILED_NO_VALID_RECOVERY_CONTROL = -10;
+      const int16 FAILED_UNKNOWN_PLANNER_ERROR = -11;
+      const int16 FAILED_ROBOT_OSCILLATING = -12;
+      const int16 FAILED_SOFTWARE_ERROR = -13;
+      @verbatim (language="comment", text=
+        "relative move states")
+      const int16 FAILED_TIMEOUT = -14;
+      const int16 FAILED_COLLISION = -15;
+      const int16 INVALID_GOAL = -16;
+      @verbatim (language="comment", text=
+        "docking move states")
+      const int16 FAILED_MARKER_TRACKING_ERROR = -17;
+    };
+    @verbatim (language="comment", text=
+      "result definition")
+    struct MirMoveBase_Result {
+      @verbatim (language="comment", text=
+        "shared results")
+      int16 end_state;
+
+      geometry_msgs::msg::PoseStamped end_pose;
+
+      @verbatim (language="comment", text=
+        "docking results")
+      geometry_msgs::msg::Pose2D pose;
+
+      @verbatim (language="comment", text=
+        "feedback for UI")
+      string message;
+    };
+    module MirMoveBase_Feedback_Constants {
+      const int8 NOT_READY = -1;
+      @verbatim (language="comment", text=
+        "global move states")
+      const int8 PLANNING = 0;
+      const int8 CONTROLLING = 1;
+      const int8 CLEARING = 2;
+      @verbatim (language="comment", text=
+        "relative move states")
+      const int8 DOCKING = 3;
+      const int8 COLLISION = 4;
+    };
+    @verbatim (language="comment", text=
+      "feedback" "\n"
+      "shared")
+    struct MirMoveBase_Feedback {
+      @verbatim (language="comment", text=
+        "shared feedback")
+      int8 state;
+
+      @verbatim (language="comment", text=
+        "global move feedback")
+      geometry_msgs::msg::PoseStamped base_position;
+
+      @verbatim (language="comment", text=
+        "relative move feedback")
+      geometry_msgs::msg::PoseStamped current_goal;
+
+      geometry_msgs::msg::PoseStamped dist_to_goal;
+
+      @verbatim (language="comment", text=
+        "docking move feedback" "\n"
+        "int8 DOCKING = 0" "\n"
+        "int8 COLLISION = 1" "\n"
+        "int8 state")
+      geometry_msgs::msg::Pose2D pose;
+
+      boolean marker_inversion;
+    };
+  };
+};

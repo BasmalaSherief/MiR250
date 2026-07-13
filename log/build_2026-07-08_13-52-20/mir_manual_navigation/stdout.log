@@ -1,0 +1,62 @@
+running egg_info
+creating ../../../build/mir_manual_navigation/mir_manual_navigation.egg-info
+writing ../../../build/mir_manual_navigation/mir_manual_navigation.egg-info/PKG-INFO
+writing dependency_links to ../../../build/mir_manual_navigation/mir_manual_navigation.egg-info/dependency_links.txt
+writing entry points to ../../../build/mir_manual_navigation/mir_manual_navigation.egg-info/entry_points.txt
+writing requirements to ../../../build/mir_manual_navigation/mir_manual_navigation.egg-info/requires.txt
+writing top-level names to ../../../build/mir_manual_navigation/mir_manual_navigation.egg-info/top_level.txt
+writing manifest file '../../../build/mir_manual_navigation/mir_manual_navigation.egg-info/SOURCES.txt'
+reading manifest file '../../../build/mir_manual_navigation/mir_manual_navigation.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../../build/mir_manual_navigation/mir_manual_navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/basmala/mir250_ws/build/mir_manual_navigation/build
+creating /home/basmala/mir250_ws/build/mir_manual_navigation/build/lib
+creating /home/basmala/mir250_ws/build/mir_manual_navigation/build/lib/mir_manual_navigation
+copying mir_manual_navigation/__init__.py -> /home/basmala/mir250_ws/build/mir_manual_navigation/build/lib/mir_manual_navigation
+copying mir_manual_navigation/isaac_calibration_test.py -> /home/basmala/mir250_ws/build/mir_manual_navigation/build/lib/mir_manual_navigation
+copying mir_manual_navigation/encoder_to_joint_state.py -> /home/basmala/mir250_ws/build/mir_manual_navigation/build/lib/mir_manual_navigation
+copying mir_manual_navigation/cloud_transformation.py -> /home/basmala/mir250_ws/build/mir_manual_navigation/build/lib/mir_manual_navigation
+copying mir_manual_navigation/isaac_diff_controller.py -> /home/basmala/mir250_ws/build/mir_manual_navigation/build/lib/mir_manual_navigation
+copying mir_manual_navigation/isaac_diff_controller_debug.py -> /home/basmala/mir250_ws/build/mir_manual_navigation/build/lib/mir_manual_navigation
+copying mir_manual_navigation/initial_position_mir.py -> /home/basmala/mir250_ws/build/mir_manual_navigation/build/lib/mir_manual_navigation
+running install
+running install_lib
+creating /home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages/mir_manual_navigation
+copying /home/basmala/mir250_ws/build/mir_manual_navigation/build/lib/mir_manual_navigation/__init__.py -> /home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages/mir_manual_navigation
+copying /home/basmala/mir250_ws/build/mir_manual_navigation/build/lib/mir_manual_navigation/isaac_calibration_test.py -> /home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages/mir_manual_navigation
+copying /home/basmala/mir250_ws/build/mir_manual_navigation/build/lib/mir_manual_navigation/encoder_to_joint_state.py -> /home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages/mir_manual_navigation
+copying /home/basmala/mir250_ws/build/mir_manual_navigation/build/lib/mir_manual_navigation/cloud_transformation.py -> /home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages/mir_manual_navigation
+copying /home/basmala/mir250_ws/build/mir_manual_navigation/build/lib/mir_manual_navigation/isaac_diff_controller.py -> /home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages/mir_manual_navigation
+copying /home/basmala/mir250_ws/build/mir_manual_navigation/build/lib/mir_manual_navigation/isaac_diff_controller_debug.py -> /home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages/mir_manual_navigation
+copying /home/basmala/mir250_ws/build/mir_manual_navigation/build/lib/mir_manual_navigation/initial_position_mir.py -> /home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages/mir_manual_navigation
+byte-compiling /home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages/mir_manual_navigation/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages/mir_manual_navigation/isaac_calibration_test.py to isaac_calibration_test.cpython-310.pyc
+byte-compiling /home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages/mir_manual_navigation/encoder_to_joint_state.py to encoder_to_joint_state.cpython-310.pyc
+byte-compiling /home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages/mir_manual_navigation/cloud_transformation.py to cloud_transformation.cpython-310.pyc
+byte-compiling /home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages/mir_manual_navigation/isaac_diff_controller.py to isaac_diff_controller.cpython-310.pyc
+byte-compiling /home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages/mir_manual_navigation/isaac_diff_controller_debug.py to isaac_diff_controller_debug.cpython-310.pyc
+byte-compiling /home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages/mir_manual_navigation/initial_position_mir.py to initial_position_mir.cpython-310.pyc
+running install_data
+creating /home/basmala/mir250_ws/install/mir_manual_navigation/share/ament_index
+creating /home/basmala/mir250_ws/install/mir_manual_navigation/share/ament_index/resource_index
+creating /home/basmala/mir250_ws/install/mir_manual_navigation/share/ament_index/resource_index/packages
+copying resource/mir_manual_navigation -> /home/basmala/mir250_ws/install/mir_manual_navigation/share/ament_index/resource_index/packages
+copying package.xml -> /home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation
+creating /home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation/launch
+copying launch/manual_control_launch.py -> /home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation/launch
+creating /home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation/config
+copying config/joy_init.yaml -> /home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation/config
+copying config/joy_config.yaml -> /home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation/config
+copying config/twist_mux.yaml -> /home/basmala/mir250_ws/install/mir_manual_navigation/share/mir_manual_navigation/config
+running install_egg_info
+Copying ../../../build/mir_manual_navigation/mir_manual_navigation.egg-info to /home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages/mir_manual_navigation-0.0.0-py3.10.egg-info
+running install_scripts
+Installing cloud_transformation script to /home/basmala/mir250_ws/install/mir_manual_navigation/lib/mir_manual_navigation
+Installing encoder_to_joint_state script to /home/basmala/mir250_ws/install/mir_manual_navigation/lib/mir_manual_navigation
+Installing initial_position_mir script to /home/basmala/mir250_ws/install/mir_manual_navigation/lib/mir_manual_navigation
+Installing isaac_calibration_test script to /home/basmala/mir250_ws/install/mir_manual_navigation/lib/mir_manual_navigation
+Installing isaac_diff_controller script to /home/basmala/mir250_ws/install/mir_manual_navigation/lib/mir_manual_navigation
+Installing isaac_diff_controller_debug script to /home/basmala/mir250_ws/install/mir_manual_navigation/lib/mir_manual_navigation
+writing list of installed files to '/home/basmala/mir250_ws/build/mir_manual_navigation/install.log'

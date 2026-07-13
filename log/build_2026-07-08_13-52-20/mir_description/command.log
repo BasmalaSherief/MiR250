@@ -1,0 +1,6 @@
+Invoking command in '/home/basmala/mir250_ws/build/mir_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/mir_description -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/mir_description
+Invoked command in '/home/basmala/mir250_ws/build/mir_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MIR_250/mir_description -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/mir_description
+Invoking command in '/home/basmala/mir250_ws/build/mir_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/build/mir_description -- -j20 -l20
+Invoked command in '/home/basmala/mir250_ws/build/mir_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/build/mir_description -- -j20 -l20
+Invoking command in '/home/basmala/mir250_ws/build/mir_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/build/mir_description
+Invoked command in '/home/basmala/mir250_ws/build/mir_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/build/mir_description

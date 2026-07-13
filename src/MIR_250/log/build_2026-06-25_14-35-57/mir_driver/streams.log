@@ -1,0 +1,49 @@
+[0.688s] Invoking command in '/home/basmala/mir250_ws/src/MiR250/MIR_250/mir_driver': CMAKE_PREFIX_PATH=/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_msgs:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_description:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sensors_launcher_mir_250:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_navigation:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_actions:/home/basmala/mir250_ws/install/sensors_launcher_mir_250:/home/basmala/mir250_ws/install/sdc21x0:/home/basmala/mir250_ws/install/mir_navigation:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:/home/basmala/mir250_ws/install/mir_actions LD_LIBRARY_PATH=/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_msgs/lib:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sensors_launcher_mir_250/lib:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_actions/lib:/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib:/home/basmala/mir250_ws/install/sdc21x0/lib:/home/basmala/mir250_ws/install/mir_msgs/lib:/home/basmala/mir250_ws/install/mir_actions/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/mir_driver build --build-base /home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/build install --record /home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/install.log --install-scripts $base/lib/mir_driver --single-version-externally-managed install_data
+[0.991s] running egg_info
+[0.992s] creating ../build/mir_driver/mir_driver.egg-info
+[0.992s] writing ../build/mir_driver/mir_driver.egg-info/PKG-INFO
+[0.993s] writing dependency_links to ../build/mir_driver/mir_driver.egg-info/dependency_links.txt
+[0.993s] writing entry points to ../build/mir_driver/mir_driver.egg-info/entry_points.txt
+[0.993s] writing requirements to ../build/mir_driver/mir_driver.egg-info/requires.txt
+[0.993s] writing top-level names to ../build/mir_driver/mir_driver.egg-info/top_level.txt
+[0.993s] writing manifest file '../build/mir_driver/mir_driver.egg-info/SOURCES.txt'
+[0.995s] reading manifest file '../build/mir_driver/mir_driver.egg-info/SOURCES.txt'
+[0.997s] writing manifest file '../build/mir_driver/mir_driver.egg-info/SOURCES.txt'
+[0.997s] running build
+[0.997s] running build_py
+[0.997s] creating /home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/build
+[0.997s] creating /home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/build/lib
+[0.997s] creating /home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/build/lib/mir_driver
+[0.998s] copying mir_driver/tf_static_publisher.py -> /home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/build/lib/mir_driver
+[1.002s] copying mir_driver/rosbridge.py -> /home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/build/lib/mir_driver
+[1.002s] copying mir_driver/__init__.py -> /home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/build/lib/mir_driver
+[1.002s] copying mir_driver/mir_bridge.py -> /home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/build/lib/mir_driver
+[1.003s] copying mir_driver/tf_remove_child_frames.py -> /home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/build/lib/mir_driver
+[1.003s] running install
+[1.003s] running install_lib
+[1.005s] creating /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/lib/python3.10/site-packages/mir_driver
+[1.005s] copying /home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/build/lib/mir_driver/tf_static_publisher.py -> /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/lib/python3.10/site-packages/mir_driver
+[1.006s] copying /home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/build/lib/mir_driver/rosbridge.py -> /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/lib/python3.10/site-packages/mir_driver
+[1.006s] copying /home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/build/lib/mir_driver/__init__.py -> /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/lib/python3.10/site-packages/mir_driver
+[1.006s] copying /home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/build/lib/mir_driver/mir_bridge.py -> /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/lib/python3.10/site-packages/mir_driver
+[1.006s] copying /home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/build/lib/mir_driver/tf_remove_child_frames.py -> /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/lib/python3.10/site-packages/mir_driver
+[1.007s] byte-compiling /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/lib/python3.10/site-packages/mir_driver/tf_static_publisher.py to tf_static_publisher.cpython-310.pyc
+[1.007s] byte-compiling /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/lib/python3.10/site-packages/mir_driver/rosbridge.py to rosbridge.cpython-310.pyc
+[1.009s] byte-compiling /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/lib/python3.10/site-packages/mir_driver/__init__.py to __init__.cpython-310.pyc
+[1.009s] byte-compiling /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/lib/python3.10/site-packages/mir_driver/mir_bridge.py to mir_bridge.cpython-310.pyc
+[1.013s] byte-compiling /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/lib/python3.10/site-packages/mir_driver/tf_remove_child_frames.py to tf_remove_child_frames.cpython-310.pyc
+[1.014s] running install_data
+[1.014s] creating /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/share/ament_index
+[1.014s] creating /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/share/ament_index/resource_index
+[1.014s] creating /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/share/ament_index/resource_index/packages
+[1.014s] copying resource/mir_driver -> /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/share/ament_index/resource_index/packages
+[1.015s] copying package.xml -> /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/share/mir_driver
+[1.015s] creating /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/share/mir_driver/launch
+[1.015s] copying launch/additions_launch.py -> /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/share/mir_driver/launch
+[1.015s] copying launch/mir_launch.py -> /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/share/mir_driver/launch
+[1.015s] running install_egg_info
+[1.018s] Copying ../build/mir_driver/mir_driver.egg-info to /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/lib/python3.10/site-packages/mir_driver-0.0.0-py3.10.egg-info
+[1.019s] running install_scripts
+[1.040s] Installing mir_bridge script to /home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/lib/mir_driver
+[1.041s] writing list of installed files to '/home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/install.log'
+[1.062s] Invoked command in '/home/basmala/mir250_ws/src/MiR250/MIR_250/mir_driver' returned '0': CMAKE_PREFIX_PATH=/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_msgs:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_description:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sensors_launcher_mir_250:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_navigation:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_actions:/home/basmala/mir250_ws/install/sensors_launcher_mir_250:/home/basmala/mir250_ws/install/sdc21x0:/home/basmala/mir250_ws/install/mir_navigation:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:/home/basmala/mir250_ws/install/mir_actions LD_LIBRARY_PATH=/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_msgs/lib:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sensors_launcher_mir_250/lib:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_actions/lib:/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib:/home/basmala/mir250_ws/install/sdc21x0/lib:/home/basmala/mir250_ws/install/mir_msgs/lib:/home/basmala/mir250_ws/install/mir_actions/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/mir_driver build --build-base /home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/build install --record /home/basmala/mir250_ws/src/MiR250/MIR_250/build/mir_driver/install.log --install-scripts $base/lib/mir_driver --single-version-externally-managed install_data

@@ -1,0 +1,8 @@
+[console_scripts]
+cloud_transformation = mir_manual_navigation.cloud_transformation:main
+encoder_to_joint_state = mir_manual_navigation.encoder_to_joint_state:main
+initial_position_mir = mir_manual_navigation.initial_position_mir:main
+isaac_calibration_test = mir_manual_navigation.isaac_calibration_test:main
+isaac_diff_controller = mir_manual_navigation.isaac_diff_controller:main
+isaac_diff_controller_debug = mir_manual_navigation.isaac_diff_controller_debug:main
+

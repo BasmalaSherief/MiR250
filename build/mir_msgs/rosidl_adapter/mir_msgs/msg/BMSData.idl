@@ -1,0 +1,180 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mir_msgs/msg/BMSData.msg
+// generated code does not contain a copyright notice
+
+
+module mir_msgs {
+  module msg {
+    module BMSData_Constants {
+      @verbatim (language="comment", text=
+        "bit 0")
+      const int32 DISCHARGING = 1;
+      @verbatim (language="comment", text=
+        "bit 1")
+      const int32 CHARGING = 2;
+      @verbatim (language="comment", text=
+        "bit 2 Over voltage")
+      const int32 OV = 4;
+      @verbatim (language="comment", text=
+        "bit 3 Under voltage")
+      const int32 UV = 8;
+      @verbatim (language="comment", text=
+        "bit 4 Charge over current")
+      const int32 COC = 16;
+      @verbatim (language="comment", text=
+        "bit 5 Discharge over current")
+      const int32 DOC = 32;
+      @verbatim (language="comment", text=
+        "bit 6 Discharge over temperature")
+      const int32 DOT = 64;
+      @verbatim (language="comment", text=
+        "bit 7 Discharge under temperature")
+      const int32 DUT = 128;
+      @verbatim (language="comment", text=
+        "bit 9")
+      const int32 SC = 512;
+      @verbatim (language="comment", text=
+        "bit 10 Charge over temperature")
+      const int32 COT = 1024;
+      @verbatim (language="comment", text=
+        "bit 11 Charge under temperature")
+      const int32 CUT = 2048;
+      @verbatim (language="comment", text=
+        "to get Battery_Firmware_Status  do the following:")
+      const int32 FW_STATUS_MSK = 2031616;
+      @verbatim (language="comment", text=
+        "batt_fw_stat=(status_flags & FW_STATUS_MSK)>>FW_STATUS_SHIFT")
+      const int32 FW_STATUS_SHIFT = 16;
+      @verbatim (language="comment", text=
+        "Battery firmware update finished OK.")
+      const int32 FW_UPD_OK = 0;
+      @verbatim (language="comment", text=
+        "Battery firmware update running.")
+      const int32 FW_UPD_RUNNING = 1;
+      @verbatim (language="comment", text=
+        "Battery firmware update failed in Bootloader (Robot must not drive)")
+      const int32 FW_UPD_FAILED_BOOT = 2;
+      @verbatim (language="comment", text=
+        "Battery firmware update failed updating the application (Robot can drive with old FW)")
+      const int32 FW_UPD_FAILED_APP = 3;
+      @verbatim (language="comment", text=
+        "Battery firmware update failed uploading parameters (Robot can drive with old fw and parameters.)")
+      const int32 FW_UPD_FAILED_PARAM = 4;
+      @verbatim (language="comment", text=
+        "Battery firmware update skipped battery too low (Robot can drive with old parameters.)")
+      const int32 FW_STATUS_LOW_BATT = 5;
+      @verbatim (language="comment", text=
+        "Battery firmware file corrupted (Robot can drive with old parameters.)")
+      const int32 FW_STATUS_FILE_CORRUPTED = 6;
+      @verbatim (language="comment", text=
+        "Battery firmware file corrupted (Robot can drive with old parameters.)")
+      const int32 FW_STATUS_CURRENT_TO_HIGH = 7;
+      @verbatim (language="comment", text=
+        "Battery firmware update skipped no CAN communication (Robot can drive with old fw and parameters.)")
+      const int32 FW_STATUS_NO_CAN = 8;
+      @verbatim (language="comment", text=
+        "Battery firmware update is enforced and the battery will be shut off by the new firmware")
+      const int32 FW_BATTERY_IMBALANCE_HIGH = 9;
+    };
+    struct BMSData {
+      double pack_voltage;
+
+      double charge_current;
+
+      double discharge_current;
+
+      int32 state_of_charge;
+
+      double remaining_time_to_full_charge;
+
+      int32 remaining_capacity;
+
+      int32 state_of_health;
+
+      int32 status_flags;
+
+      int32 temperature;
+
+      @verbatim (language="comment", text=
+        "In Mk2 robots and above the BMS provides data for 8 battery cells. 2Gen robots have BMS for 13 battery cells")
+      sequence<uint32> cell_voltage;
+
+      @verbatim (language="comment", text=
+        "Exteded diagnosticts for BMZ battery" "\n"
+        "Flag for enabling extended diagnosticts")
+      uint32 bmz_flag;
+
+      double full_voltage;
+
+      int32 full_capacity;
+
+      int32 temperature2;
+
+      int32 temperature3;
+
+      int32 cycle_count;
+
+      int32 dsg_overcurrent_counter;
+
+      int32 chg_overcurrent_counter;
+
+      int32 hw_major;
+
+      int32 hw_minor;
+
+      int32 fw_major;
+
+      int32 fw_minor;
+
+      int32 fw_patch;
+
+      int32 rec_fw_major;
+
+      int32 rec_fw_minor;
+
+      int32 bl_major;
+
+      int32 bl_minor;
+
+      uint32 status_enabled;
+
+      uint32 status_current_limitation;
+
+      uint32 status_switch_off_warn1;
+
+      uint32 status_switch_off_warn2;
+
+      uint32 status_fully_discharged;
+
+      uint32 status_nearly_discharged;
+
+      uint32 status_chargefet_on;
+
+      uint32 status_dischargefet_on;
+
+      uint32 status_discharging;
+
+      uint32 status_fully_charged;
+
+      uint32 status_charging;
+
+      uint32 status_temp_charging_err;
+
+      uint32 status_cell_over_voltage;
+
+      uint32 status_cell_under_voltage;
+
+      uint32 status_charge_over_current;
+
+      uint32 status_shortcircuit;
+
+      uint32 status_discharge_over_current;
+
+      uint32 status_temp_discharging_err;
+
+      uint32 status_charger_detected;
+
+      double last_battery_msg_time;
+    };
+  };
+};

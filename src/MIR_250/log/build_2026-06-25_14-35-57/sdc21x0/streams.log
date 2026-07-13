@@ -1,0 +1,348 @@
+[0.291s] Invoking command in '/home/basmala/mir250_ws/src/MiR250/MIR_250/build/sdc21x0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_restapi:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_manual_navigation:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/graph_based_navigation_system:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver:/home/basmala/mir250_ws/install/mir_restapi:/home/basmala/mir250_ws/install/mir_manual_navigation:/home/basmala/mir250_ws/install/graph_based_navigation_system:/home/basmala/mir250_ws/install/mir_driver:/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MiR250/MIR_250/sdc21x0 -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0
+[0.361s] -- The C compiler identification is GNU 11.4.0
+[0.458s] -- The CXX compiler identification is GNU 11.4.0
+[0.471s] -- Detecting C compiler ABI info
+[0.583s] -- Detecting C compiler ABI info - done
+[0.596s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.598s] -- Detecting C compile features
+[0.598s] -- Detecting C compile features - done
+[0.605s] -- Detecting CXX compiler ABI info
+[0.724s] -- Detecting CXX compiler ABI info - done
+[0.734s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.734s] -- Detecting CXX compile features
+[0.735s] -- Detecting CXX compile features - done
+[0.739s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.977s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.146s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[1.209s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.219s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.234s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.259s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.289s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.316s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.342s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[1.813s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.322s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.532s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.559s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.562s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.599s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.599s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.599s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.599s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.631s] -- Found PythonExtra: .so  
+[2.824s] -- Configuring done
+[2.899s] -- Generating done
+[2.922s] -- Build files have been written to: /home/basmala/mir250_ws/src/MiR250/MIR_250/build/sdc21x0
+[2.931s] Invoked command in '/home/basmala/mir250_ws/src/MiR250/MIR_250/build/sdc21x0' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_restapi:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_manual_navigation:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/graph_based_navigation_system:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver:/home/basmala/mir250_ws/install/mir_restapi:/home/basmala/mir250_ws/install/mir_manual_navigation:/home/basmala/mir250_ws/install/graph_based_navigation_system:/home/basmala/mir250_ws/install/mir_driver:/opt/ros/humble /usr/bin/cmake /home/basmala/mir250_ws/src/MiR250/MIR_250/sdc21x0 -DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0
+[2.932s] Invoking command in '/home/basmala/mir250_ws/src/MiR250/MIR_250/build/sdc21x0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_restapi:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_manual_navigation:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/graph_based_navigation_system:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver:/home/basmala/mir250_ws/install/mir_restapi:/home/basmala/mir250_ws/install/mir_manual_navigation:/home/basmala/mir250_ws/install/graph_based_navigation_system:/home/basmala/mir250_ws/install/mir_driver:/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/src/MiR250/MIR_250/build/sdc21x0 -- -j20 -l20
+[2.985s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.000s] [  3%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[3.007s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.014s] [  5%] Built target ament_cmake_python_copy_sdc21x0
+[3.362s] running egg_info
+[3.363s] creating sdc21x0.egg-info
+[3.363s] writing sdc21x0.egg-info/PKG-INFO
+[3.364s] writing dependency_links to sdc21x0.egg-info/dependency_links.txt
+[3.364s] writing top-level names to sdc21x0.egg-info/top_level.txt
+[3.364s] writing manifest file 'sdc21x0.egg-info/SOURCES.txt'
+[3.368s] reading manifest file 'sdc21x0.egg-info/SOURCES.txt'
+[3.369s] writing manifest file 'sdc21x0.egg-info/SOURCES.txt'
+[3.412s] [  5%] Built target ament_cmake_python_build_sdc21x0_egg
+[3.591s] [  5%] Built target sdc21x0__rs
+[3.676s] [  7%] [32mBuilding C object CMakeFiles/sdc21x0__rosidl_generator_c.dir/rosidl_generator_c/sdc21x0/msg/detail/motor_currents__functions.c.o[0m
+[3.679s] [  8%] [32mBuilding C object CMakeFiles/sdc21x0__rosidl_generator_c.dir/rosidl_generator_c/sdc21x0/msg/detail/encoders__functions.c.o[0m
+[3.679s] [ 10%] [32mBuilding C object CMakeFiles/sdc21x0__rosidl_generator_c.dir/rosidl_generator_c/sdc21x0/msg/detail/stamped_encoders__functions.c.o[0m
+[3.681s] [ 12%] [32mBuilding C object CMakeFiles/sdc21x0__rosidl_generator_c.dir/rosidl_generator_c/sdc21x0/srv/detail/flags__functions.c.o[0m
+[3.763s] [ 12%] Built target sdc21x0__cpp
+[3.782s] [ 14%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.783s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.783s] [ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.806s] [ 19%] [32m[1mLinking C shared library libsdc21x0__rosidl_generator_c.so[0m
+[3.870s] [ 19%] Built target sdc21x0__rosidl_generator_c
+[3.887s] [ 21%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.891s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.893s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.308s] [ 30%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sdc21x0/msg/motor_currents__type_support.cpp.o[0m
+[4.308s] [ 30%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sdc21x0/msg/stamped_encoders__type_support.cpp.o[0m
+[4.308s] [ 30%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sdc21x0/msg/encoders__type_support.cpp.o[0m
+[4.308s] [ 32%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sdc21x0/srv/flags__type_support.cpp.o[0m
+[4.485s] [ 33%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sdc21x0/msg/detail/dds_fastrtps/encoders__type_support.cpp.o[0m
+[4.487s] [ 35%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sdc21x0/msg/detail/dds_fastrtps/stamped_encoders__type_support.cpp.o[0m
+[4.487s] [ 37%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sdc21x0/msg/detail/dds_fastrtps/motor_currents__type_support.cpp.o[0m
+[4.488s] [ 39%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sdc21x0/srv/detail/dds_fastrtps/flags__type_support.cpp.o[0m
+[4.661s] [ 41%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_c.dir/rosidl_typesupport_c/sdc21x0/msg/stamped_encoders__type_support.cpp.o[0m
+[4.682s] [ 42%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_c.dir/rosidl_typesupport_c/sdc21x0/msg/encoders__type_support.cpp.o[0m
+[4.683s] [ 44%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_c.dir/rosidl_typesupport_c/sdc21x0/msg/motor_currents__type_support.cpp.o[0m
+[4.690s] [ 46%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_c.dir/rosidl_typesupport_c/sdc21x0/srv/flags__type_support.cpp.o[0m
+[4.691s] [ 48%] [32mBuilding C object CMakeFiles/sdc21x0__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sdc21x0/msg/detail/encoders__type_support.c.o[0m
+[4.701s] [ 50%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sdc21x0/msg/detail/encoders__type_support_c.cpp.o[0m
+[4.722s] [ 51%] [32mBuilding C object CMakeFiles/sdc21x0__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sdc21x0/msg/detail/stamped_encoders__type_support.c.o[0m
+[4.722s] [ 53%] [32mBuilding C object CMakeFiles/sdc21x0__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sdc21x0/msg/detail/motor_currents__type_support.c.o[0m
+[4.724s] [ 55%] [32mBuilding C object CMakeFiles/sdc21x0__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sdc21x0/srv/detail/flags__type_support.c.o[0m
+[4.736s] [ 57%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sdc21x0/msg/detail/motor_currents__type_support_c.cpp.o[0m
+[4.738s] [ 58%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sdc21x0/msg/detail/stamped_encoders__type_support_c.cpp.o[0m
+[4.770s] [ 60%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sdc21x0/srv/detail/flags__type_support_c.cpp.o[0m
+[4.779s] [ 62%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sdc21x0/msg/detail/encoders__type_support.cpp.o[0m
+[4.785s] [ 64%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sdc21x0/msg/detail/motor_currents__type_support.cpp.o[0m
+[4.817s] [ 66%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sdc21x0/msg/detail/stamped_encoders__type_support.cpp.o[0m
+[4.831s] [ 67%] [32mBuilding CXX object CMakeFiles/sdc21x0__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sdc21x0/srv/detail/flags__type_support.cpp.o[0m
+[4.861s] [ 69%] [32m[1mLinking CXX shared library libsdc21x0__rosidl_typesupport_c.so[0m
+[4.913s] [ 71%] [32m[1mLinking C shared library libsdc21x0__rosidl_typesupport_introspection_c.so[0m
+[5.089s] [ 71%] Built target sdc21x0__rosidl_typesupport_c
+[5.094s] [ 71%] Built target sdc21x0__rosidl_typesupport_introspection_c
+[5.183s] [ 73%] [32m[1mLinking CXX shared library libsdc21x0__rosidl_typesupport_cpp.so[0m
+[5.379s] [ 73%] Built target sdc21x0__rosidl_typesupport_cpp
+[5.750s] [ 75%] [32m[1mLinking CXX shared library libsdc21x0__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.782s] [ 76%] [32m[1mLinking CXX shared library libsdc21x0__rosidl_typesupport_fastrtps_c.so[0m
+[5.862s] [ 78%] [32m[1mLinking CXX shared library libsdc21x0__rosidl_typesupport_introspection_cpp.so[0m
+[5.881s] [ 78%] Built target sdc21x0__rosidl_typesupport_fastrtps_cpp
+[5.945s] [ 78%] Built target sdc21x0__rosidl_typesupport_fastrtps_c
+[5.965s] [ 78%] Built target sdc21x0__rosidl_typesupport_introspection_cpp
+[5.995s] [ 78%] Built target sdc21x0
+[6.033s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[6.907s] [ 80%] Built target sdc21x0__py
+[6.941s] [ 82%] [32mBuilding C object CMakeFiles/sdc21x0__rosidl_generator_py.dir/rosidl_generator_py/sdc21x0/msg/_motor_currents_s.c.o[0m
+[6.945s] [ 85%] [32mBuilding C object CMakeFiles/sdc21x0__rosidl_generator_py.dir/rosidl_generator_py/sdc21x0/msg/_encoders_s.c.o[0m
+[6.946s] [ 85%] [32mBuilding C object CMakeFiles/sdc21x0__rosidl_generator_py.dir/rosidl_generator_py/sdc21x0/srv/_flags_s.c.o[0m
+[6.946s] [ 87%] [32mBuilding C object CMakeFiles/sdc21x0__rosidl_generator_py.dir/rosidl_generator_py/sdc21x0/msg/_stamped_encoders_s.c.o[0m
+[7.156s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/sdc21x0/libsdc21x0__rosidl_generator_py.so[0m
+[7.222s] [ 89%] Built target sdc21x0__rosidl_generator_py
+[7.255s] [ 91%] [32mBuilding C object CMakeFiles/sdc21x0__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/sdc21x0/_sdc21x0_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.264s] [ 92%] [32mBuilding C object CMakeFiles/sdc21x0__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/sdc21x0/_sdc21x0_s.ep.rosidl_typesupport_c.c.o[0m
+[7.264s] [ 94%] [32mBuilding C object CMakeFiles/sdc21x0__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/sdc21x0/_sdc21x0_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.422s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/sdc21x0/sdc21x0_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.441s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/sdc21x0/sdc21x0_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.450s] [100%] [32m[1mLinking C shared library rosidl_generator_py/sdc21x0/sdc21x0_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.480s] [100%] Built target sdc21x0__rosidl_typesupport_introspection_c__pyext
+[7.498s] [100%] Built target sdc21x0__rosidl_typesupport_c__pyext
+[7.509s] [100%] Built target sdc21x0__rosidl_typesupport_fastrtps_c__pyext
+[7.535s] Invoked command in '/home/basmala/mir250_ws/src/MiR250/MIR_250/build/sdc21x0' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_restapi:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_manual_navigation:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/graph_based_navigation_system:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver:/home/basmala/mir250_ws/install/mir_restapi:/home/basmala/mir250_ws/install/mir_manual_navigation:/home/basmala/mir250_ws/install/graph_based_navigation_system:/home/basmala/mir250_ws/install/mir_driver:/opt/ros/humble /usr/bin/cmake --build /home/basmala/mir250_ws/src/MiR250/MIR_250/build/sdc21x0 -- -j20 -l20
+[7.538s] Invoking command in '/home/basmala/mir250_ws/src/MiR250/MIR_250/build/sdc21x0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_restapi:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_manual_navigation:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/graph_based_navigation_system:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver:/home/basmala/mir250_ws/install/mir_restapi:/home/basmala/mir250_ws/install/mir_manual_navigation:/home/basmala/mir250_ws/install/graph_based_navigation_system:/home/basmala/mir250_ws/install/mir_driver:/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/src/MiR250/MIR_250/build/sdc21x0
+[7.553s] -- Install configuration: ""
+[7.554s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/ament_index/resource_index/rosidl_interfaces/sdc21x0
+[7.554s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0
+[7.554s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv
+[7.555s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/flags.h
+[7.555s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail
+[7.555s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail/flags__functions.c
+[7.555s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail/flags__struct.h
+[7.555s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail/flags__functions.h
+[7.555s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail/flags__type_support.h
+[7.556s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg
+[7.556s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/stamped_encoders.h
+[7.556s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/motor_currents.h
+[7.556s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/encoders.h
+[7.557s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/rosidl_generator_c__visibility_control.h
+[7.557s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail
+[7.557s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/motor_currents__type_support.h
+[7.558s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/encoders__functions.c
+[7.558s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/encoders__type_support.h
+[7.558s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/encoders__struct.h
+[7.558s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/stamped_encoders__type_support.h
+[7.558s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/stamped_encoders__functions.h
+[7.559s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/motor_currents__functions.c
+[7.559s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/stamped_encoders__functions.c
+[7.559s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/stamped_encoders__struct.h
+[7.559s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/encoders__functions.h
+[7.560s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/motor_currents__struct.h
+[7.560s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/motor_currents__functions.h
+[7.560s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/environment/library_path.sh
+[7.561s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/environment/library_path.dsv
+[7.561s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib/libsdc21x0__rosidl_generator_c.so
+[7.562s] -- Set runtime path of "/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib/libsdc21x0__rosidl_generator_c.so" to ""
+[7.562s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0
+[7.562s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv
+[7.562s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail
+[7.562s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail/flags__rosidl_typesupport_fastrtps_c.h
+[7.562s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg
+[7.563s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail
+[7.563s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/motor_currents__rosidl_typesupport_fastrtps_c.h
+[7.563s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/stamped_encoders__rosidl_typesupport_fastrtps_c.h
+[7.563s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/encoders__rosidl_typesupport_fastrtps_c.h
+[7.563s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[7.564s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib/libsdc21x0__rosidl_typesupport_fastrtps_c.so
+[7.564s] -- Set runtime path of "/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib/libsdc21x0__rosidl_typesupport_fastrtps_c.so" to ""
+[7.565s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0
+[7.565s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv
+[7.565s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail
+[7.565s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail/flags__builder.hpp
+[7.565s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail/flags__struct.hpp
+[7.565s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail/flags__traits.hpp
+[7.566s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail/flags__type_support.hpp
+[7.566s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/flags.hpp
+[7.566s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg
+[7.566s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/motor_currents.hpp
+[7.566s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/rosidl_generator_cpp__visibility_control.hpp
+[7.567s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail
+[7.567s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/motor_currents__builder.hpp
+[7.567s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/stamped_encoders__traits.hpp
+[7.567s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/encoders__traits.hpp
+[7.567s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/motor_currents__traits.hpp
+[7.568s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/stamped_encoders__struct.hpp
+[7.568s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/encoders__builder.hpp
+[7.568s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/motor_currents__struct.hpp
+[7.568s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/stamped_encoders__builder.hpp
+[7.569s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/motor_currents__type_support.hpp
+[7.569s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/encoders__struct.hpp
+[7.569s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/encoders__type_support.hpp
+[7.569s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/stamped_encoders__type_support.hpp
+[7.569s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/encoders.hpp
+[7.570s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/stamped_encoders.hpp
+[7.570s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0
+[7.570s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv
+[7.570s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail
+[7.570s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail/dds_fastrtps
+[7.570s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail/flags__rosidl_typesupport_fastrtps_cpp.hpp
+[7.571s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg
+[7.571s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[7.571s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail
+[7.571s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/encoders__rosidl_typesupport_fastrtps_cpp.hpp
+[7.571s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/motor_currents__rosidl_typesupport_fastrtps_cpp.hpp
+[7.572s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/dds_fastrtps
+[7.572s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/stamped_encoders__rosidl_typesupport_fastrtps_cpp.hpp
+[7.572s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib/libsdc21x0__rosidl_typesupport_fastrtps_cpp.so
+[7.573s] -- Set runtime path of "/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib/libsdc21x0__rosidl_typesupport_fastrtps_cpp.so" to ""
+[7.573s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0
+[7.573s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv
+[7.573s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail
+[7.573s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail/flags__rosidl_typesupport_introspection_c.h
+[7.573s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail/flags__type_support.c
+[7.574s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg
+[7.574s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail
+[7.574s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/motor_currents__type_support.c
+[7.575s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/encoders__type_support.c
+[7.575s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/motor_currents__rosidl_typesupport_introspection_c.h
+[7.575s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/stamped_encoders__rosidl_typesupport_introspection_c.h
+[7.575s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/encoders__rosidl_typesupport_introspection_c.h
+[7.575s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/stamped_encoders__type_support.c
+[7.575s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[7.576s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib/libsdc21x0__rosidl_typesupport_introspection_c.so
+[7.576s] -- Set runtime path of "/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib/libsdc21x0__rosidl_typesupport_introspection_c.so" to ""
+[7.576s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib/libsdc21x0__rosidl_typesupport_c.so
+[7.576s] -- Set runtime path of "/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib/libsdc21x0__rosidl_typesupport_c.so" to ""
+[7.576s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0
+[7.577s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv
+[7.577s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail
+[7.577s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail/flags__type_support.cpp
+[7.577s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/srv/detail/flags__rosidl_typesupport_introspection_cpp.hpp
+[7.577s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg
+[7.577s] -- Up-to-date: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail
+[7.578s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/motor_currents__rosidl_typesupport_introspection_cpp.hpp
+[7.578s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/motor_currents__type_support.cpp
+[7.578s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/stamped_encoders__type_support.cpp
+[7.578s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/stamped_encoders__rosidl_typesupport_introspection_cpp.hpp
+[7.578s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/encoders__type_support.cpp
+[7.578s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/include/sdc21x0/sdc21x0/msg/detail/encoders__rosidl_typesupport_introspection_cpp.hpp
+[7.579s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib/libsdc21x0__rosidl_typesupport_introspection_cpp.so
+[7.579s] -- Set runtime path of "/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib/libsdc21x0__rosidl_typesupport_introspection_cpp.so" to ""
+[7.579s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib/libsdc21x0__rosidl_typesupport_cpp.so
+[7.579s] -- Set runtime path of "/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib/libsdc21x0__rosidl_typesupport_cpp.so" to ""
+[7.579s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/environment/pythonpath.sh
+[7.579s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/environment/pythonpath.dsv
+[7.580s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0-1.1.3-py3.10.egg-info
+[7.580s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0-1.1.3-py3.10.egg-info/dependency_links.txt
+[7.580s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0-1.1.3-py3.10.egg-info/PKG-INFO
+[7.580s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0-1.1.3-py3.10.egg-info/SOURCES.txt
+[7.580s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0-1.1.3-py3.10.egg-info/top_level.txt
+[7.580s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0
+[7.581s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/sdc21x0_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.581s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/srv
+[7.581s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/srv/__init__.py
+[7.581s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/srv/_flags.py
+[7.581s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/srv/_flags_s.c
+[7.581s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/_sdc21x0_s.ep.rosidl_typesupport_fastrtps_c.c
+[7.582s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/msg
+[7.582s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/msg/_stamped_encoders.py
+[7.582s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/msg/_motor_currents.py
+[7.582s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/msg/__init__.py
+[7.582s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/msg/_motor_currents_s.c
+[7.582s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/msg/_encoders_s.c
+[7.582s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/msg/_encoders.py
+[7.583s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/msg/_stamped_encoders_s.c
+[7.583s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/__init__.py
+[7.583s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/sdc21x0_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[7.583s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/_sdc21x0_s.ep.rosidl_typesupport_c.c
+[7.583s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/_sdc21x0_s.ep.rosidl_typesupport_introspection_c.c
+[7.583s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/sdc21x0_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[7.583s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/libsdc21x0__rosidl_generator_py.so
+[7.646s] Listing '/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0'...
+[7.646s] Compiling '/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/__init__.py'...
+[7.646s] Listing '/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/msg'...
+[7.646s] Compiling '/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/msg/__init__.py'...
+[7.646s] Compiling '/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/msg/_encoders.py'...
+[7.646s] Compiling '/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/msg/_motor_currents.py'...
+[7.646s] Compiling '/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/msg/_stamped_encoders.py'...
+[7.646s] Listing '/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/srv'...
+[7.646s] Compiling '/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/srv/__init__.py'...
+[7.646s] Compiling '/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/srv/_flags.py'...
+[7.653s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/sdc21x0_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[7.654s] -- Set runtime path of "/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/sdc21x0_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.654s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/sdc21x0_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.654s] -- Set runtime path of "/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/sdc21x0_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.654s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/sdc21x0_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[7.654s] -- Set runtime path of "/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/local/lib/python3.10/dist-packages/sdc21x0/sdc21x0_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.655s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib/libsdc21x0__rosidl_generator_py.so
+[7.655s] -- Set runtime path of "/home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/lib/libsdc21x0__rosidl_generator_py.so" to ""
+[7.655s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/ament_index/resource_index/rust_packages/sdc21x0
+[7.655s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/rust
+[7.656s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/rust/Cargo.toml
+[7.656s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/rust/build.rs
+[7.656s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/rust/src
+[7.656s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/rust/src/srv
+[7.656s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/rust/src/srv/rmw.rs
+[7.657s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/rust/src/msg.rs
+[7.657s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/rust/src/msg
+[7.657s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/rust/src/msg/rmw.rs
+[7.657s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/rust/src/srv.rs
+[7.657s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/rust/src/lib.rs
+[7.657s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/msg/Encoders.idl
+[7.658s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/msg/MotorCurrents.idl
+[7.658s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/msg/StampedEncoders.idl
+[7.658s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/srv/Flags.idl
+[7.658s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/msg/Encoders.msg
+[7.658s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/msg/MotorCurrents.msg
+[7.658s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/msg/StampedEncoders.msg
+[7.659s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/srv/Flags.srv
+[7.659s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/srv/Flags_Request.msg
+[7.659s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/srv/Flags_Response.msg
+[7.659s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/ament_index/resource_index/package_run_dependencies/sdc21x0
+[7.659s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/ament_index/resource_index/parent_prefix_path/sdc21x0
+[7.659s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/environment/ament_prefix_path.sh
+[7.660s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/environment/ament_prefix_path.dsv
+[7.660s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/environment/path.sh
+[7.660s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/environment/path.dsv
+[7.660s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/local_setup.bash
+[7.660s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/local_setup.sh
+[7.660s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/local_setup.zsh
+[7.661s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/local_setup.dsv
+[7.661s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/package.dsv
+[7.661s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/ament_index/resource_index/packages/sdc21x0
+[7.661s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/export_sdc21x0__rosidl_generator_cExport.cmake
+[7.661s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/export_sdc21x0__rosidl_generator_cExport-noconfig.cmake
+[7.661s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/export_sdc21x0__rosidl_typesupport_fastrtps_cExport.cmake
+[7.661s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/export_sdc21x0__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[7.662s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/export_sdc21x0__rosidl_generator_cppExport.cmake
+[7.662s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/export_sdc21x0__rosidl_typesupport_fastrtps_cppExport.cmake
+[7.662s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/export_sdc21x0__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[7.662s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/sdc21x0__rosidl_typesupport_introspection_cExport.cmake
+[7.662s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/sdc21x0__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[7.662s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/sdc21x0__rosidl_typesupport_cExport.cmake
+[7.662s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/sdc21x0__rosidl_typesupport_cExport-noconfig.cmake
+[7.663s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/sdc21x0__rosidl_typesupport_introspection_cppExport.cmake
+[7.663s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/sdc21x0__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[7.663s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/sdc21x0__rosidl_typesupport_cppExport.cmake
+[7.663s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/sdc21x0__rosidl_typesupport_cppExport-noconfig.cmake
+[7.663s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/export_sdc21x0__rosidl_generator_pyExport.cmake
+[7.663s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/export_sdc21x0__rosidl_generator_pyExport-noconfig.cmake
+[7.663s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/rosidl_cmake-extras.cmake
+[7.664s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.664s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.664s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/ament_cmake_export_libraries-extras.cmake
+[7.664s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/ament_cmake_export_targets-extras.cmake
+[7.664s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[7.664s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[7.664s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/sdc21x0Config.cmake
+[7.665s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/cmake/sdc21x0Config-version.cmake
+[7.665s] -- Installing: /home/basmala/mir250_ws/src/MiR250/MIR_250/install/sdc21x0/share/sdc21x0/package.xml
+[7.669s] Invoked command in '/home/basmala/mir250_ws/src/MiR250/MIR_250/build/sdc21x0' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_restapi:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_manual_navigation:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/graph_based_navigation_system:/home/basmala/mir250_ws/src/MiR250/MIR_250/install/mir_driver:/home/basmala/mir250_ws/install/mir_restapi:/home/basmala/mir250_ws/install/mir_manual_navigation:/home/basmala/mir250_ws/install/graph_based_navigation_system:/home/basmala/mir250_ws/install/mir_driver:/opt/ros/humble /usr/bin/cmake --install /home/basmala/mir250_ws/src/MiR250/MIR_250/build/sdc21x0
