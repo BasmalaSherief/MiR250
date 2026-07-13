@@ -5,12 +5,41 @@ import runpy
 
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Candidate locations where the real script lives in this workspace
-targets = [
-    os.path.join(THIS_DIR, "src", "MIR_250", "mir_manual_navigation", "mir_manual_navigation", "isaac_diff_controller.py"),
-    os.path.join(THIS_DIR, "src", "mir_manual_navigation", "mir_manual_navigation", "isaac_diff_controller.py"),
-    os.path.join(THIS_DIR, "src", "MIR_250", "isaac_diff_controller.py"),
-]
+
+def build_candidates():
+    candidates = []
+    roots = [THIS_DIR]
+    parent = os.path.dirname(THIS_DIR)
+    if parent and parent != THIS_DIR:
+        roots.append(parent)
+
+    for root in roots:
+        candidates.extend([
+            os.path.join(root, "MIR_250", "mir_manual_navigation", "mir_manual_navigation", "isaac_diff_controller.py"),
+            os.path.join(root, "mir_manual_navigation", "mir_manual_navigation", "isaac_diff_controller.py"),
+            os.path.join(root, "MIR_250", "isaac_diff_controller.py"),
+            os.path.join(root, "isaac_diff_controller.py"),
+        ])
+
+    # Also cover the older src/ layout if the repository is mounted there.
+    for root in roots:
+        candidates.extend([
+            os.path.join(root, "src", "MIR_250", "mir_manual_navigation", "mir_manual_navigation", "isaac_diff_controller.py"),
+            os.path.join(root, "src", "mir_manual_navigation", "mir_manual_navigation", "isaac_diff_controller.py"),
+            os.path.join(root, "src", "MIR_250", "isaac_diff_controller.py"),
+        ])
+
+    # Deduplicate while preserving order.
+    seen = set()
+    unique = []
+    for candidate in candidates:
+        if candidate not in seen:
+            seen.add(candidate)
+            unique.append(candidate)
+    return unique
+
+
+targets = build_candidates()
 
 for t in targets:
     if os.path.exists(t):

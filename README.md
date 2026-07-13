@@ -1,9 +1,8 @@
 #!/usr/bin/env markdown
 # MIR250 Development Environment & Isaac Sim Controller
 
-This repository contains the hybrid development environment for the MiR250 mobile manipulator (NVIDIA Isaac Sim host + ROS 2 Humble in Docker). The project includes `isaac_diff_controller.py` which dynamically patches USD physics issues at runtime and a convenience script `run_mir250.sh` to launch the simulation.
+This repository contains the hybrid development environment for the MiR250 mobile manipulator (NVIDIA Isaac Sim host + ROS 2 Humble). The project includes `isaac_diff_controller.py` which dynamically patches USD physics issues at runtime and a convenience script `run_mir250.sh` to launch the simulation.
 
-**Location:** [src/README.md](src/README.md)
 
 ## Quick Makefile-style Guide
 
@@ -14,7 +13,7 @@ make help           # Show available targets and descriptions
 make headless-check # Run environment self-test (takes ~2 minutes)
 make demo           # Launch GUI simulation (autonomous drive)
 make start          # Launch interactive simulation (awaits teleop)
-make teleop         # Launch teleop_twist_keyboard (inside Docker/ROS 2)
+make teleop         # Launch teleop_twist_keyboard (ROS 2)
 ```
 
 ## Prerequisites (Host: Ubuntu 24.04)
@@ -52,7 +51,7 @@ If the script cannot auto-detect your USD, specify it:
 make start UDP_PATH=/path/to/robot_ros_bridge.usd
 ```
 
-## Teleoperation (Docker / ROS 2)
+## Teleoperation (ROS 2)
 
 Open a second terminal and run:
 
@@ -61,7 +60,12 @@ source /opt/ros/humble/setup.bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
 
-Controls: `i` (forward), `,` (back), `j`/`l` (turn), `k` (stop). The simulation publishes odometry on `/odom` and USD Action Graphs publish joint states and camera feeds.
+Controls:
+- Base movement: `i` (forward), `,` (backward), `j`/`l` (turn left/right), `k` (stop)
+- Diagonal motion: `u`/`o` (forward-left/forward-right), `m`/`.` (backward-left/backward-right)
+- Holonomic/strafe mode: hold `Shift` and use `U`/`I`/`O` (strafe left/forward/strafe right), `J`/`K`/`L` (turn left/stop/turn right), and `M`/`<`/`>` (backward-left/backward/backward-right)
+
+The simulation publishes odometry on `/odom` and USD Action Graphs publish joint states and camera feeds.
 
 ## Kinematics (Differential Drive)
 

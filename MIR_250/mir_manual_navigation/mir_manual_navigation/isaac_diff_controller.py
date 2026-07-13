@@ -115,7 +115,11 @@ def find_usd_path():
             return env
         log(f"WARNING: MIR250_USD={env} does not exist, falling back to search")
 
-    search_dirs = ["/home/basmala/mir250_ws/src/usd/robots"]
+    search_dirs = [
+        "/home/basmala/mir250_ws/usd/robots",
+        "/home/basmala/mir250_ws/MIR_250/usd/robots",
+        "/home/basmala/mir250_ws/src/usd/robots",
+    ]
     d = _THIS_DIR                       # walk up from the script location
     for _ in range(7):
         search_dirs.append(os.path.join(d, "usd", "robots"))

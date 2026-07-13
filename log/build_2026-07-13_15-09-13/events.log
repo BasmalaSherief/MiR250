@@ -1,0 +1,324 @@
+[0.000000] (-) TimerEvent: {}
+[0.000436] (-) JobUnselected: {'identifier': 'graph_based_navigation_system'}
+[0.000479] (-) JobUnselected: {'identifier': 'mir_actions'}
+[0.000499] (-) JobUnselected: {'identifier': 'mir_description'}
+[0.000515] (-) JobUnselected: {'identifier': 'mir_driver'}
+[0.000533] (-) JobUnselected: {'identifier': 'mir_manual_navigation'}
+[0.000551] (-) JobUnselected: {'identifier': 'mir_msgs'}
+[0.000569] (-) JobUnselected: {'identifier': 'mir_navigation'}
+[0.000585] (-) JobUnselected: {'identifier': 'mir_restapi'}
+[0.000600] (-) JobUnselected: {'identifier': 'sdc21x0'}
+[0.000616] (-) JobUnselected: {'identifier': 'teleop_twist_keyboard'}
+[0.000667] (sensors_launcher_mir_250) JobQueued: {'identifier': 'sensors_launcher_mir_250', 'dependencies': OrderedDict()}
+[0.000710] (sensors_launcher_mir_250) JobStarted: {'identifier': 'sensors_launcher_mir_250'}
+[0.008655] (sensors_launcher_mir_250) JobProgress: {'identifier': 'sensors_launcher_mir_250', 'progress': 'cmake'}
+[0.009061] (sensors_launcher_mir_250) Command: {'cmd': ['/usr/bin/cmake', '/home/basmala/mir250_ws/MIR_250/sensors_launcher_mir_250', '-DCMAKE_INSTALL_PREFIX=/home/basmala/mir250_ws/install/sensors_launcher_mir_250'], 'cwd': '/home/basmala/mir250_ws/build/sensors_launcher_mir_250', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('AI_AGENT', 'github_copilot_vscode_agent'), ('USER', 'basmala'), ('LC_TIME', 'it_IT.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIT_EDITOR', ':'), ('GIO_MODULE_DIR', '/home/basmala/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/247/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib:/home/basmala/mir250_ws/install/sdc21x0/lib:/home/basmala/mir250_ws/install/mir_msgs/lib:/home/basmala/mir250_ws/install/mir_actions/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('COPILOT_AGENT', '1'), ('HOME', '/home/basmala'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/basmala/mir250_ws/MIR_250/sensors_launcher_mir_250'), ('TERM_PROGRAM_VERSION', '1.124.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/247/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/basmala/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/247/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'it_IT.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/247/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2102'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=7d6d182a75af9750207578ae6a54d8fe'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/basmala/mir250_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'basmala'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'basmala'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('WINDOWPATH', '2'), ('PATH', '/home/basmala/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/basmala/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/basmala-Victus-by-HP-Laptop-16-d1xxx:@/tmp/.ICE-unix/2102,unix/basmala-Victus-by-HP-Laptop-16-d1xxx:/tmp/.ICE-unix/2102'), ('GTK_EXE_PREFIX', '/snap/code/247/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/28bc77e9_d629_40fe_bc05_89dad8c874d8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/247/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/basmala/snap/code/247/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2d59cfdb21.sock'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/basmala/snap/code/247/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/basmala/mir250_ws/install/mir_manual_navigation:/home/basmala/mir250_ws/install/teleop_twist_keyboard:/home/basmala/mir250_ws/install/sensors_launcher_mir_250:/home/basmala/mir250_ws/install/sdc21x0:/home/basmala/mir250_ws/install/mir_restapi:/home/basmala/mir250_ws/install/mir_navigation:/home/basmala/mir250_ws/install/graph_based_navigation_system:/home/basmala/mir250_ws/install/mir_driver:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:/home/basmala/mir250_ws/install/mir_actions:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/basmala/mir250_ws/build/sensors_launcher_mir_250'), ('GIT_MERGE_AUTOEDIT', 'no'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('COPILOT_DEBUG_NONCE', '0f45860d4350cb621615f53231dbe193'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=7d6d182a75af9750207578ae6a54d8fe'), ('XDG_DATA_DIRS', '/home/basmala/snap/code/247/.local/share:/home/basmala/snap/code/247:/snap/code/247/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/teleop_twist_keyboard/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/sdc21x0/local/lib/python3.10/dist-packages:/home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_driver/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_msgs/local/lib/python3.10/dist-packages:/home/basmala/mir250_ws/install/mir_actions/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/basmala/mir250_ws/install/sensors_launcher_mir_250:/home/basmala/mir250_ws/install/sdc21x0:/home/basmala/mir250_ws/install/mir_navigation:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:/home/basmala/mir250_ws/install/mir_actions:/home/basmala/mir250_ws/install/mir_manual_navigation:/home/basmala/mir250_ws/install/teleop_twist_keyboard:/home/basmala/mir250_ws/install/mir_restapi:/home/basmala/mir250_ws/install/graph_based_navigation_system:/home/basmala/mir250_ws/install/mir_driver:/opt/ros/humble')]), 'shell': False}
+[0.099892] (-) TimerEvent: {}
+[0.125708] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.200023] (-) TimerEvent: {}
+[0.218116] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.228765] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.289492] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.296952] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.298167] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.299057] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.300085] (-) TimerEvent: {}
+[0.302674] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.375604] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.382598] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.382735] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.382959] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.387582] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400182] (-) TimerEvent: {}
+[0.500630] (-) TimerEvent: {}
+[0.506176] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.578238] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.600810] (-) TimerEvent: {}
+[0.663643] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.667673] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.675532] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.686196] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.699855] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.700918] (-) TimerEvent: {}
+[0.739936] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.742250] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.801022] (-) TimerEvent: {}
+[0.814049] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.832717] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.860671] (sensors_launcher_mir_250) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.870113] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.901126] (-) TimerEvent: {}
+[0.936734] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.937021] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.994193] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.995014] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.001355] (-) TimerEvent: {}
+[1.101762] (-) TimerEvent: {}
+[1.127162] (sensors_launcher_mir_250) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.137522] (sensors_launcher_mir_250) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.164543] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.164722] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.196125] (sensors_launcher_mir_250) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.201864] (-) TimerEvent: {}
+[1.208402] (sensors_launcher_mir_250) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.239195] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.239487] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.301960] (-) TimerEvent: {}
+[1.402223] (-) TimerEvent: {}
+[1.502478] (-) TimerEvent: {}
+[1.602739] (-) TimerEvent: {}
+[1.703054] (-) TimerEvent: {}
+[1.803335] (-) TimerEvent: {}
+[1.903642] (-) TimerEvent: {}
+[2.003892] (-) TimerEvent: {}
+[2.067923] (sensors_launcher_mir_250) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.078708] (sensors_launcher_mir_250) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[2.103987] (-) TimerEvent: {}
+[2.107230] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[2.109124] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.156273] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.204229] (-) TimerEvent: {}
+[2.276828] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.282258] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.287542] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.304332] (-) TimerEvent: {}
+[2.401282] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[2.404395] (-) TimerEvent: {}
+[2.504697] (-) TimerEvent: {}
+[2.511176] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.604806] (-) TimerEvent: {}
+[2.626550] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[2.627397] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[2.628237] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[2.629030] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[2.630095] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[2.630884] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[2.631188] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[2.631541] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[2.632432] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[2.633411] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[2.634234] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[2.635112] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[2.635922] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[2.637121] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[2.637799] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[2.638542] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[2.638976] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[2.639592] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[2.640243] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[2.640792] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[2.641353] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[2.641538] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[2.642025] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[2.642656] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[2.643348] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[2.705039] (-) TimerEvent: {}
+[2.720693] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found PCL: /usr/include/pcl-1.12\n'}
+[2.753252] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.802154] (sensors_launcher_mir_250) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.803228] (sensors_launcher_mir_250) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.803555] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/basmala/mir250_ws/MIR_250/sensors_launcher_mir_250/include;$<BUILD_INTERFACE:/home/basmala/mir250_ws/MIR_250/sensors_launcher_mir_250/include>\n'}
+[2.803642] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.804426] (sensors_launcher_mir_250) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.804523] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.804823] (sensors_launcher_mir_250) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.805089] (-) TimerEvent: {}
+[2.805439] (sensors_launcher_mir_250) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.805762] (sensors_launcher_mir_250) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.806531] (sensors_launcher_mir_250) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.806671] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.806895] (sensors_launcher_mir_250) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.808354] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.868399] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Generating done\n'}
+[2.878339] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Build files have been written to: /home/basmala/mir250_ws/build/sensors_launcher_mir_250\n'}
+[2.890617] (sensors_launcher_mir_250) CommandEnded: {'returncode': 0}
+[2.891242] (sensors_launcher_mir_250) JobProgress: {'identifier': 'sensors_launcher_mir_250', 'progress': 'build'}
+[2.891885] (sensors_launcher_mir_250) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/basmala/mir250_ws/build/sensors_launcher_mir_250', '--', '-j20', '-l20'], 'cwd': '/home/basmala/mir250_ws/build/sensors_launcher_mir_250', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('AI_AGENT', 'github_copilot_vscode_agent'), ('USER', 'basmala'), ('LC_TIME', 'it_IT.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIT_EDITOR', ':'), ('GIO_MODULE_DIR', '/home/basmala/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/247/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib:/home/basmala/mir250_ws/install/sdc21x0/lib:/home/basmala/mir250_ws/install/mir_msgs/lib:/home/basmala/mir250_ws/install/mir_actions/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('COPILOT_AGENT', '1'), ('HOME', '/home/basmala'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/basmala/mir250_ws/MIR_250/sensors_launcher_mir_250'), ('TERM_PROGRAM_VERSION', '1.124.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/247/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/basmala/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/247/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'it_IT.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/247/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2102'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=7d6d182a75af9750207578ae6a54d8fe'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/basmala/mir250_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'basmala'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'basmala'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('WINDOWPATH', '2'), ('PATH', '/home/basmala/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/basmala/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/basmala-Victus-by-HP-Laptop-16-d1xxx:@/tmp/.ICE-unix/2102,unix/basmala-Victus-by-HP-Laptop-16-d1xxx:/tmp/.ICE-unix/2102'), ('GTK_EXE_PREFIX', '/snap/code/247/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/28bc77e9_d629_40fe_bc05_89dad8c874d8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/247/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/basmala/snap/code/247/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2d59cfdb21.sock'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/basmala/snap/code/247/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/basmala/mir250_ws/install/mir_manual_navigation:/home/basmala/mir250_ws/install/teleop_twist_keyboard:/home/basmala/mir250_ws/install/sensors_launcher_mir_250:/home/basmala/mir250_ws/install/sdc21x0:/home/basmala/mir250_ws/install/mir_restapi:/home/basmala/mir250_ws/install/mir_navigation:/home/basmala/mir250_ws/install/graph_based_navigation_system:/home/basmala/mir250_ws/install/mir_driver:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:/home/basmala/mir250_ws/install/mir_actions:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/basmala/mir250_ws/build/sensors_launcher_mir_250'), ('GIT_MERGE_AUTOEDIT', 'no'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('COPILOT_DEBUG_NONCE', '0f45860d4350cb621615f53231dbe193'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=7d6d182a75af9750207578ae6a54d8fe'), ('XDG_DATA_DIRS', '/home/basmala/snap/code/247/.local/share:/home/basmala/snap/code/247:/snap/code/247/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/teleop_twist_keyboard/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/sdc21x0/local/lib/python3.10/dist-packages:/home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_driver/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_msgs/local/lib/python3.10/dist-packages:/home/basmala/mir250_ws/install/mir_actions/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/basmala/mir250_ws/install/sensors_launcher_mir_250:/home/basmala/mir250_ws/install/sdc21x0:/home/basmala/mir250_ws/install/mir_navigation:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:/home/basmala/mir250_ws/install/mir_actions:/home/basmala/mir250_ws/install/mir_manual_navigation:/home/basmala/mir250_ws/install/teleop_twist_keyboard:/home/basmala/mir250_ws/install/mir_restapi:/home/basmala/mir250_ws/install/graph_based_navigation_system:/home/basmala/mir250_ws/install/mir_driver:/opt/ros/humble')]), 'shell': False}
+[2.905333] (-) TimerEvent: {}
+[2.936638] (sensors_launcher_mir_250) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/sensors_launcher_mir_250.dir/src/dual_laser_merger.cpp.o\x1b[0m\n'}
+[2.936794] (sensors_launcher_mir_250) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/dual_laser_merger_node.dir/rclcpp_components/node_main_dual_laser_merger_node.cpp.o\x1b[0m\n'}
+[2.938478] (sensors_launcher_mir_250) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/camera_right_changer_node.dir/src/camera_right_changer.cpp.o\x1b[0m\n'}
+[2.938582] (sensors_launcher_mir_250) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/camera_left_changer_node.dir/src/camera_left_changer.cpp.o\x1b[0m\n'}
+[3.005638] (-) TimerEvent: {}
+[3.105954] (-) TimerEvent: {}
+[3.206259] (-) TimerEvent: {}
+[3.306621] (-) TimerEvent: {}
+[3.406877] (-) TimerEvent: {}
+[3.507213] (-) TimerEvent: {}
+[3.607470] (-) TimerEvent: {}
+[3.707756] (-) TimerEvent: {}
+[3.808102] (-) TimerEvent: {}
+[3.908396] (-) TimerEvent: {}
+[4.008769] (-) TimerEvent: {}
+[4.109108] (-) TimerEvent: {}
+[4.209478] (-) TimerEvent: {}
+[4.309883] (-) TimerEvent: {}
+[4.410153] (-) TimerEvent: {}
+[4.510438] (-) TimerEvent: {}
+[4.610711] (-) TimerEvent: {}
+[4.711008] (-) TimerEvent: {}
+[4.811310] (-) TimerEvent: {}
+[4.911640] (-) TimerEvent: {}
+[5.011973] (-) TimerEvent: {}
+[5.112318] (-) TimerEvent: {}
+[5.212573] (-) TimerEvent: {}
+[5.229238] (sensors_launcher_mir_250) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX executable dual_laser_merger_node\x1b[0m\n'}
+[5.312736] (-) TimerEvent: {}
+[5.356681] (sensors_launcher_mir_250) StdoutLine: {'line': b'[ 62%] Built target dual_laser_merger_node\n'}
+[5.412836] (-) TimerEvent: {}
+[5.513113] (-) TimerEvent: {}
+[5.613465] (-) TimerEvent: {}
+[5.713818] (-) TimerEvent: {}
+[5.814279] (-) TimerEvent: {}
+[5.914701] (-) TimerEvent: {}
+[6.015050] (-) TimerEvent: {}
+[6.115497] (-) TimerEvent: {}
+[6.215791] (-) TimerEvent: {}
+[6.316107] (-) TimerEvent: {}
+[6.416474] (-) TimerEvent: {}
+[6.516827] (-) TimerEvent: {}
+[6.617257] (-) TimerEvent: {}
+[6.717515] (-) TimerEvent: {}
+[6.817835] (-) TimerEvent: {}
+[6.918253] (-) TimerEvent: {}
+[7.018520] (-) TimerEvent: {}
+[7.118865] (-) TimerEvent: {}
+[7.219270] (-) TimerEvent: {}
+[7.319705] (-) TimerEvent: {}
+[7.420022] (-) TimerEvent: {}
+[7.520422] (-) TimerEvent: {}
+[7.620839] (-) TimerEvent: {}
+[7.721180] (-) TimerEvent: {}
+[7.821472] (-) TimerEvent: {}
+[7.921853] (-) TimerEvent: {}
+[8.022237] (-) TimerEvent: {}
+[8.122569] (-) TimerEvent: {}
+[8.222998] (-) TimerEvent: {}
+[8.323253] (-) TimerEvent: {}
+[8.423520] (-) TimerEvent: {}
+[8.523772] (-) TimerEvent: {}
+[8.624096] (-) TimerEvent: {}
+[8.724589] (-) TimerEvent: {}
+[8.825036] (-) TimerEvent: {}
+[8.925454] (-) TimerEvent: {}
+[9.025747] (-) TimerEvent: {}
+[9.126193] (-) TimerEvent: {}
+[9.226480] (-) TimerEvent: {}
+[9.326789] (-) TimerEvent: {}
+[9.427035] (-) TimerEvent: {}
+[9.527282] (-) TimerEvent: {}
+[9.627692] (-) TimerEvent: {}
+[9.727949] (-) TimerEvent: {}
+[9.828348] (-) TimerEvent: {}
+[9.928828] (-) TimerEvent: {}
+[10.029538] (-) TimerEvent: {}
+[10.075508] (sensors_launcher_mir_250) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable camera_left_changer_node\x1b[0m\n'}
+[10.115411] (sensors_launcher_mir_250) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable camera_right_changer_node\x1b[0m\n'}
+[10.129671] (-) TimerEvent: {}
+[10.229982] (-) TimerEvent: {}
+[10.330246] (-) TimerEvent: {}
+[10.430534] (-) TimerEvent: {}
+[10.442508] (sensors_launcher_mir_250) StdoutLine: {'line': b'[ 87%] Built target camera_left_changer_node\n'}
+[10.447717] (sensors_launcher_mir_250) StdoutLine: {'line': b'[ 87%] Built target camera_right_changer_node\n'}
+[10.530632] (-) TimerEvent: {}
+[10.630927] (-) TimerEvent: {}
+[10.731272] (-) TimerEvent: {}
+[10.831688] (-) TimerEvent: {}
+[10.931974] (-) TimerEvent: {}
+[11.032230] (-) TimerEvent: {}
+[11.132479] (-) TimerEvent: {}
+[11.232718] (-) TimerEvent: {}
+[11.333102] (-) TimerEvent: {}
+[11.433392] (-) TimerEvent: {}
+[11.533641] (-) TimerEvent: {}
+[11.633926] (-) TimerEvent: {}
+[11.734337] (-) TimerEvent: {}
+[11.834665] (-) TimerEvent: {}
+[11.934917] (-) TimerEvent: {}
+[12.035225] (-) TimerEvent: {}
+[12.135509] (-) TimerEvent: {}
+[12.235782] (-) TimerEvent: {}
+[12.336119] (-) TimerEvent: {}
+[12.436403] (-) TimerEvent: {}
+[12.536707] (-) TimerEvent: {}
+[12.636978] (-) TimerEvent: {}
+[12.737334] (-) TimerEvent: {}
+[12.837629] (-) TimerEvent: {}
+[12.937890] (-) TimerEvent: {}
+[13.038139] (-) TimerEvent: {}
+[13.138417] (-) TimerEvent: {}
+[13.238758] (-) TimerEvent: {}
+[13.339006] (-) TimerEvent: {}
+[13.439304] (-) TimerEvent: {}
+[13.539548] (-) TimerEvent: {}
+[13.639847] (-) TimerEvent: {}
+[13.740228] (-) TimerEvent: {}
+[13.840580] (-) TimerEvent: {}
+[13.940890] (-) TimerEvent: {}
+[14.041147] (-) TimerEvent: {}
+[14.141432] (-) TimerEvent: {}
+[14.241676] (-) TimerEvent: {}
+[14.341995] (-) TimerEvent: {}
+[14.442258] (-) TimerEvent: {}
+[14.542582] (-) TimerEvent: {}
+[14.642846] (-) TimerEvent: {}
+[14.743269] (-) TimerEvent: {}
+[14.843520] (-) TimerEvent: {}
+[14.943828] (-) TimerEvent: {}
+[15.044227] (-) TimerEvent: {}
+[15.071923] (sensors_launcher_mir_250) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libsensors_launcher_mir_250.so\x1b[0m\n'}
+[15.144414] (-) TimerEvent: {}
+[15.244779] (-) TimerEvent: {}
+[15.345032] (-) TimerEvent: {}
+[15.445416] (-) TimerEvent: {}
+[15.545708] (-) TimerEvent: {}
+[15.645985] (-) TimerEvent: {}
+[15.746351] (-) TimerEvent: {}
+[15.846627] (-) TimerEvent: {}
+[15.946916] (-) TimerEvent: {}
+[16.047265] (-) TimerEvent: {}
+[16.086355] (sensors_launcher_mir_250) StdoutLine: {'line': b'[100%] Built target sensors_launcher_mir_250\n'}
+[16.094393] (sensors_launcher_mir_250) CommandEnded: {'returncode': 0}
+[16.094917] (sensors_launcher_mir_250) JobProgress: {'identifier': 'sensors_launcher_mir_250', 'progress': 'install'}
+[16.103384] (sensors_launcher_mir_250) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/basmala/mir250_ws/build/sensors_launcher_mir_250'], 'cwd': '/home/basmala/mir250_ws/build/sensors_launcher_mir_250', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('AI_AGENT', 'github_copilot_vscode_agent'), ('USER', 'basmala'), ('LC_TIME', 'it_IT.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIT_EDITOR', ':'), ('GIO_MODULE_DIR', '/home/basmala/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/247/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib:/home/basmala/mir250_ws/install/sdc21x0/lib:/home/basmala/mir250_ws/install/mir_msgs/lib:/home/basmala/mir250_ws/install/mir_actions/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('COPILOT_AGENT', '1'), ('HOME', '/home/basmala'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/basmala/mir250_ws/MIR_250/sensors_launcher_mir_250'), ('TERM_PROGRAM_VERSION', '1.124.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/247/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/basmala/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/247/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'it_IT.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/247/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2102'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=7d6d182a75af9750207578ae6a54d8fe'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/basmala/mir250_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'basmala'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'basmala'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('WINDOWPATH', '2'), ('PATH', '/home/basmala/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/basmala/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/basmala-Victus-by-HP-Laptop-16-d1xxx:@/tmp/.ICE-unix/2102,unix/basmala-Victus-by-HP-Laptop-16-d1xxx:/tmp/.ICE-unix/2102'), ('GTK_EXE_PREFIX', '/snap/code/247/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/28bc77e9_d629_40fe_bc05_89dad8c874d8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/247/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/basmala/snap/code/247/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2d59cfdb21.sock'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/basmala/snap/code/247/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/basmala/mir250_ws/install/mir_manual_navigation:/home/basmala/mir250_ws/install/teleop_twist_keyboard:/home/basmala/mir250_ws/install/sensors_launcher_mir_250:/home/basmala/mir250_ws/install/sdc21x0:/home/basmala/mir250_ws/install/mir_restapi:/home/basmala/mir250_ws/install/mir_navigation:/home/basmala/mir250_ws/install/graph_based_navigation_system:/home/basmala/mir250_ws/install/mir_driver:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:/home/basmala/mir250_ws/install/mir_actions:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/basmala/mir250_ws/build/sensors_launcher_mir_250'), ('GIT_MERGE_AUTOEDIT', 'no'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('COPILOT_DEBUG_NONCE', '0f45860d4350cb621615f53231dbe193'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=7d6d182a75af9750207578ae6a54d8fe'), ('XDG_DATA_DIRS', '/home/basmala/snap/code/247/.local/share:/home/basmala/snap/code/247:/snap/code/247/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/basmala/mir250_ws/install/mir_manual_navigation/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/teleop_twist_keyboard/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/sdc21x0/local/lib/python3.10/dist-packages:/home/basmala/mir250_ws/install/mir_restapi/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/graph_based_navigation_system/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_driver/lib/python3.10/site-packages:/home/basmala/mir250_ws/install/mir_msgs/local/lib/python3.10/dist-packages:/home/basmala/mir250_ws/install/mir_actions/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/basmala/mir250_ws/install/sensors_launcher_mir_250:/home/basmala/mir250_ws/install/sdc21x0:/home/basmala/mir250_ws/install/mir_navigation:/home/basmala/mir250_ws/install/mir_msgs:/home/basmala/mir250_ws/install/mir_description:/home/basmala/mir250_ws/install/mir_actions:/home/basmala/mir250_ws/install/mir_manual_navigation:/home/basmala/mir250_ws/install/teleop_twist_keyboard:/home/basmala/mir250_ws/install/mir_restapi:/home/basmala/mir250_ws/install/graph_based_navigation_system:/home/basmala/mir250_ws/install/mir_driver:/opt/ros/humble')]), 'shell': False}
+[16.109393] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.109515] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/sensors_launcher_mir_250/dual_laser_merger_node\n'}
+[16.109847] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Set runtime path of "/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/sensors_launcher_mir_250/dual_laser_merger_node" to ""\n'}
+[16.109945] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/libsensors_launcher_mir_250.so\n'}
+[16.115147] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Set runtime path of "/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/libsensors_launcher_mir_250.so" to ""\n'}
+[16.115336] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/sensors_launcher_mir_250/camera_left_changer_node\n'}
+[16.117042] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Set runtime path of "/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/sensors_launcher_mir_250/camera_left_changer_node" to ""\n'}
+[16.117195] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/sensors_launcher_mir_250/camera_right_changer_node\n'}
+[16.119105] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Set runtime path of "/home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/sensors_launcher_mir_250/camera_right_changer_node" to ""\n'}
+[16.119193] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/include/sensors_launcher_mir_250\n'}
+[16.119255] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/include/sensors_launcher_mir_250/dual_laser_merger.hpp\n'}
+[16.119377] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250//launch\n'}
+[16.119435] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250//launch/sensors_launcher.launch.py\n'}
+[16.119527] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/environment/library_path.sh\n'}
+[16.119595] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/environment/library_path.dsv\n'}
+[16.119648] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Up-to-date: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/include/sensors_launcher_mir_250\n'}
+[16.119706] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/include/sensors_launcher_mir_250/sensors_launcher_mir_250\n'}
+[16.119788] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/include/sensors_launcher_mir_250/sensors_launcher_mir_250/dual_laser_merger.hpp\n'}
+[16.119852] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Up-to-date: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/lib/libsensors_launcher_mir_250.so\n'}
+[16.119908] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/ament_index/resource_index/package_run_dependencies/sensors_launcher_mir_250\n'}
+[16.119964] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/ament_index/resource_index/parent_prefix_path/sensors_launcher_mir_250\n'}
+[16.120019] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/environment/ament_prefix_path.sh\n'}
+[16.120089] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/environment/ament_prefix_path.dsv\n'}
+[16.120175] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/environment/path.sh\n'}
+[16.120238] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/environment/path.dsv\n'}
+[16.120316] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/local_setup.bash\n'}
+[16.120375] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/local_setup.sh\n'}
+[16.120434] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/local_setup.zsh\n'}
+[16.120492] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/local_setup.dsv\n'}
+[16.120550] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/package.dsv\n'}
+[16.120624] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/ament_index/resource_index/packages/sensors_launcher_mir_250\n'}
+[16.120723] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/ament_index/resource_index/rclcpp_components/sensors_launcher_mir_250\n'}
+[16.120785] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.120845] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.120904] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[16.120964] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/cmake/sensors_launcher_mir_250Config.cmake\n'}
+[16.121024] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/cmake/sensors_launcher_mir_250Config-version.cmake\n'}
+[16.121104] (sensors_launcher_mir_250) StdoutLine: {'line': b'-- Installing: /home/basmala/mir250_ws/install/sensors_launcher_mir_250/share/sensors_launcher_mir_250/package.xml\n'}
+[16.122099] (sensors_launcher_mir_250) CommandEnded: {'returncode': 0}
+[16.140020] (sensors_launcher_mir_250) JobEnded: {'identifier': 'sensors_launcher_mir_250', 'rc': 0}
+[16.140619] (-) EventReactorShutdown: {}

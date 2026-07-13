@@ -102,8 +102,8 @@ install(TARGETS
   RUNTIME DESTINATION lib/${PROJECT_NAME}
 )
 
-# Install headers
-install(DIRECTORY include/
+# Install headers in a package-scoped include directory
+install(DIRECTORY include/${PROJECT_NAME}/
   DESTINATION include/${PROJECT_NAME}
 )
 

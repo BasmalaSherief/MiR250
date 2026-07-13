@@ -4,7 +4,7 @@
 # MIR250 Development Environment & Isaac Sim Controller
 # =============================================================================
 # This Makefile organizes the MIR250 mobile manipulator development workflow
-# consisting of NVIDIA Isaac Sim 5.1.0 (Host) and ROS 2 Humble (Docker).
+# consisting of NVIDIA Isaac Sim 5.1.0 (Host) and ROS 2 Humble.
 # =============================================================================
 
 SHELL := /bin/bash
@@ -118,7 +118,7 @@ teleop:
 	@echo "The script publishes to /odom"
 	@echo "Joint states and RealSense camera feeds published by USD Action Graphs"
 	@echo ""
-	@bash -c 'source /opt/ros/humble/setup.bash && ros2 run teleop_twist_keyboard teleop_twist_keyboard'
+	@bash -c 'source /opt/ros/humble/setup.bash && source $(SCRIPT_DIR)/MIR_250/install/setup.bash && ros2 run teleop_twist_keyboard teleop_twist_keyboard'
 
 # =============================================================================
 # KINEMATICS & MATHEMATICAL MODEL
