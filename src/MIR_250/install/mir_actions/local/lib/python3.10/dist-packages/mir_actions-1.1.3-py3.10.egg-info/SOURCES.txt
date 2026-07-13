@@ -1,6 +1,0 @@
-setup.py
-mir_actions/__init__.py
-mir_actions.egg-info/PKG-INFO
-mir_actions.egg-info/SOURCES.txt
-mir_actions.egg-info/dependency_links.txt
-mir_actions.egg-info/top_level.txt
