@@ -186,7 +186,7 @@ To validate the digital twin's calibration, compare the physical `/odom` feedbac
 - Validation: Export the recorded `/odom` data to CSV for analysis. Calculate the trajectory error with:
 
   $$
-  \text{Drift} = \sqrt{(x_{\text{real}} - x_{\text{sim}})^2 + (y_{\text{real}} - y_{\text{sim}})^2}
+  \text{Drift} = \sqrt{\left(x_{\text{real}} - x_{\text{sim}}\right)^2 + \left(y_{\text{real}} - y_{\text{sim}}\right)^2}
   $$
 
 - Visualization: Use Matplotlib to overlay the physical trajectory plot with the simulation baseline and quantify the accuracy of the wheel calibration.
