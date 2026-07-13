@@ -1,0 +1,8 @@
+# Build and runtime artifacts
+build/
+install/
+log/
+
+# Python cache
+__pycache__/
+*.py[cod]
