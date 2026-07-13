@@ -1,57 +1,63 @@
-#!/usr/bin/env markdown
 # MIR250 Development Environment & Isaac Sim Controller
 
-This repository contains the hybrid development environment for the MiR250 mobile manipulator (NVIDIA Isaac Sim host + ROS 2 Humble). The project includes `isaac_diff_controller.py` which dynamically patches USD physics issues at runtime and a convenience script `run_mir250.sh` to launch the simulation.
+This repository contains the hybrid development environment for the MiR250 mobile manipulator, combining NVIDIA Isaac Sim on the host with ROS 2 Humble inside Docker. It includes a verified Python controller for differential drive kinematics and runtime USD physics fixes, plus a helper script for launching the simulation.
 
+## Quick Start
 
-## Quick Makefile-style Guide
-
-Use the project's top-level `Makefile` to run common workflows. Example commands:
-
-```bash
-make help           # Show available targets and descriptions
-make headless-check # Run environment self-test (takes ~2 minutes)
-make demo           # Launch GUI simulation (autonomous drive)
-make start          # Launch interactive simulation (awaits teleop)
-make teleop         # Launch teleop_twist_keyboard (ROS 2)
-```
-
-## Prerequisites (Host: Ubuntu 24.04)
-
-- GPU: NVIDIA RTX 3050 (4GB VRAM)
-- NVIDIA Driver: v580.126.09+
-- CUDA: 13.0
-- NVIDIA Container Toolkit (required for GPU passthrough to Docker)
-
-If you're missing `run_mir250.sh`, ensure it exists in the repository root. The Makefile checks for this script before running simulation targets.
-
-## How to Launch
-
-1. Run the headless self-test (first run will download assets):
+Use the top-level Makefile for the common workflow:
 
 ```bash
+make help
 make headless-check
-```
-
-2. To open the GUI and run the demo autonomous drive:
-
-```bash
 make demo
-```
-
-3. For a normal interactive run (waits for teleop input):
-
-```bash
 make start
+make teleop
 ```
 
-If the script cannot auto-detect your USD, specify it:
+## Prerequisites
 
-```bash
-make start UDP_PATH=/path/to/robot_ros_bridge.usd
-```
+### Host system (Ubuntu 24.04)
 
-## Teleoperation (ROS 2)
+- GPU: NVIDIA RTX 3050 (4 GB VRAM)
+- NVIDIA driver: v580.126.09+
+- CUDA: 13.0
+- NVIDIA Container Toolkit for Docker GPU passthrough
+
+### Software
+
+- Docker Engine
+- ROS 2 Humble inside the container
+- The script `run_mir250.sh` in the repository root
+
+## Launching the Simulation
+
+1. Run the headless self-test first:
+
+   ```bash
+   make headless-check
+   ```
+
+   This may take a couple of minutes and requires internet on the first run to download assets.
+
+2. Launch the GUI demo:
+
+   ```bash
+   make demo
+   ```
+
+3. Launch the interactive simulation:
+
+   ```bash
+   make start
+   ```
+
+   If the USD file is not detected automatically, use:
+
+   ```bash
+   make start UDP_PATH=/path/to/robot_ros_bridge.usd
+   ```
+
+## Teleoperation
 
 Open a second terminal and run:
 
@@ -61,15 +67,19 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
 
 Controls:
-- Base movement: `i` (forward), `,` (backward), `j`/`l` (turn left/right), `k` (stop)
-- Diagonal motion: `u`/`o` (forward-left/forward-right), `m`/`.` (backward-left/backward-right)
-- Holonomic/strafe mode: hold `Shift` and use `U`/`I`/`O` (strafe left/forward/strafe right), `J`/`K`/`L` (turn left/stop/turn right), and `M`/`<`/`>` (backward-left/backward/backward-right)
 
-The simulation publishes odometry on `/odom` and USD Action Graphs publish joint states and camera feeds.
+- `i` — forward
+- `,` — backward
+- `j` / `l` — turn left / right
+- `k` — stop
 
-## Kinematics (Differential Drive)
+The simulation publishes odometry on `/odom`, while the USD Action Graphs publish joint states and camera feeds.
 
-Inverse kinematics (wheel speeds from linear $V$ and angular $\omega$):
+## Kinematics
+
+### Inverse kinematics
+
+For a target linear velocity $V$ and angular velocity $\omega$, the required wheel speeds are:
 
 $$
 \omega_R = \frac{1}{2r}(2V + \omega L)
@@ -79,106 +89,117 @@ $$
 \omega_L = \frac{1}{2r}(2V - \omega L)
 $$
 
-Where $r$ is wheel radius and $L$ is the track width.
+Where $r$ is the wheel radius and $L$ is the track width.
 
-Forward kinematics (odometry matrix form):
+### Forward kinematics
+
+The robot state in the world frame is computed as:
 
 $$
-\begin{bmatrix}\dot{x} & \dot{y} & \dot{\theta}\end{bmatrix}^T =
 \begin{bmatrix}
-\tfrac{r\cos\theta}{2} & \tfrac{r\cos\theta}{2} \\
-\tfrac{r\sin\theta}{2} & \tfrac{r\sin\theta}{2} \\
-\tfrac{r}{L} & -\tfrac{r}{L}
+\dot{x} \\
+\dot{y} \\
+\dot{\theta}
 \end{bmatrix}
-\begin{bmatrix}\omega_R & \omega_L\end{bmatrix}^T
+=
+\begin{bmatrix}
+\frac{r\cos\theta}{2} & \frac{r\cos\theta}{2} \\
+\frac{r\sin\theta}{2} & \frac{r\sin\theta}{2} \\
+\frac{r}{L} & -\frac{r}{L}
+\end{bmatrix}
+\begin{bmatrix}
+\omega_R \\
+\omega_L
+\end{bmatrix}
 $$
 
-Pose integration (over time):
+### Pose integration
 
 $$
-x = x_0 + \int \dot{x} \, dt,
-y = y_0 + \int \dot{y} \, dt,
-\theta = \theta_0 + \int \dot{\theta} \, dt
+x = x_0 + \int \dot{x}\,dt
 $$
 
-## Technical Troubleshooting & Physics Fixes
+$$
+y = y_0 + \int \dot{y}\,dt
+$$
 
-`isaac_diff_controller.py` applies runtime fixes for common USD physics issues. Common problems addressed:
+$$
+\theta = \theta_0 + \int \dot{\theta}\,dt
+$$
 
-- Caster wheel friction and slipping (adjust caster friction coefficient)
-- Geometry offsets causing bouncing (zero stale translation offsets)
-- Missing structural joints (attach loose parts at runtime)
-- Drive configuration defaults (strip position drives, assign velocity drives)
+## Troubleshooting & Physics Fixes
 
-For more details and exact tuning values, run:
+The controller patches common USD physics issues at runtime. The main fixes include:
+
+- Caster wheel friction and slipping
+- Geometry offset issues that cause bouncing
+- Missing structural joints for attached payloads
+- Drive configuration defaults that need velocity-based control
+
+For details, run:
 
 ```bash
 make troubleshoot
 ```
 
+## Real Robot Integration Testing (Sim-to-Real)
+
+This section summarizes the procedure for moving from simulation to physical MiR250 hardware.
+
+### 1. Safety validation
+
+Before any movement test:
+
+- Turn the physical key to Autonomous control.
+- Observe the RESUME button and press it once it begins blinking blue.
+- Confirm the LED strip changes from red to yellow.
+- Keep a team member near the emergency stop button during initial tests.
+
+### 2. Basic movement testing
+
+1. Start the hardware driver:
+
+   ```bash
+   ros2 launch mir_driver mir_launch.py
+   ```
+
+2. Launch the manual control stack in a second terminal:
+
+   ```bash
+   ros2 launch mir_manual_navigation manual_control_launch.py
+   ```
+
+3. Use the teleop window to test forward motion, rotation, and emergency stops.
+
+### 3. Trajectory comparison analysis
+
+To validate the digital twin's calibration, compare the physical `/odom` feedback with the simulated trajectories.
+
+- Data logging: In a third terminal, record the robot's progress during testing:
+
+  ```bash
+  ros2 bag record /cmd_vel /odom
+  ```
+
+- Pose alignment: If the robot drifts, use the MiR web interface under Service → Command view → Set start position to manually reset the pose.
+
+- Validation: Export the recorded `/odom` data to CSV for analysis. Calculate the trajectory error with:
+
+  $$
+  \text{Drift} = \sqrt{(x_{\text{real}} - x_{\text{sim}})^2 + (y_{\text{real}} - y_{\text{sim}})^2}
+  $$
+
+- Visualization: Use Matplotlib to overlay the physical trajectory plot with the simulation baseline and quantify the accuracy of the wheel calibration.
+
 ## Maintenance
 
-- Clean build artifacts:
+Clean generated artifacts with:
 
 ```bash
 make clean
 ```
 
-## Files of interest
+## Files of Interest
 
-- `run_mir250.sh` - launch script used by Makefile targets
-- `isaac_diff_controller.py` - runtime USD physics patches
-
----
-
-If you'd like, I can also update the top-level `Makefile` to add or adjust targets, or create a `make help`-style formatted section inside this README. What would you like next?
-
-## Real Robot Integration Testing (Sim-to-Real)
-
-This section outlines the procedures for moving from the Isaac Sim digital twin to the physical MiR250 hardware while maintaining safe operation and accurate trajectory validation.
-
-### 1. Safety Validation Protocols
-
-Before starting any ROS 2 commands, verify the physical hardware state and release any lockouts.
-
-- Key switch: turn the physical key on the MiR250 chassis to Autonomous control.
-- System reset: observe the RESUME button; it should begin blinking blue, then press it to clear hardware lockouts.
-- LED verification: confirm the robot LED strip changes from RED (E-stop) to YELLOW (pause state).
-- E-stop readiness: keep the physical red emergency stop button within reach during initial movement tests.
-
-### 2. Basic Movement Testing (Teleoperation)
-
-With the robot in the Yellow Pause state, bring up the hardware driver and the manual control stack.
-
-#### Terminal 1: Hardware Driver Bringup
-
-Connect to the physical robot network and launch the core driver:
-
-```bash
-ros2 launch mir_driver mir_launch.py
-```
-
-> The driver must be fully running and connected before launching any teleop nodes.
-
-#### Terminal 2: Manual Control
-
-Launch the manual navigation stack:
-
-```bash
-ros2 launch mir_manual_navigation manual_control_launch.py
-```
-
-Use the teleop window to test forward motion, in-place rotation, and emergency-stop behavior.
-
-### 3. Trajectory Comparison Analysis
-
-To validate the digital twin against the real robot, compare the physical odometry with the simulated trajectory data.
-
-- Data capture: in a third terminal, record the relevant topics:
-
-```bash
-ros2 bag record /cmd_vel /odom
-```
-
-- Pose recovery: if localization is lost during aggressive testing, open the MiR web interface, go to Service -> Command view -> Set start position, drag the robot to its true location, and click Adjust.
-- Analysis: plot the recorded physical `/odom` trajectory against the Isaac Sim trajectories to finalize the comparison report.
+- `run_mir250.sh` — launch script used by the Makefile targets
+- `isaac_diff_controller.py` — runtime USD physics patch controller
