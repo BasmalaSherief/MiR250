@@ -132,3 +132,53 @@ make clean
 ---
 
 If you'd like, I can also update the top-level `Makefile` to add or adjust targets, or create a `make help`-style formatted section inside this README. What would you like next?
+
+## Real Robot Integration Testing (Sim-to-Real)
+
+This section outlines the procedures for moving from the Isaac Sim digital twin to the physical MiR250 hardware while maintaining safe operation and accurate trajectory validation.
+
+### 1. Safety Validation Protocols
+
+Before starting any ROS 2 commands, verify the physical hardware state and release any lockouts.
+
+- Key switch: turn the physical key on the MiR250 chassis to Autonomous control.
+- System reset: observe the RESUME button; it should begin blinking blue, then press it to clear hardware lockouts.
+- LED verification: confirm the robot LED strip changes from RED (E-stop) to YELLOW (pause state).
+- E-stop readiness: keep the physical red emergency stop button within reach during initial movement tests.
+
+### 2. Basic Movement Testing (Teleoperation)
+
+With the robot in the Yellow Pause state, bring up the hardware driver and the manual control stack.
+
+#### Terminal 1: Hardware Driver Bringup
+
+Connect to the physical robot network and launch the core driver:
+
+```bash
+ros2 launch mir_driver mir_launch.py
+```
+
+> The driver must be fully running and connected before launching any teleop nodes.
+
+#### Terminal 2: Manual Control
+
+Launch the manual navigation stack:
+
+```bash
+ros2 launch mir_manual_navigation manual_control_launch.py
+```
+
+Use the teleop window to test forward motion, in-place rotation, and emergency-stop behavior.
+
+### 3. Trajectory Comparison Analysis
+
+To validate the digital twin against the real robot, compare the physical odometry with the simulated trajectory data.
+
+- Data capture: in a third terminal, record the relevant topics:
+
+```bash
+ros2 bag record /cmd_vel /odom
+```
+
+- Pose recovery: if localization is lost during aggressive testing, open the MiR web interface, go to Service -> Command view -> Set start position, drag the robot to its true location, and click Adjust.
+- Analysis: plot the recorded physical `/odom` trajectory against the Isaac Sim trajectories to finalize the comparison report.
