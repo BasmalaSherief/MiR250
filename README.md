@@ -103,13 +103,13 @@ $$
 \end{bmatrix}
 =
 \begin{bmatrix}
-\frac{r \cos \theta}{2} & \frac{r \cos \theta}{2} \\
-\frac{r \sin \theta}{2} & \frac{r \sin \theta}{2} \\
-\frac{r}{L} & -\frac{r}{L}
+(r\cos\theta)/2 & (r\cos\theta)/2 \\
+(r\sin\theta)/2 & (r\sin\theta)/2 \\
+2r/2 & -2r/L
 \end{bmatrix}
 \begin{bmatrix}
-\omega_R \\
-\omega_L
+\omega_L \\
+\omega_R
 \end{bmatrix}
 $$
 
