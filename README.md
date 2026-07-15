@@ -14,6 +14,14 @@ make start
 make teleop
 ```
 
+## Demo Video
+
+Watch the MIR250 simulation in action:
+
+<video src="assests/demo.mp4" controls width="100%" style="max-width: 800px; border-radius: 8px;"></video>
+
+[Download demo video](assests/demo.mp4)
+
 ## Prerequisites
 
 ### Host system (Ubuntu 24.04)
