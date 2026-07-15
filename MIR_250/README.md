@@ -2,6 +2,17 @@
 
 This repository contains the hybrid development environment for the MiR250 mobile manipulator, consisting of NVIDIA Isaac Sim 5.1.0 on the host and ROS 2 Humble in a Docker container. It includes a verified Python controller that resolves deep-seated USD physics issues, handles differential-drive kinematics, and supports the UR5e payload.
 
+## Demo Video
+
+Watch the MiR250 simulation in action:
+
+<video controls width="100%">
+  <source src="../assests/demo.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+You can also download or open the demo video directly from [assests/demo.webm](../assests/demo.webm).
+
 ## Prerequisites (Host: Ubuntu 24.04)
 
 - **GPU**: NVIDIA RTX 3050 (4 GB VRAM)
