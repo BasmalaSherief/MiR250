@@ -103,8 +103,8 @@ $$
 \end{bmatrix}
 =
 \begin{bmatrix}
-\frac{r\cos\theta}{2} & \frac{r\cos\theta}{2} \\
-\frac{r\sin\theta}{2} & \frac{r\sin\theta}{2} \\
+\frac{r \cos \theta}{2} & \frac{r \cos \theta}{2} \\
+\frac{r \sin \theta}{2} & \frac{r \sin \theta}{2} \\
 \frac{r}{L} & -\frac{r}{L}
 \end{bmatrix}
 \begin{bmatrix}
