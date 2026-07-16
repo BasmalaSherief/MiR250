@@ -23,6 +23,7 @@ setup(
     entry_points={
         'console_scripts': [
             'mir_bridge = mir_driver.mir_bridge:main',
+            'mir_driver_node = mir_driver.mir_bridge:main',
         ],
     },
 )

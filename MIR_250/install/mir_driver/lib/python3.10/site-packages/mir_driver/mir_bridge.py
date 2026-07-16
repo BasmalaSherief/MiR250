@@ -688,7 +688,17 @@ class MiR250BridgeNode(Node):
             hostname = self.declare_parameter(
                 'hostname', '<robot-ip>').value
         except KeyError:
-            self.get_logger().fatal('Parameter "hostname" is not set!')
+            hostname = None
+
+        if hostname is None or hostname == '<robot-ip>':
+            try:
+                hostname = self.declare_parameter(
+                    'mir_hostname', '<robot-ip>').value
+            except KeyError:
+                hostname = '<robot-ip>'
+
+        if hostname is None or hostname == '<robot-ip>':
+            self.get_logger().fatal('Parameter "hostname" or "mir_hostname" is not set!')
             sys.exit(-1)
         port = self.declare_parameter('port', 9090).value
         assert isinstance(port, int), 'port parameter must be an integer'

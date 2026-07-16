@@ -168,13 +168,19 @@ Before any movement test:
 1. Start the hardware driver:
 
    ```bash
-   ros2 launch mir_driver mir_launch.py
+   cd /home/basmala/mir250_ws/MIR_250
+   source /opt/ros/humble/setup.bash
+   source install/setup.bash
+   ros2 run mir_driver mir_driver_node --ros-args -p mir_hostname:=130.251.13.90
    ```
 
 2. Launch the manual control stack in a second terminal:
 
    ```bash
-   ros2 launch mir_manual_navigation manual_control_launch.py
+   cd /home/basmala/mir250_ws/MIR_250
+   source /opt/ros/humble/setup.bash
+   source install/setup.bash
+   ros2 launch mir_manual_navigation manual_control_launch.py mir_hostname:=130.251.13.90
    ```
 
 3. Use the teleop window to test forward motion, rotation, and emergency stops.
@@ -199,6 +205,7 @@ To validate the digital twin's calibration, compare the physical `/odom` feedbac
 
 - Visualization: Use Matplotlib to overlay the physical trajectory plot with the simulation baseline and quantify the accuracy of the wheel calibration.
 
+
 ## Maintenance
 
 Clean generated artifacts with:
@@ -211,3 +218,11 @@ make clean
 
 - `run_mir250.sh` — launch script used by the Makefile targets
 - `isaac_diff_controller.py` — runtime USD physics patch controller
+
+## References
+
+The `references/` folder contains supporting research and design documents for the MiR250 simulation and ROS 2 integration:
+
+- `references/Benchmarking_Full-Stack_ROS_2_Simulation_Platforms_for_Mobile_Robots.pdf`
+- `references/Bridging_Sim2Real__Digital_Twin_for_Autonomous_Mobile_Robots.pdf`
+- `references/Software_Framework_of_Autonomous_Mobile_Robots_on_Isaac_Sim_and_ROS.pdf`

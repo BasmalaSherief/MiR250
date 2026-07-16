@@ -40,6 +40,8 @@ def generate_launch_description():
     # Launch configurations with defaults
     namespace = LaunchConfiguration('namespace', default='')
     use_sim_time = LaunchConfiguration('use_sim_time', default='false')
+    mir_hostname = LaunchConfiguration('mir_hostname', default=os.environ.get('MIR_HOSTNAME', '130.251.13.90'))
+    mir_restapi_auth = LaunchConfiguration('mir_restapi_auth', default='')
 
     # Paths to configuration files
     twist_config = os.path.join(manual_navigation_dir, 'config', 'twist_mux.yaml')
@@ -57,6 +59,18 @@ def generate_launch_description():
         'use_sim_time',
         default_value='false',
         description='Use simulation (Gazebo) clock if true'
+    )
+
+    declare_mir_hostname = DeclareLaunchArgument(
+        'mir_hostname',
+        default_value=os.environ.get('MIR_HOSTNAME', '130.251.13.90'),
+        description='Hostname or IP address of the MiR robot REST API'
+    )
+
+    declare_mir_restapi_auth = DeclareLaunchArgument(
+        'mir_restapi_auth',
+        default_value='',
+        description='Base64-encoded REST API auth token for the MiR robot'
     )
 
     # Nodes
@@ -102,7 +116,11 @@ def generate_launch_description():
         package='mir_restapi',
         executable='mir_restapi_server',
         name='mir_restapi_server',
-        parameters=[{'use_sim_time': use_sim_time}],
+        parameters=[{
+            'use_sim_time': use_sim_time,
+            'mir_hostname': mir_hostname,
+            'mir_restapi_auth': mir_restapi_auth,
+        }],
         namespace=namespace,
         output='screen',
     )
@@ -129,6 +147,8 @@ def generate_launch_description():
     return LaunchDescription([
         declare_namespace,
         declare_use_sim_time,
+        declare_mir_hostname,
+        declare_mir_restapi_auth,
         twist_mux_node,
         keyboard_teleop_node,
         joy_node,
