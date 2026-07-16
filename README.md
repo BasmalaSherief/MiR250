@@ -1,6 +1,6 @@
 # MIR250 Development Environment & Isaac Sim Controller
 
-This repository contains the hybrid development environment for the MiR250 mobile manipulator, combining NVIDIA Isaac Sim on the host with ROS 2 Humble inside Docker. It includes a verified Python controller for differential drive kinematics and runtime USD physics fixes, plus a helper script for launching the simulation.
+This repository contains a hybrid development environment for the MiR250 mobile manipulator, bridging NVIDIA Isaac Sim on the host with ROS 2 Humble inside Docker. It includes a verified Python controller for differential-drive kinematics, runtime USD physics fixes, and a helper script for launching the simulation.
 
 ## Quick Start
 
@@ -87,21 +87,45 @@ The simulation publishes odometry on `/odom`, while the USD Action Graphs publis
 
 ### Inverse kinematics
 
-For a target linear velocity $V$ and angular velocity $\omega$, the required wheel speeds are:
+For a target linear velocity $V$ and angular velocity $\omega$, the wheel angular rates are:
 
 $$
-\omega_R = \frac{1}{2r}(2V + \omega L)
+\omega_R = \frac{V + \frac{L}{2}\,\omega}{r}
 $$
 
 $$
-\omega_L = \frac{1}{2r}(2V - \omega L)
+\omega_L = \frac{V - \frac{L}{2}\,\omega}{r}
 $$
 
-Where $r$ is the wheel radius and $L$ is the track width.
+Where $r$ is the wheel radius and $L$ is the distance between the left and right wheels (track width).
 
 ### Forward kinematics
 
-The robot state in the world frame is computed as:
+The robot velocity in the world frame is:
+
+$$
+\dot{x} = V\cos\theta,
+$$
+
+$$
+\dot{y} = V\sin\theta,
+$$
+
+$$
+\dot{\theta} = \omega.
+$$
+
+In terms of left and right wheel rates $\omega_L$ and $\omega_R$:
+
+$$
+V = \frac{r}{2}\left(\omega_R + \omega_L\right)
+$$
+
+$$
+\omega = \frac{r}{L}\left(\omega_R - \omega_L\right)
+$$
+
+Hence:
 
 $$
 \begin{bmatrix}
@@ -111,9 +135,9 @@ $$
 \end{bmatrix}
 =
 \begin{bmatrix}
-(r\cos\theta)/2 & (r\cos\theta)/2 \\
-(r\sin\theta)/2 & (r\sin\theta)/2 \\
-2r/2 & -2r/L
+\frac{r\cos\theta}{2} & \frac{r\cos\theta}{2} \\
+\frac{r\sin\theta}{2} & \frac{r\sin\theta}{2} \\
+-\frac{r}{L} & \frac{r}{L}
 \end{bmatrix}
 \begin{bmatrix}
 \omega_L \\
@@ -124,15 +148,15 @@ $$
 ### Pose integration
 
 $$
-x = x_0 + \int \dot{x}\,dt
+x(t) = x_0 + \int_0^t \dot{x}(\tau)\,d\tau
 $$
 
 $$
-y = y_0 + \int \dot{y}\,dt
+y(t) = y_0 + \int_0^t \dot{y}(\tau)\,d\tau
 $$
 
 $$
-\theta = \theta_0 + \int \dot{\theta}\,dt
+\theta(t) = \theta_0 + \int_0^t \dot{\theta}(\tau)\,d\tau
 $$
 
 ## Troubleshooting & Physics Fixes
@@ -185,7 +209,8 @@ Before any movement test:
 
 3. Use the teleop window to test forward motion, rotation, and emergency stops.
 
-### 3. Trajectory comparison analysis
+## Future work 
+### Trajectory comparison analysis
 
 To validate the digital twin's calibration, compare the physical `/odom` feedback with the simulated trajectories.
 
@@ -218,6 +243,7 @@ make clean
 
 - `run_mir250.sh` — launch script used by the Makefile targets
 - `isaac_diff_controller.py` — runtime USD physics patch controller
+- 'rosbag2_2026_07_15-15_11_22_0.db3` - recording for \odom and /cmd_vel of the simulation
 
 ## References
 

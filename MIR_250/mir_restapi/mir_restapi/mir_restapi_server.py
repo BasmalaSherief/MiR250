@@ -20,9 +20,9 @@ class MirRestAPIServer(Node):
         self.get_logger().info("started")
 
         # parameters: hostname, api_token
-        self.declare_parameter('mir_hostname', "<robot-ip>")
+        self.declare_parameter('mir_hostname', "130.251.13.90")
         self.hostname = self.get_parameter('mir_hostname').get_parameter_value().string_value
-        self.declare_parameter('mir_restapi_auth', "Basic <your base64-encoded credentials>")
+        self.declare_parameter('mir_restapi_auth', "Basic ZGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA==")
         self.auth = self.get_parameter('mir_restapi_auth').get_parameter_value().string_value
         self.add_on_set_parameters_callback(self.parameters_callback)
 

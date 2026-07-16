@@ -31,8 +31,8 @@ sleep 2
 
 echo "- Starting new server instance..." >&3
 ros2 run mir_restapi mir_restapi_server --ros-args \
-    -p mir_hostname:='<robot-ip>' \
-    -p mir_restapi_auth:='Basic <your base64-encoded credentials>' &
+    -p mir_hostname:='130.251.13.90' \
+    -p mir_restapi_auth:='Basic ZGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA==' &
 SERVER_PID=$!
 
 echo "- Waiting for server to initialize..." >&3

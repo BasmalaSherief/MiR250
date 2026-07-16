@@ -686,18 +686,18 @@ class MiR250BridgeNode(Node):
         try:
             # Define the hostname and port of the MiR
             hostname = self.declare_parameter(
-                'hostname', '<robot-ip>').value
+                'hostname', '130.251.13.90').value
         except KeyError:
             hostname = None
 
-        if hostname is None or hostname == '<robot-ip>':
+        if hostname is None or hostname == 'http://130.251.13.90':
             try:
                 hostname = self.declare_parameter(
-                    'mir_hostname', '<robot-ip>').value
+                    'mir_hostname', 'http://130.251.13.90').value
             except KeyError:
-                hostname = '<robot-ip>'
+                hostname = 'http://130.251.13.90'
 
-        if hostname is None or hostname == '<robot-ip>':
+        if hostname is None or hostname == 'http://130.251.13.90':
             self.get_logger().fatal('Parameter "hostname" or "mir_hostname" is not set!')
             sys.exit(-1)
         port = self.declare_parameter('port', 9090).value

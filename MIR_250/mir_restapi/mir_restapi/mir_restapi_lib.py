@@ -103,7 +103,7 @@ class MirRestAPI():
         if hostname is not None:
             address = hostname + ":80"
         else:
-            address="<robot-ip>"
+            address="130.251.13.90"
         self.http = HttpConnection(logger, address, auth, "/api/v2.0.0")
 
     def close(self):
