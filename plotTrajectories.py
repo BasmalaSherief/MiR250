@@ -1,43 +1,57 @@
+import sqlite3
+from pathlib import Path
+
 import matplotlib.pyplot as plt
-from rosbags.rosbag2 import Reader
-from rosbags.serde import deserialize_cdr
+from rosbags.typesys import Stores, get_typestore
+
 
 def extract_odom_from_bag(bag_path, topic_name='/odom'):
+    bag_dir = Path(bag_path)
+    if bag_dir.is_dir():
+        db_files = sorted(bag_dir.glob('*.db3'))
+        if not db_files:
+            raise FileNotFoundError(f'No .db3 bag files found in {bag_path}')
+        db_path = db_files[0]
+    else:
+        db_path = Path(bag_path)
+
+    typestore = get_typestore(Stores.ROS2_KILTED)
+
+    with sqlite3.connect(db_path) as conn:
+        cur = conn.cursor()
+        topic_row = cur.execute(
+            'SELECT id, type FROM topics WHERE name = ?', (topic_name,)
+        ).fetchone()
+        if topic_row is None:
+            raise ValueError(f'Topic {topic_name} not found in bag {db_path}')
+
+        topic_id, topic_type = topic_row
+        rows = cur.execute(
+            'SELECT data FROM messages WHERE topic_id = ? ORDER BY id',
+            (topic_id,),
+        ).fetchall()
+
     x_coords = []
     y_coords = []
-    
-    # Open the ROS 2 bag database
-    with Reader(bag_path) as reader:
-        # Find the connection for the specific topic
-        connections = [x for x in reader.connections if x.topic == topic_name]
-        for connection, timestamp, rawdata in reader.messages(connections=connections):
-            # Deserialize the binary ROS 2 message
-            msg = deserialize_cdr(rawdata, connection.msgtype)
-            
-            # Extract the X and Y positions
-            x_coords.append(msg.pose.pose.position.x)
-            y_coords.append(msg.pose.pose.position.y)
-            
+    for (rawdata,) in rows:
+        msg = typestore.deserialize_cdr(rawdata, topic_type)
+        x_coords.append(msg.pose.pose.position.x)
+        y_coords.append(msg.pose.pose.position.y)
+
     return x_coords, y_coords
 
-# --- 1. Extract Data ---
-# Replace these with your actual folder paths
-sim_bag_path = '/home/basmala/mir250_ws/rosbag2_2026_07_15-15_11_22_sim'
-real_bag_path = 'rosbag2_2026_07_15-15_11_22' 
 
+# --- 1. Extract Data ---
+sim_bag_path = '/home/basmala/mir250_ws/rosbag2_2026_07_15-15_11_22_sim'
 sim_x, sim_y = extract_odom_from_bag(sim_bag_path)
-real_x, real_y = extract_odom_from_bag(real_bag_path)
 
 # --- 2. Plotting ---
 plt.figure(figsize=(10, 6))
-
 plt.plot(sim_x, sim_y, label='Isaac Sim Trajectory', linestyle='--', color='blue')
-plt.plot(real_x, real_y, label='Physical Robot Trajectory', color='red')
-
-plt.title('Sim-to-Real Trajectory Comparison')
+plt.title('Simulation Trajectory Visualization')
 plt.xlabel('X Position (m)')
 plt.ylabel('Y Position (m)')
-plt.axis('equal') # CRITICAL: Keeps the physical scale accurate
+plt.axis('equal')
 plt.legend()
 plt.grid(True)
 plt.show()
