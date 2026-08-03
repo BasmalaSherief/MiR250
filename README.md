@@ -22,6 +22,9 @@ Watch the MIR250 simulation in action:
 
 [Download demo video](assests/demo.mp4)
 
+## Architecture
+![System architecture of the MIR250.](assests/arch.png)
+
 ## Isaac Sim Trajectory
 
 Recorded trajectory from the Isaac Sim simulation showing the robot's path during autonomous navigation:
